@@ -1,0 +1,27 @@
+---
+title: "Ahad Jawaid"
+about:
+  template: trestles
+  image: assets/profile.png
+  links:
+    - icon: twitter
+      text: twitter
+      href: https://twitter.com\_ahadj_
+    - icon: github
+      text: Github
+      href: https://github.com
+---
+
+Ahad Jawaid is the Software Developement Engineer at Amazon. When not innovating on data platforms, Ahad enjoys spending  time biking and playing with his piano and guitar.
+
+## Education
+
+**The University of Texas at Dallas** | Richardson, TX
+B.S in Computer Science | August 2021 - Present
+
+**The University of Houston** | Houston, TX
+B.S in Computer Science | August 2020 - May 2021
+
+## Experience
+
+Amazon | Software Development Engineer Intern | May 2023 - present

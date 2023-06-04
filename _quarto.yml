@@ -1,0 +1,46 @@
+project:
+  type: website
+  render:
+    - "*.qmd"
+
+website:
+  title: "Ahad Jawaid"
+  search: false
+  back-to-top-navigation: true
+
+  navbar:
+    logo: "assets/chip.png"
+    logo-alt: "computer chip icon"
+
+    tools:
+      - icon: twitter
+        href: https://twitter.com\_ahadj_
+      - icon: github
+        menu:
+          - text: Source Code
+          - text: Report Bug
+
+    right:
+      - text: About
+        href: index.qmd
+        icon: person
+
+      - text: Blog
+        href: blog/index.qmd
+        icon: newspaper
+
+  page-footer:
+    border: false
+    left: "Copyright 2023, Ahad Jawaid"
+    right:
+      - icon: twitter
+        href: https://twitter.com\_ahadj_
+      - icon: github
+        href: https://github.com
+    
+
+format:
+  html:
+    theme: zephyr
+    css: styles.css
+    toc: true
