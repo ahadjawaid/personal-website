@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Ahad Jawaid">
+<meta name="dcterms.date" content="2023-06-05">
 
-<title>Ahad Jawaid - Blog</title>
+<title>Ahad Jawaid - Implementing my first deep learning research paper</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,20 +25,18 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../site_libs/quarto-listing/list.min.js"></script>
-<script src="../site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-html/quarto.js"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "language": {
     "search-no-results-text": "No results",
@@ -51,41 +51,10 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-posts .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
 
-    const options = {
-      valueNames: ['listing-title','listing-subtitle','listing-author','listing-description','listing-date','listing-image','listing-reading-time',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] }],
-      
-      searchColumns: ["listing-title","listing-date","listing-author"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-posts'] = new List('listing-posts', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<link rel="stylesheet" href="../styles.css">
-<link rel="alternate" type="application/rss+xml" title="Ahad Jawaid" href="index.xml" data-external="1"></head>
+<link rel="stylesheet" href="../../../styles.css">
+</head>
 
 <body class="nav-fixed">
 
@@ -94,10 +63,10 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg navbar-dark ">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="../index.html" class="navbar-brand navbar-brand-logo">
-    <img src="../assets/chip.png" alt="computer chip icon" class="navbar-logo">
+    <a href="../../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../../assets/chip.png" alt="computer chip icon" class="navbar-logo">
     </a>
-    <a class="navbar-brand" href="../index.html">
+    <a class="navbar-brand" href="../../../index.html">
     <span class="navbar-title">Ahad Jawaid</span>
     </a>
   </div>
@@ -107,12 +76,12 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../index.html" rel="" target=""><i class="bi bi-person" role="img">
+    <a class="nav-link" href="../../../index.html" rel="" target=""><i class="bi bi-person" role="img">
 </i> 
  <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="../blog/index.html" rel="" target="" aria-current="page"><i class="bi bi-newspaper" role="img">
+    <a class="nav-link" href="../../../blog/index.html" rel="" target=""><i class="bi bi-newspaper" role="img">
 </i> 
  <span class="menu-text">Blog</span></a>
   </li>  
@@ -144,21 +113,56 @@ ul.task-list li input[type="checkbox"] {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Deep Learning">Deep Learning <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Neueral Networks">Neueral Networks <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Research">Research <span class="quarto-category-count">(1)</span></div></div></div>
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a>
+  <ul class="collapse">
+  <li><a href="#context" id="toc-context" class="nav-link" data-scroll-target="#context">Context</a></li>
+  </ul></li>
+  <li><a href="#inspiration" id="toc-inspiration" class="nav-link" data-scroll-target="#inspiration">Inspiration</a></li>
+  <li><a href="#implementation" id="toc-implementation" class="nav-link" data-scroll-target="#implementation">Implementation</a>
+  <ul class="collapse">
+  <li><a href="#read" id="toc-read" class="nav-link" data-scroll-target="#read">Read</a></li>
+  <li><a href="#implement" id="toc-implement" class="nav-link" data-scroll-target="#implement">Implement</a></li>
+  <li><a href="#visualize-test" id="toc-visualize-test" class="nav-link" data-scroll-target="#visualize-test">Visualize (Test)</a></li>
+  <li><a href="#repeat" id="toc-repeat" class="nav-link" data-scroll-target="#repeat">Repeat</a></li>
+  </ul></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">Conclusion</a></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Blog</h1>
-</div>
+<h1 class="title">Implementing my first deep learning research paper</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">Deep Learning</div>
+    <div class="quarto-category">Research</div>
+    <div class="quarto-category">Independent Study</div>
+  </div>
+  </div>
 
 
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Ahad Jawaid </p>
+          </div>
+  </div>
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">June 5, 2023</p>
+    </div>
+  </div>
   
     
   </div>
@@ -166,102 +170,99 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p><br><br></p>
-<div id="listing-posts" class="quarto-listing quarto-listing-container-default">
-<div class="listing-actions-group">
-   <div class="input-group input-group-sm quarto-listing-sort">
-     <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
-     <select id="listing-posts-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-posts'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
-       <option value="" disabled="" selected="" hidden="">Order By</option>
-       <option value="index" data-direction="asc">Default</option>
-         <option value="listing-date-sort" data-direction="asc">
-          Date - Oldest
-        </option>
-         <option value="listing-date-sort" data-direction="desc">
-          Date - Newest
-        </option>
-         <option value="listing-author" data-direction="asc">
-          Author
-        </option>
-     </select>
-  </div>
-    <div class="input-group input-group-sm quarto-listing-filter">
-      <span class="input-group-text"><i class="bi bi-search"></i></span>
-      <input type="text" class="search form-control" placeholder="Filter">
-    </div>
-</div>
-<div class="list quarto-listing-default">
-<div class="quarto-post image-left" data-index="0" data-categories="Deep Learning,Research" data-listing-date-sort="1685948400000" data-listing-file-modified-sort="1686004036249" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
-<div class="thumbnail">
-<p><a href="../blog/posts/02-implementing-papers-wavenet/index.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
-</div>
-<div class="body">
-<a href="../blog/posts/02-implementing-papers-wavenet/index.html">
-<h3 class="no-anchor listing-title">
-First Implementation of a Deep Learning Research Paper - Wavenet
-</h3>
-<div class="listing-subtitle">
-
-</div>
-<div class="listing-description">
-Earlier this year I had tried my hand at implementing a research paper from scratch. I want to document the journey I went through to serve as a guide for myself and others…
-</div>
-</a>
-</div>
-<div class="metadata">
-<a href="../blog/posts/02-implementing-papers-wavenet/index.html">
-<div class="listing-date">
-05 June 2023
-</div>
-<div class="listing-author">
-Ahad Jawaid
-</div>
-<div class="listing-reading-time">
-1 min
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-left" data-index="1" data-categories="Deep Learning,Neueral Networks" data-listing-date-sort="1677139200000" data-listing-file-modified-sort="1685911425188" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6">
-<div class="thumbnail">
-<p><a href="../blog/posts/01-the-universal-function/index.html"> <p class="card-img-top"><img src="posts/01-the-universal-function/assets/model.png"  class="thumbnail-image card-img"/></p> </a></p>
-</div>
-<div class="body">
-<a href="../blog/posts/01-the-universal-function/index.html">
-<h3 class="no-anchor listing-title">
-Neural network: The universal function
-</h3>
-<div class="listing-subtitle">
-
-</div>
-<div class="listing-description">
-Have you ever imagined a single machine that can adapt to any role given to it? It could be a screw, a tire, a screen or any other task you could think of. That’s what a…
-</div>
-</a>
-</div>
-<div class="metadata">
-<a href="../blog/posts/01-the-universal-function/index.html">
-<div class="listing-date">
-23 February 2023
-</div>
-<div class="listing-author">
-Ahad Jawaid
-</div>
-<div class="listing-reading-time">
-6 min
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div>
-<p><br><br></p>
+<section id="introduction" class="level2">
+<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
+<p>Earlier this year I had tried my hand at implementing a research paper from scratch. I want to document the journey I went through to serve as a guide for myself and others and a form of reflexition my experience and places I could improve. I hope you find this blog post valuable and if you find anything I could improve please write about it in the feedback form, thank you!</p>
+<section id="context" class="level3">
+<h3 class="anchored" data-anchor-id="context">Context</h3>
+<p>To give a bit of context on what motivated me to attempt to implement a paper. I had been meaning to start understanding deep learning more deeply for a while and to do that I decided to register for an independent study course at my university where I would have complete certain goals that I outlined with the professor supervising me. The goals I had choosen for this independent study were focused on allowing me to have some experience in what a deep learning researcher would do. The goals I had choosen were:</p>
+<blockquote class="blockquote">
+<ol type="1">
+<li>Read 30 research papers</li>
+<li>Implement a research paper</li>
+<li>Write a paper</li>
+</ol>
+</blockquote>
+<p>I had choosen these goals after watching many videos on what researcher do and what makes a good one. A notable video I watched was <a href="https://www.youtube.com/watch?v=733m6qBH-jI">Andrew Ng’s video</a> on giving career advice for researchers.</p>
+<p>Given these goals all I needed now was a subject to research. So I thought of a couple of interesting topics at the time, the first one was reinforcement learning and the second one was speech synthesis since I listen to alot of audiobooks and it is expensive. So with these topics in hand I reached out to some professor’s at my school and I had no luck until at the suggesition of a friend that I reached out to one professor who he said is a good professor to do a study under. So I reached out to him and he eventually responeded so I pitched him the two topics and he found speech synthesis more interesting but with a twist. The twist was to involve emotions in speech synthesis. So with a topic and some goals I began reading more about the subject to gain a better idea about what is what.</p>
+</section>
+</section>
+<section id="inspiration" class="level2">
+<h2 class="anchored" data-anchor-id="inspiration">Inspiration</h2>
+<p>After reading through some papers I began too quickly notice one of the main architectures that started the whole deep learning revolution in speech synthesis is <a href="https://arxiv.org/abs/1609.03499">WaveNet</a>. Although I found this paper I was still hesistant on implementing it since to me it seem pretty intidmiating to try to implement a whole deep learning architecture myself, so I did the natural thing which was search up the architecture on google. I looked at some implementations on github most of them seemed really complicated with files going on for hundernds of lines of code so I kept on looking for a simple and understanble one until I found one! <a href="https://github.com/golbin/WaveNet">This</a> implementation made me think of it less intimeideatgly and more as a programing problem since it was laid out very simply with clear names it made it more understandable and made me feel like I could do it.</p>
+</section>
+<section id="implementation" class="level2">
+<h2 class="anchored" data-anchor-id="implementation">Implementation</h2>
+<p>And then a couple of weeks later since I was still in school and I was procrastanticing a bit I finally started trying to implement the architecture myself after going through part of the <a href="">fastai</a> I kinda understood the idea of how to trying to implement stuff which is to start small trying to start at something you understand and build your way up. So for example for me I start with basic multiplication of a tensor with a convolution kernal (usually a small n x n matrix). And then I made my way up by trying to visualize each step of the way.</p>
+<p>So given that main idea of trying to idea of trying to implement something can be summed up into 4 main steps:</p>
+<ol type="1">
+<li>read</li>
+<li>implement</li>
+<li>visualize (test)</li>
+<li>repeat 1-3</li>
+</ol>
+<p>With these steps and enough time and gumption you will be able to implement anything although I would recommend starting of small so it doesn’t take forever and you don’t get too disheartned. Now that I have laid out a basic algorithm for how to implement stuff I will go a bit more in depth on how to go through each step.</p>
+<section id="read" class="level3">
+<h3 class="anchored" data-anchor-id="read">Read</h3>
+<p>Reading is one of the most important steps but it is easy for it to be done wrong when you are trying to implement something. The main thing you are trying to do when you are trying to implement a paper is understand what is happening functionaly and to do that you don’t need to read the entire paper word for word. You should focus on what helps you understand what is happening. You can do this by have a couple of ideas in mind when you are implementing something:</p>
+<ol type="1">
+<li>What are the inputs and outputs</li>
+<li>What change is occuring to the data</li>
+<li>What are the assumptions</li>
+</ol>
+<p>It is important to understand what are the inputs and outputs because this is where you are going to have to start to even start trying to implement a model. You will need to make a iteration loop and to that you will need to be able to test if you code is working as desired. Another important question to keep in mind is what is change is occuring to the data cause this is the core thing that you will be implementing and the meat of the code you will be writing, are we multiplying the data, resizing the images, or padding it. Lastly but still of great importantance you need to keep in mind what are the assumptions that are being made are they assuming that you will have the data preprocessed into a specific format or how are they assuming that outputs are in probabilties. You need to understand every step and these are some question to keep in mind when going through the process of reading a paper.</p>
+<p>In addition to having good questions in mind it is also advantagnous to know where to look in the paper to find the details you will need to know when implementing the model. I will first start off by listing the important sections in a research paper:</p>
+<ol type="1">
+<li><strong>Abstract</strong>
+<ul>
+<li>Usually you read the abstract to get a borad understanding of what this paper is about and if it will be useful to you</li>
+</ul></li>
+<li><strong>Figures</strong>
+<ul>
+<li>Usually the figures in the research papers almost completly summarizes the paper and they are very useful in understanding how the model works. But I will put a bit of a disclaimer when using only picture that sometimes the diagrams are not always completly accurate to what is presented in the paper and you must verify by reading the actual details.</li>
+</ul></li>
+<li><strong>Introduction</strong>
+<ul>
+<li>It introduces what they did and what makes their research new or important</li>
+</ul></li>
+<li><strong>Architecture</strong>
+<ul>
+<li>This is the meat of the paper containg the details for the architecture (usually where you will spend the most of you time)</li>
+</ul></li>
+<li><strong>Training</strong>
+<ul>
+<li>Similarlly in the training section they might contain hyperparmeters for training their model and accuracy figures of what resulted from the training process. This can be useful to be able to compare if you model is working like the paper’s implementation to see how good and bad you did.</li>
+</ul></li>
+<li><strong>The appendix</strong>
+<ul>
+<li>This section is unexpecdely very useful when trying to implement something. Usually when the author wants to contain the implementation details but isn’t going with the flow of their paper they put it in the appendix. So this is a very valuable place to find the details that may not be in the main part of the paper.</li>
+</ul></li>
+<li><strong>Experiements</strong> (Optional)
+<ul>
+<li>Sometimes they contain important information like how much data or what parameters they used to train their model</li>
+</ul></li>
+</ol>
+<p>With knowing what to look for and where to look for you have an idea of starting place when seeing the dense pages of research papers.</p>
+</section>
+<section id="implement" class="level3">
+<h3 class="anchored" data-anchor-id="implement">Implement</h3>
+<p>When implementing you algorithm or model it is very important that you not get overwhelmed by all the different things you need to do but rather focus on starting from something you can understand and building your way up. And to do this it is fine if you code is not perfect the first time you can always make changes later and improve it.</p>
+</section>
+<section id="visualize-test" class="level3">
+<h3 class="anchored" data-anchor-id="visualize-test">Visualize (Test)</h3>
+<p>After you implement something you need to verify the code works as you expected and to do this you can visualize what the outputs are or what the data looks like by using a library like <a href="https://matplotlib.org/">matplotlib</a>. Also it may help to work in an iteractive enviroment like a <a href="https://jupyter.org/">jupyter notebook</a> so you can immedtialy see the output instead of having to rerun your code everytime. In the same vein of visualizing testing your code with asserts statements or libraries like <a href="https://docs.pytest.org/en/7.3.x/">pytest</a> can help you ensure that your code is working as expected. This will be really useful when you go back to try to figure out why some part of your model may not be working as expected.</p>
+</section>
+<section id="repeat" class="level3">
+<h3 class="anchored" data-anchor-id="repeat">Repeat</h3>
+<p>The key thing to this process is repeating and being able to iterate quickly. You will most likely start slow at the start but as you build your library up you will have greater abstractions to work with allowing yourself to work quicker each iteration. Additionally this will help you learn and become a better programmer by getting used to improving your codebase.</p>
+</section>
+</section>
+<section id="conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
+<p>In summary, the main lessons I learned and methodolgy I formulated during my first implementation of a research paper are to read, implement, visualize, and repeat. I hope you found this post useful and if you have any feedback please feel free to leave some in the feedback form, thank you.</p>
 
 
-
+</section>
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
