@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Ahad Jawaid</title>
+<title>Ahad Jawaid - 👋 Hey, I’m Ahad</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -25,6 +25,8 @@ ul.task-list li input[type="checkbox"] {
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/quarto-listing/list.min.js"></script>
+<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/clipboard/clipboard.min.js"></script>
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -48,9 +50,51 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
 
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-landing-posts .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-landing-posts'] = new List('listing-landing-posts', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
+<style>html{ scroll-behavior: smooth; }</style>
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <link rel="stylesheet" href="styles.css">
+<meta property="og:title" content="Ahad Jawaid - 👋 Hey, I’m Ahad">
+<meta property="og:description" content="Ahad Jawaid’s Website">
+<meta property="og:image" content="https://ahadjawaid.github.io/personal-website/clouds.png">
+<meta property="og:site-name" content="Ahad Jawaid">
+<meta name="twitter:title" content="Ahad Jawaid">
+<meta name="twitter:description" content="Ahad Jawaid’s Website">
+<meta name="twitter:image" content="https://ahadjawaid.github.io/personal-website/clouds.png">
+<meta name="twitter:creator" content="@_ahadj_">
+<meta name="twitter:site" content="@_ahadj_">
+<meta name="twitter:card" content="summary_large_image">
 </head>
 
 <body class="nav-fixed">
@@ -73,14 +117,19 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" rel="" target="" aria-current="page"><i class="bi bi-person" role="img">
+    <a class="nav-link active" href="./index.html" rel="" target="" aria-current="page"><i class="bi bi-house-door" role="img">
 </i> 
- <span class="menu-text">About</span></a>
+ <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./blog/index.html" rel="" target=""><i class="bi bi-newspaper" role="img">
 </i> 
  <span class="menu-text">Blog</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./about.html" rel="" target=""><i class="bi bi-person" role="img">
+</i> 
+ <span class="menu-text">About</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -112,25 +161,32 @@ ul.task-list li input[type="checkbox"] {
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">On this page</h2>
+   
   <ul>
-  <li><a href="#education" id="toc-education" class="nav-link active" data-scroll-target="#education">Education</a></li>
-  <li><a href="#experience" id="toc-experience" class="nav-link" data-scroll-target="#experience">Experience</a></li>
+  <li><a href="#blog" id="toc-blog" class="nav-link active" data-scroll-target="#blog">Blog</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
-<div class="quarto-about-trestles">
-  <div class="about-entity">
-    <img src="assets/profile.png" class="about-image
-  rounded " style="width: 20em;">
-<header id="title-block-header" class="quarto-title-block default">
+<main class="content" id="quarto-document-content">
+
+
+
+<div class="quarto-about-jolla">
+  <img src="assets/profile.png" class="about-image
+  round " style="height: 15em; width: 15em;">
+ <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Ahad Jawaid</h1>
+<h1 class="title">👋 Hey, I’m Ahad</h1>
 </div>
 <div class="quarto-title-meta">
   </div>
-</header>
-    <div class="about-links">
+</header><div id="about">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis</p>
+<p>Read more about me <a href="./about.html">here</a>.</p>
+</div> 
+  <hr class="about-sep">
+   <div class="about-links">
   <a href="https://twitter.com\_ahadj_" class="about-link" rel="" target="">
     <i class="bi bi-twitter"></i>
      <span class="about-link-text">Twitter</span>
@@ -143,24 +199,86 @@ ul.task-list li input[type="checkbox"] {
     <i class="bi bi-linkedin"></i>
      <span class="about-link-text">LinkedIn</span>
   </a>
+  <a href="mailto:ahadjawaid0@gmail.com" class="about-link" rel="" target="">
+    <i class="bi bi-envelope"></i>
+     <span class="about-link-text">Email</span>
+  </a>
 </div>
-  </div>
-  <div class="about-contents"><main class="content" id="quarto-document-content">
-
-<p>Ahad Jawaid is the Software Developement Engineer at Amazon. When not innovating on data platforms, Ahad enjoys spending time biking and playing with his piano and guitar.</p>
-<section id="education" class="level2">
-<h2 data-anchor-id="education">Education</h2>
-<p><strong>The University of Texas at Dallas</strong> | Richardson, TX B.S in Computer Science | Expected Graduation: May 2024</p>
-</section>
-<section id="experience" class="level2">
-<h2 data-anchor-id="experience">Experience</h2>
-<p>Amazon | Software Development Engineer Intern | May 2023 - present</p>
-
-
-</section>
-<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main></div>
 </div>
- <!-- /main -->
+
+<section id="blog" class="level2">
+<h2 data-anchor-id="blog">Blog</h2>
+<p>Click <a href="./blog/index.html">here</a> to check out my blog.</p>
+<div id="listing-landing-posts" class="quarto-listing quarto-listing-container-default">
+<div class="list quarto-listing-default">
+<div class="quarto-post image-right" data-index="0" data-categories="Deep Learning,Research,Independent Study" data-listing-date-sort="1685948400000" data-listing-file-modified-sort="1686014373974" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6">
+<div class="thumbnail">
+<p><a href="./blog/posts/02-implementing-papers-wavenet/index.html"> <p class="card-img-top"><img src="blog/posts/02-implementing-papers-wavenet/assets/wavenet.png"  class="thumbnail-image card-img"/></p> </a></p>
+</div>
+<div class="body">
+<a href="./blog/posts/02-implementing-papers-wavenet/index.html">
+<h3 class="no-anchor listing-title">
+Implementing my first deep learning research paper
+</h3>
+<div class="listing-subtitle">
+
+</div>
+<div class="listing-description">
+Earlier this year, I embarked on an endeavor to implement a few deep learning research papers from scratch. My goal was to chronicle this journey not only for my own…
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="./blog/posts/02-implementing-papers-wavenet/index.html">
+<div class="listing-date">
+Jun 5, 2023
+</div>
+<div class="listing-author">
+Ahad Jawaid
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="1" data-categories="Deep Learning,Neueral Networks" data-listing-date-sort="1677139200000" data-listing-file-modified-sort="1685911425188" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6">
+<div class="thumbnail">
+<p><a href="./blog/posts/01-the-universal-function/index.html"> <p class="card-img-top"><img src="blog/posts/01-the-universal-function/assets/model.png"  class="thumbnail-image card-img"/></p> </a></p>
+</div>
+<div class="body">
+<a href="./blog/posts/01-the-universal-function/index.html">
+<h3 class="no-anchor listing-title">
+Neural network: The universal function
+</h3>
+<div class="listing-subtitle">
+
+</div>
+<div class="listing-description">
+Have you ever imagined a single machine that can adapt to any role given to it? It could be a screw, a tire, a screen or any other task you could think of. That’s what a…
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="./blog/posts/01-the-universal-function/index.html">
+<div class="listing-date">
+Feb 23, 2023
+</div>
+<div class="listing-author">
+Ahad Jawaid
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div>
+
+
+
+
+</section>
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -481,4 +599,5 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
+<script src="site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>

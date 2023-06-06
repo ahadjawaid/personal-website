@@ -2,23 +2,16 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Ahad Jawaid",
+    "title": "👋 Hey, I’m Ahad",
     "section": "",
-    "text": "Ahad Jawaid is the Software Developement Engineer at Amazon. When not innovating on data platforms, Ahad enjoys spending time biking and playing with his piano and guitar."
+    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis\nRead more about me here.\n \n  \n   \n  \n    \n     Twitter\n  \n  \n    \n     Github\n  \n  \n    \n     LinkedIn\n  \n  \n    \n     Email"
   },
   {
-    "objectID": "index.html#education",
-    "href": "index.html#education",
-    "title": "Ahad Jawaid",
-    "section": "Education",
-    "text": "Education\nThe University of Texas at Dallas | Richardson, TX B.S in Computer Science | Expected Graduation: May 2024"
-  },
-  {
-    "objectID": "index.html#experience",
-    "href": "index.html#experience",
-    "title": "Ahad Jawaid",
-    "section": "Experience",
-    "text": "Experience\nAmazon | Software Development Engineer Intern | May 2023 - present"
+    "objectID": "index.html#blog",
+    "href": "index.html#blog",
+    "title": "👋 Hey, I’m Ahad",
+    "section": "Blog",
+    "text": "Blog\nClick here to check out my blog.\n\n\n\n\n  \n\n\n\n\nImplementing my first deep learning research paper\n\n\n\n\n\n\n\n\n\n\n\n\nJun 5, 2023\n\n\nAhad Jawaid\n\n\n\n\n\n\n  \n\n\n\n\nNeural network: The universal function\n\n\n\n\n\n\n\n\n\n\n\n\nFeb 23, 2023\n\n\nAhad Jawaid\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "blog/posts/01-the-universal-function/index.html",
@@ -75,6 +68,27 @@
     "title": "Neural network: The universal function",
     "section": "The Universal Function",
     "text": "The Universal Function\nIn conclusion, the neural network is a powerful tool that allows software to adapt to any role given to them. At first glance, it may seem like an abstract concept, but it is nothing more guessing and checking then improving. What’s fascinating about this is that the improvement can be made automatically by using concepts from calculus like the derivative, which allows us to determine how to improve. With these tools, the neural network can learn any task and solve most problem thrown its way.\nToday, we see the applications of neural networks in various fields, including speech recognition, image and pattern recognition, and natural language processing, to name a few. The possibilities of what we can achieve with this technology are endless, and we are only scratching the surface of what it can do."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "Ahad Jawaid",
+    "section": "",
+    "text": "Ahad Jawaid is the Software Developement Engineer at Amazon. When not innovating on data platforms, Ahad enjoys spending time biking and playing with his piano and guitar."
+  },
+  {
+    "objectID": "about.html#education",
+    "href": "about.html#education",
+    "title": "Ahad Jawaid",
+    "section": "Education",
+    "text": "Education\nThe University of Texas at Dallas | Richardson, TX B.S in Computer Science | Expected Graduation: May 2024"
+  },
+  {
+    "objectID": "about.html#experience",
+    "href": "about.html#experience",
+    "title": "Ahad Jawaid",
+    "section": "Experience",
+    "text": "Experience\nAmazon | Software Development Engineer Intern | May 2023 - present"
   },
   {
     "objectID": "blog/index.html",
