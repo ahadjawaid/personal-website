@@ -14,125 +14,6 @@
     "text": "Blog\nClick here to check out my blog.\n\n\n\n\n  \n\n\n\n\nTranslating Theory into Code: A Student’s Guide to Implementing Research Papers\n\n\n\n\n\n\n\n\n\n\n\n\nJun 5, 2023\n\n\nAhad Jawaid\n\n\n\n\n\n\n  \n\n\n\n\nNeural network: The universal function\n\n\n\n\n\n\n\n\n\n\n\n\nFeb 23, 2023\n\n\nAhad Jawaid\n\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "blog/posts/01-the-universal-function/index.html",
-    "href": "blog/posts/01-the-universal-function/index.html",
-    "title": "Neural network: The universal function",
-    "section": "",
-    "text": "Have you ever imagined a single machine that can adapt to any role given to it? It could be a screw, a tire, a screen or any other task you could think of. That’s what a neural network is for software — a function that can perform any task.\nInitially, when I learned about neural networks, it seemed like a highly abstract concept that emulated the brain. However, after reading books such as Deep Learning by Ian Goodfellow and The Deep Learning practical coder by Jeremy Howard, I came to realize that a neural network is nothing more than a function that can be adjusted to perform any task we require of it."
-  },
-  {
-    "objectID": "blog/posts/01-the-universal-function/index.html#what-exactly-is-a-function",
-    "href": "blog/posts/01-the-universal-function/index.html#what-exactly-is-a-function",
-    "title": "Neural network: The universal function",
-    "section": "What exactly is a function?",
-    "text": "What exactly is a function?\nA function is a mapping of an input to an output. For instance, an addition function could take two numbers as inputs and output their sum."
-  },
-  {
-    "objectID": "blog/posts/01-the-universal-function/index.html#adjustable-function",
-    "href": "blog/posts/01-the-universal-function/index.html#adjustable-function",
-    "title": "Neural network: The universal function",
-    "section": "Adjustable function",
-    "text": "Adjustable function\nAn adjustable function, on the other hand, is a function that has weights or parameters that regulate how the inputs are modified to generate a specific output. For example, a function f that takes two numbers as inputs can be expressed as\n\nf(input1, input2) = weight1 * input1 + weight2 * input2\n\nHere, we can change the function by adjusting the weights."
-  },
-  {
-    "objectID": "blog/posts/01-the-universal-function/index.html#how-can-an-adjustable-function-learn-a-task",
-    "href": "blog/posts/01-the-universal-function/index.html#how-can-an-adjustable-function-learn-a-task",
-    "title": "Neural network: The universal function",
-    "section": "How can an adjustable function learn a task?",
-    "text": "How can an adjustable function learn a task?\nNow that we have established what an adjustable function is, let’s look at how we can use it to solve a problem. The process of adjusting the weights in the function to accomplish a task involves three main steps:\n1. Get output from the function\n2. Check how wrong the output is compared to 3. the desired output\n4. Adjust the weights to make the output look more like the desired output\nThis process can be illustrated in the following diagram:\n\nAs simple as this may seem, this is the core of how a neural network learns a task. It starts by guessing an output, and then we adjust the weights to make it look more like the desired output."
-  },
-  {
-    "objectID": "blog/posts/01-the-universal-function/index.html#adjusting-the-weights-automatically",
-    "href": "blog/posts/01-the-universal-function/index.html#adjusting-the-weights-automatically",
-    "title": "Neural network: The universal function",
-    "section": "Adjusting the weights automatically",
-    "text": "Adjusting the weights automatically\nAdjusting the weights automatically is where it gets interesting. Let’s assume you’re playing a game where someone has a number in mind, and you have to guess it. Every time you make a guess, they tell you whether you’re close or far. If you randomly pick the numbers at random, you’d get nowhere. But adding two simple steps to the process can solve this problem:\n1. A method to determine how far you are from the desired output (output error method)\n2.A method for finding the direction and extent of the weights to be changed (method for determining how to adjust weights)"
-  },
-  {
-    "objectID": "blog/posts/01-the-universal-function/index.html#output-error-method",
-    "href": "blog/posts/01-the-universal-function/index.html#output-error-method",
-    "title": "Neural network: The universal function",
-    "section": "Output Error Method",
-    "text": "Output Error Method\nTo find how far we are from the desired output, we can subtract our function’s output and the desired output,\n\nf(input1, input2) = 5 goal_function(input1, input2) = 10 error = 5–10 = -5\n\nThe problem with this method is that it could give us negative values, which can be problematic when attempting to minimize the error. To address this issue, we can bound the method by taking the absolute value of the subtraction (positive number).\n\nerror = | 5–10 | = 5"
-  },
-  {
-    "objectID": "blog/posts/01-the-universal-function/index.html#method-for-determining-how-to-adjust-weights",
-    "href": "blog/posts/01-the-universal-function/index.html#method-for-determining-how-to-adjust-weights",
-    "title": "Neural network: The universal function",
-    "section": "Method for determining how to adjust weights",
-    "text": "Method for determining how to adjust weights\nThe last addition to adjust the weights automatically is to find the direction and extent of the weights to be changed. We can accomplish this by using a concept from calculus known as the derivative, which is the slope of the function at a specific point. By finding the slope or derivative, we can determine the direction and amount to change the weights.\n\nSo in this illustration, we can find that the slope at point one is two by using the rise-over run of the tangent line (a line that touches the function at a point). We can use this slope or derivative to determine in what direction and how much to change the weights. This is done because of a property that a derivative has, which is when the derivative is zero, it is at the minimum or maximum (or saddle point) of the function. We can take advantage of this property with our method of measuring the error to find the minimum of the error.\nSo if we keep adjusting the weights and the derivative gets smaller, we are approaching a minimum or maximum (or saddle point). To ensure we are finding the minimum and not the maximum error, we need to figure out what direction we should change the weights. This can be done simply by subtracting the derivative to act as we descend to the minimum. Putting it together\nThe heart of deep learning lies in the ability of neural networks to learn any task by going through five steps. These are:\n1. Input data into the function\n2. Compare the output to the error function (loss function)\n3. Take the derivative of the error function with respect to the weights\n4. Subtract the derivative of the weights from the weights\n5. Repeat until the error is small\n\nEverything else is focused on making the training process efficient and timely."
-  },
-  {
-    "objectID": "blog/posts/01-the-universal-function/index.html#the-universal-function",
-    "href": "blog/posts/01-the-universal-function/index.html#the-universal-function",
-    "title": "Neural network: The universal function",
-    "section": "The Universal Function",
-    "text": "The Universal Function\nIn conclusion, the neural network is a powerful tool that allows software to adapt to any role given to them. At first glance, it may seem like an abstract concept, but it is nothing more guessing and checking then improving. What’s fascinating about this is that the improvement can be made automatically by using concepts from calculus like the derivative, which allows us to determine how to improve. With these tools, the neural network can learn any task and solve most problem thrown its way.\nToday, we see the applications of neural networks in various fields, including speech recognition, image and pattern recognition, and natural language processing, to name a few. The possibilities of what we can achieve with this technology are endless, and we are only scratching the surface of what it can do."
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "Ahad Jawaid",
-    "section": "",
-    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis."
-  },
-  {
-    "objectID": "about.html#education",
-    "href": "about.html#education",
-    "title": "Ahad Jawaid",
-    "section": "Education",
-    "text": "Education\nThe University of Texas at Dallas | Richardson, TX B.S in Computer Science | Expected Graduation: May 2024"
-  },
-  {
-    "objectID": "about.html#experience",
-    "href": "about.html#experience",
-    "title": "Ahad Jawaid",
-    "section": "Experience",
-    "text": "Experience\nAmazon | Software Development Engineer Intern | May 2023 - present"
-  },
-  {
-    "objectID": "blog/index.html",
-    "href": "blog/index.html",
-    "title": "Blog",
-    "section": "",
-    "text": "Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n  \n\n\n\n\nTranslating Theory into Code: A Student’s Guide to Implementing Research Papers\n\n\n\n\n\n\n\n\n\n\n\n\n05 June 2023\n\n\nAhad Jawaid\n\n\n6 min\n\n\n\n\n\n\n  \n\n\n\n\nNeural network: The universal function\n\n\n\n\n\n\n\n\n\n\n\n\n23 February 2023\n\n\nAhad Jawaid\n\n\n6 min\n\n\n\n\n\n\nNo matching items\n\n\n\nLoading…\n\n\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "blog/posts/02-implementing-papers-wavenet/index.html",
-    "href": "blog/posts/02-implementing-papers-wavenet/index.html",
-    "title": "Implementing my first deep learning research paper",
-    "section": "",
-    "text": "Earlier this year, I embarked on an endeavor to implement a few deep learning research papers from scratch. My goal was to chronicle this journey not only for my own reference but also to offer a useful guide to others interested in similar projects. It’s also a reflective exercise, allowing me to assess my experience and identify areas for improvement. I welcome your feedback and hope you find value in this blog post.\n\n\nMy journey started with an aspiration to understand deep learning on a deeper level. To facilitate this, I registered for an independent study course at my university, under the supervision of a professor, which allowed me to set specific goals. These goals were designed to emulate the tasks of a deep learning researcher:\n\n\nRead 30 research papers\nImplement a research paper\nWrite a paper\n\n\nI had choosen these goals after watching many videos on what researcher do and what makes a good one. A notable video I watched was on giving career advice for researchers.\nThese objectives were influenced by numerous videos I watched on the roles and qualities of a good researcher, notably Andrew Ng’s video video offering career advice for researchers.\nArmed with my goals, the next step was choosing a subject to research. I considered two fascinating topics: reinforcement learning and speech synthesis. The latter appealed to me particularly due to my interest in audiobooks and their associated costs. I pitched these topics to various professors at my university. On the recommendation of a friend, I reached out to a particular professor known for his expertise and guidance in independent studies. He responded positively to the idea of speech synthesis but suggested adding a layer of complexity: introducing emotions into the mix. Equipped with this unique topic and my predetermined goals, I delved into extensive reading to garner a more profound understanding of the subject matter."
-  },
-  {
-    "objectID": "blog/posts/02-implementing-papers-wavenet/index.html#introduction",
-    "href": "blog/posts/02-implementing-papers-wavenet/index.html#introduction",
-    "title": "Implementing my first deep learning research paper",
-    "section": "",
-    "text": "Earlier this year, I embarked on an endeavor to implement a few deep learning research papers from scratch. My goal was to chronicle this journey not only for my own reference but also to offer a useful guide to others interested in similar projects. It’s also a reflective exercise, allowing me to assess my experience and identify areas for improvement. I welcome your feedback and hope you find value in this blog post.\n\n\nMy journey started with an aspiration to understand deep learning on a deeper level. To facilitate this, I registered for an independent study course at my university, under the supervision of a professor, which allowed me to set specific goals. These goals were designed to emulate the tasks of a deep learning researcher:\n\n\nRead 30 research papers\nImplement a research paper\nWrite a paper\n\n\nI had choosen these goals after watching many videos on what researcher do and what makes a good one. A notable video I watched was on giving career advice for researchers.\nThese objectives were influenced by numerous videos I watched on the roles and qualities of a good researcher, notably Andrew Ng’s video video offering career advice for researchers.\nArmed with my goals, the next step was choosing a subject to research. I considered two fascinating topics: reinforcement learning and speech synthesis. The latter appealed to me particularly due to my interest in audiobooks and their associated costs. I pitched these topics to various professors at my university. On the recommendation of a friend, I reached out to a particular professor known for his expertise and guidance in independent studies. He responded positively to the idea of speech synthesis but suggested adding a layer of complexity: introducing emotions into the mix. Equipped with this unique topic and my predetermined goals, I delved into extensive reading to garner a more profound understanding of the subject matter."
-  },
-  {
-    "objectID": "blog/posts/02-implementing-papers-wavenet/index.html#inspiration",
-    "href": "blog/posts/02-implementing-papers-wavenet/index.html#inspiration",
-    "title": "Implementing my first deep learning research paper",
-    "section": "Inspiration",
-    "text": "Inspiration\nIn the process of reviewing multiple papers, I quickly noticed that WaveNet was a significant architecture that kick-started the deep learning revolution in speech synthesis. Although intrigued by this paper, the idea of implementing an entire deep learning architecture felt daunting. My initial approach was to seek out existing implementations online. Many were overly complicated, with code extending into hundreds of lines, until I stumbled upon a simple and comprehendible implementation on github. This version presented the architecture in a clear, digestible format that made it feel more like a manageable programming problem than an intimidating task."
-  },
-  {
-    "objectID": "blog/posts/02-implementing-papers-wavenet/index.html#implementation",
-    "href": "blog/posts/02-implementing-papers-wavenet/index.html#implementation",
-    "title": "Implementing my first deep learning research paper",
-    "section": "Implementation",
-    "text": "Implementation\nAfter some procrastination and coursework delays, I finally mustered the courage to attempt the implementation. Drawing on lessons from the fastai course, I realized the importance of starting small with concepts I understood, gradually building up from there. I initiated the process with basic tensor multiplication using a convolution kernel (typically a small n x n matrix) and gradually advanced by visualizing each successive step.\nIn my experience, the implementation process can be distilled into four primary steps:\n\n\nRead\nImplement\nVisualize (Test)\nRepeat Steps 1-3\n\n\nThis iterative process, accompanied by ample time and persistence, enables the implementation of any concept, although I recommend starting small to avoid discouragement and an excessively lengthy process. Next, I delve deeper into each of these steps.\n\nRead\nReading is an indispensable step, yet it’s easy to misstep when attempting to implement a paper. The goal isn’t to memorize every word but to understand the core functionality of the process. To achieve this, focus on the essentials:\n\n\nWhat are the inputs and outputs\nWhat change is occuring to the data\nWhat are the assumptions\n\n\nUnderstanding the inputs and outputs is vital as it forms the basis for implementing and testing your model. The transformation of the data is the core of your implementation—it’s the heart of your code. And finally, being aware of the assumptions is critical, as they often affect data preprocessing, output interpretation, and more.\nTo expedite the reading process, it helps to know where to find necessary details. Typically, the most crucial sections in a research paper are:\n\nAbstract\n\nProvides a broad understanding of the paper and its relevance.\n\nFigures\n\nOften encapsulate the paper’s content and are valuable for understanding the model’s workings. However, ensure their accuracy by cross-referencing the textual content.\n\n\nIntroduction\n\nHighlights the paper’s novelty or significance.\n\nArchitecture (Can go by other names)\n\nContains detailed descriptions of the architecture (usually where most of your time will be spent).\n\nTraining\n\nProvides hyperparameters for training, model performance, and other essential information.\n\nThe appendix\n\nOften contains implementation details not fitting into the main paper’s flow.\n\nExperiements (Optional)\n\nCan include important data and parameters used for model training.\n\n\n\n\nImplement\nDuring implementation, the key is not to get overwhelmed by the complexity of the task. Instead, focus on the components you understand, and incrementally build upon them. It’s okay if your code isn’t flawless initially; revisions can be made as you progress.\n\n\nVisualize (Test)\nAfter you implement something you need to verify the code works as you expected and to do this you can visualize what the outputs are or what the data looks like by using a library like matplotlib. Also it may help to work in an iteractive enviroment like a jupyter notebook so you can immedtialy see the output instead of having to rerun your code everytime. In the same vein of visualizing testing your code with asserts statements or libraries like pytest can help you ensure that your code is working as expected. This will be really useful when you go back to try to figure out why some part of your model may not be working as expected.\nAfter implementation, verify the accuracy of your code. Visualize the outputs or data structures using libraries like matplotlib, or work in an interactive environment like a jupyter notebook for immediate output. Assert statements or testing libraries like pytest can also be helpful to ensure your code performs as expected.\n\n\nRepeat\nThe crux of this process lies in repetition and rapid iteration. Although you might start slow, as you build your knowledge base and develop greater abstractions, the speed of your work will increase. Additionally, this iterative process will enhance your programming skills and your ability to refine your codebase."
-  },
-  {
-    "objectID": "blog/posts/02-implementing-papers-wavenet/index.html#conclusion",
-    "href": "blog/posts/02-implementing-papers-wavenet/index.html#conclusion",
-    "title": "Implementing my first deep learning research paper",
-    "section": "Conclusion",
-    "text": "Conclusion\nIn summary, the methodology I formulated and the key lessons I learned during my initial experience implementing a research paper can be encapsulated in four words: read, implement, visualize, and repeat. I hope you find this post beneficial, and I welcome any feedback or suggestions you might have. Thank you!"
-  },
-  {
     "objectID": "blog/posts/the-universal-function/index.html",
     "href": "blog/posts/the-universal-function/index.html",
     "title": "Neural network: The universal function",
@@ -187,6 +68,34 @@
     "title": "Neural network: The universal function",
     "section": "The Universal Function",
     "text": "The Universal Function\nIn conclusion, the neural network is a powerful tool that allows software to adapt to any role given to them. At first glance, it may seem like an abstract concept, but it is nothing more guessing and checking then improving. What’s fascinating about this is that the improvement can be made automatically by using concepts from calculus like the derivative, which allows us to determine how to improve. With these tools, the neural network can learn any task and solve most problem thrown its way.\nToday, we see the applications of neural networks in various fields, including speech recognition, image and pattern recognition, and natural language processing, to name a few. The possibilities of what we can achieve with this technology are endless, and we are only scratching the surface of what it can do."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "Ahad Jawaid",
+    "section": "",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis."
+  },
+  {
+    "objectID": "about.html#education",
+    "href": "about.html#education",
+    "title": "Ahad Jawaid",
+    "section": "Education",
+    "text": "Education\nThe University of Texas at Dallas | Richardson, TX B.S in Computer Science | Expected Graduation: May 2024"
+  },
+  {
+    "objectID": "about.html#experience",
+    "href": "about.html#experience",
+    "title": "Ahad Jawaid",
+    "section": "Experience",
+    "text": "Experience\nAmazon | Software Development Engineer Intern | May 2023 - present"
+  },
+  {
+    "objectID": "blog/index.html",
+    "href": "blog/index.html",
+    "title": "Blog",
+    "section": "",
+    "text": "Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n  \n\n\n\n\nTranslating Theory into Code: A Student’s Guide to Implementing Research Papers\n\n\n\n\n\n\n\n\n\n\n\n\n05 June 2023\n\n\nAhad Jawaid\n\n\n6 min\n\n\n\n\n\n\n  \n\n\n\n\nNeural network: The universal function\n\n\n\n\n\n\n\n\n\n\n\n\n23 February 2023\n\n\nAhad Jawaid\n\n\n6 min\n\n\n\n\n\n\nNo matching items\n\n\n\nLoading…\n\n\n\n\n\n Back to top"
   },
   {
     "objectID": "blog/posts/translating-theory-into-code/index.html",
