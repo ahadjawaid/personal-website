@@ -1,11 +1,8 @@
 [
   {
-    "listing": "/blog.html",
-    "items": []
-  },
-  {
     "listing": "/blog/index.html",
     "items": [
+      "/blog/posts/02-implementing-papers-wavenet/index.html",
       "/blog/posts/01-the-universal-function/index.html"
     ]
   }
