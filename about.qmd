@@ -17,10 +17,9 @@ about:
     - icon: envelope
       text: Email
       href: mailto:ahadjawaid0@gmail.com
-  
 ---
 
-Ahad Jawaid is the Software Developement Engineer at Amazon. When not innovating on data platforms, Ahad enjoys spending  time biking and playing with his piano and guitar.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis.
 
 ## Education
 
