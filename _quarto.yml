@@ -7,6 +7,9 @@ website:
   title: "Ahad Jawaid"
   search: false
   back-to-top-navigation: true
+  site-url: https://ahadjawaid.github.io/personal-website
+  description: "Ahad Jawaid's Website!"
+
 
   navbar:
     logo: "assets/chip.png"
@@ -18,16 +21,22 @@ website:
       - icon: github
         menu:
           - text: Source Code
+            href: https://github.com/ahadjawaid/personal-website
           - text: Report Bug
+            href: https://github.com/ahadjawaid/personal-website/issues
 
     right:
-      - text: About
+      - text: Home
         href: index.qmd
-        icon: person
+        icon: house-door
 
       - text: Blog
         href: blog/index.qmd
         icon: newspaper
+
+      - text: About
+        href: about.qmd
+        icon: person
 
   page-footer:
     border: false
@@ -36,11 +45,36 @@ website:
       - icon: twitter
         href: https://twitter.com\_ahadj_
       - icon: github
-        href: https://github.com
-    
+        href: https://github.com/ahadjawaid/personal-website
+
+  comments:
+    giscus:
+      repo: ahadjawaid/personal-website
+      repo-id: R_kgDOJrWaMQ
+      category: Giscus Comments
+      category-id: DIC_kwDOJrWaMc4CXAID
+      mapping: title
+      reactions-enabled: true
+      loading: lazy
+      input-position: top
+      theme: light
+
+  twitter-card:
+    title: "Ahad Jawaid"
+    description: "Ahad Jawaid's Website"
+    image: clouds.png
+    card-style: summary_large_image
+    creator: "@_ahadj_"
+    site: "@_ahadj_"
+  open-graph:
+    description: "Ahad Jawaid's Website"
+    image: clouds.png
+
 
 format:
   html:
     theme: zephyr
     css: styles.css
+    smooth-scroll: true
     toc: true
+    

@@ -1,0 +1,97 @@
+---
+title: "Implementing my first deep learning research paper"
+author: "Ahad Jawaid"
+date: "2023-06-05"
+categories: [Deep Learning, Research, Independent Study]
+draft: false
+---
+
+## Introduction
+
+Earlier this year, I embarked on an endeavor to implement a few deep learning research papers from scratch. My goal was to chronicle this journey not only for my own reference but also to offer a useful guide to others interested in similar projects. It's also a reflective exercise, allowing me to assess my experience and identify areas for improvement. I welcome your feedback and hope you find value in this blog post.
+
+### Context
+
+My journey started with an aspiration to understand deep learning on a deeper level. To facilitate this, I registered for an independent study course at my university, under the supervision of a professor, which allowed me to set specific goals. These goals were designed to emulate the tasks of a deep learning researcher:
+
+> 1. Read 30 research papers
+> 2. Implement a research paper
+> 3. Write a paper
+
+I had choosen these goals after watching many videos on what researcher do and what makes a good one. A notable video I watched was  on giving career advice for researchers.
+
+These objectives were influenced by numerous videos I watched on the roles and qualities of a good researcher, notably [Andrew Ng's video](https://www.youtube.com/watch?v=733m6qBH-jI) video offering career advice for researchers.
+
+Armed with my goals, the next step was choosing a subject to research. I considered two fascinating topics: reinforcement learning and speech synthesis. The latter appealed to me particularly due to my interest in audiobooks and their associated costs. I pitched these topics to various professors at my university. On the recommendation of a friend, I reached out to a particular professor known for his expertise and guidance in independent studies. He responded positively to the idea of speech synthesis but suggested adding a layer of complexity: introducing emotions into the mix. Equipped with this unique topic and my predetermined goals, I delved into extensive reading to garner a more profound understanding of the subject matter.
+ 
+## Inspiration
+
+In the process of reviewing multiple papers, I quickly noticed that [WaveNet](https://arxiv.org/abs/1609.03499) was a significant architecture that kick-started the deep learning revolution in speech synthesis. Although intrigued by this paper, the idea of implementing an entire deep learning architecture felt daunting. My initial approach was to seek out existing implementations online. Many were overly complicated, with code extending into hundreds of lines, until I stumbled upon a simple and comprehendible implementation on [github](https://github.com/golbin/WaveNet). This version presented the architecture in a clear, digestible format that made it feel more like a manageable programming problem than an intimidating task.
+
+
+## Implementation
+
+After some procrastination and coursework delays, I finally mustered the courage to attempt the implementation. Drawing on lessons from the [fastai](https://www.fast.ai/) course, I realized the importance of starting small with concepts I understood, gradually building up from there. I initiated the process with basic tensor multiplication using a convolution kernel (typically a small n x n matrix) and gradually advanced by visualizing each successive step.
+
+In my experience, the implementation process can be distilled into four primary steps:
+
+> 1. Read
+> 2. Implement
+> 3. Visualize (Test)
+> 4. Repeat Steps 1-3
+
+This iterative process, accompanied by ample time and persistence, enables the implementation of any concept, although I recommend starting small to avoid discouragement and an excessively lengthy process. Next, I delve deeper into each of these steps.
+
+### Read
+
+Reading is an indispensable step, yet it's easy to misstep when attempting to implement a paper. The goal isn't to memorize every word but to understand the core functionality of the process. To achieve this, focus on the essentials:
+
+> 1. What are the inputs and outputs
+> 2. What change is occuring to the data
+> 3. What are the assumptions
+
+Understanding the inputs and outputs is vital as it forms the basis for implementing and testing your model. The transformation of the data is the core of your implementation—it's the heart of your code. And finally, being aware of the assumptions is critical, as they often affect data preprocessing, output interpretation, and more.
+
+To expedite the reading process, it helps to know where to find necessary details. Typically, the most crucial sections in a research paper are:
+
+1. **Abstract**
+    - Provides a broad understanding of the paper and its relevance.
+
+2. **Figures**
+    - Often encapsulate the paper's content and are valuable for understanding the model's workings. However, ensure their accuracy by cross-referencing the textual content.
+
+    <img src="assets/wavenet.png" width=100%/>
+
+2. **Introduction**
+    - Highlights the paper's novelty or significance.
+
+3. **Architecture (Can go by other names)**
+    - Contains detailed descriptions of the architecture (usually where most of your time will be spent).
+
+4. **Training**
+    - Provides hyperparameters for training, model performance, and other essential information.
+
+5. **The appendix**
+    - Often contains implementation details not fitting into the main paper's flow.
+
+6. **Experiements** (Optional)
+    - Can include important data and parameters used for model training.
+
+
+### Implement
+
+During implementation, the key is not to get overwhelmed by the complexity of the task. Instead, focus on the components you understand, and incrementally build upon them. It's okay if your code isn't flawless initially; revisions can be made as you progress. 
+
+### Visualize (Test)
+
+After you implement something you need to verify the code works as you expected and to do this you can visualize what the outputs are or what the data looks like by using a library like [matplotlib](https://matplotlib.org/). Also it may help to work in an iteractive enviroment like a [jupyter notebook](https://jupyter.org/) so you can immedtialy see the output instead of having to rerun your code everytime. In the same vein of visualizing testing your code with asserts statements or libraries like [pytest](https://docs.pytest.org/en/7.3.x/) can help you ensure that your code is working as expected. This will be really useful when you go back to try to figure out why some part of your model may not be working as expected.
+
+After implementation, verify the accuracy of your code. Visualize the outputs or data structures using libraries like [matplotlib](https://matplotlib.org/), or work in an interactive environment like a [jupyter notebook](https://jupyter.org/) for immediate output. Assert statements or testing libraries like [pytest](https://docs.pytest.org/en/7.3.x/) can also be helpful to ensure your code performs as expected.
+
+### Repeat
+
+The crux of this process lies in repetition and rapid iteration. Although you might start slow, as you build your knowledge base and develop greater abstractions, the speed of your work will increase. Additionally, this iterative process will enhance your programming skills and your ability to refine your codebase.
+
+## Conclusion
+
+In summary, the methodology I formulated and the key lessons I learned during my initial experience implementing a research paper can be encapsulated in four words: read, implement, visualize, and repeat. I hope you find this post beneficial, and I welcome any feedback or suggestions you might have. Thank you!

@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss  xmlns:atom="http://www.w3.org/2005/Atom" 
+      xmlns:media="http://search.yahoo.com/mrss/" 
+      xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+      xmlns:dc="http://purl.org/dc/elements/1.1/" 
+      version="2.0">
+<channel>
+<title>Ahad Jawaid</title>
+<link>https://ahadjawaid.github.io/personal-website/blog/index.html</link>
+<atom:link href="https://ahadjawaid.github.io/personal-website/blog/index.xml" rel="self" type="application/rss+xml"/>
+<description>Ahad Jawaid&#39;s Website!</description>
+<generator>quarto-1.4.122</generator>
+<lastBuildDate>Mon, 05 Jun 2023 07:00:00 GMT</lastBuildDate>
+<item>
+  <title>Implementing my first deep learning research paper</title>
+  <dc:creator>Ahad Jawaid</dc:creator>
+  <link>https://ahadjawaid.github.io/personal-website/blog/posts/02-implementing-papers-wavenet/index.html</link>
+  <description><![CDATA[ 
+
+
+
+<section id="introduction" class="level2">
+<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
+<p>Earlier this year, I embarked on an endeavor to implement a few deep learning research papers from scratch. My goal was to chronicle this journey not only for my own reference but also to offer a useful guide to others interested in similar projects. It’s also a reflective exercise, allowing me to assess my experience and identify areas for improvement. I welcome your feedback and hope you find value in this blog post.</p>
+<section id="context" class="level3">
+<h3 class="anchored" data-anchor-id="context">Context</h3>
+<p>My journey started with an aspiration to understand deep learning on a deeper level. To facilitate this, I registered for an independent study course at my university, under the supervision of a professor, which allowed me to set specific goals. These goals were designed to emulate the tasks of a deep learning researcher:</p>
+<blockquote class="blockquote">
+<ol type="1">
+<li>Read 30 research papers</li>
+<li>Implement a research paper</li>
+<li>Write a paper</li>
+</ol>
+</blockquote>
+<p>I had choosen these goals after watching many videos on what researcher do and what makes a good one. A notable video I watched was on giving career advice for researchers.</p>
+<p>These objectives were influenced by numerous videos I watched on the roles and qualities of a good researcher, notably <a href="https://www.youtube.com/watch?v=733m6qBH-jI">Andrew Ng’s video</a> video offering career advice for researchers.</p>
+<p>Armed with my goals, the next step was choosing a subject to research. I considered two fascinating topics: reinforcement learning and speech synthesis. The latter appealed to me particularly due to my interest in audiobooks and their associated costs. I pitched these topics to various professors at my university. On the recommendation of a friend, I reached out to a particular professor known for his expertise and guidance in independent studies. He responded positively to the idea of speech synthesis but suggested adding a layer of complexity: introducing emotions into the mix. Equipped with this unique topic and my predetermined goals, I delved into extensive reading to garner a more profound understanding of the subject matter.</p>
+</section>
+</section>
+<section id="inspiration" class="level2">
+<h2 class="anchored" data-anchor-id="inspiration">Inspiration</h2>
+<p>In the process of reviewing multiple papers, I quickly noticed that <a href="https://arxiv.org/abs/1609.03499">WaveNet</a> was a significant architecture that kick-started the deep learning revolution in speech synthesis. Although intrigued by this paper, the idea of implementing an entire deep learning architecture felt daunting. My initial approach was to seek out existing implementations online. Many were overly complicated, with code extending into hundreds of lines, until I stumbled upon a simple and comprehendible implementation on <a href="https://github.com/golbin/WaveNet">github</a>. This version presented the architecture in a clear, digestible format that made it feel more like a manageable programming problem than an intimidating task.</p>
+</section>
+<section id="implementation" class="level2">
+<h2 class="anchored" data-anchor-id="implementation">Implementation</h2>
+<p>After some procrastination and coursework delays, I finally mustered the courage to attempt the implementation. Drawing on lessons from the <a href="https://www.fast.ai/">fastai</a> course, I realized the importance of starting small with concepts I understood, gradually building up from there. I initiated the process with basic tensor multiplication using a convolution kernel (typically a small n x n matrix) and gradually advanced by visualizing each successive step.</p>
+<p>In my experience, the implementation process can be distilled into four primary steps:</p>
+<blockquote class="blockquote">
+<ol type="1">
+<li>Read</li>
+<li>Implement</li>
+<li>Visualize (Test)</li>
+<li>Repeat Steps 1-3</li>
+</ol>
+</blockquote>
+<p>This iterative process, accompanied by ample time and persistence, enables the implementation of any concept, although I recommend starting small to avoid discouragement and an excessively lengthy process. Next, I delve deeper into each of these steps.</p>
+<section id="read" class="level3">
+<h3 class="anchored" data-anchor-id="read">Read</h3>
+<p>Reading is an indispensable step, yet it’s easy to misstep when attempting to implement a paper. The goal isn’t to memorize every word but to understand the core functionality of the process. To achieve this, focus on the essentials:</p>
+<blockquote class="blockquote">
+<ol type="1">
+<li>What are the inputs and outputs</li>
+<li>What change is occuring to the data</li>
+<li>What are the assumptions</li>
+</ol>
+</blockquote>
+<p>Understanding the inputs and outputs is vital as it forms the basis for implementing and testing your model. The transformation of the data is the core of your implementation—it’s the heart of your code. And finally, being aware of the assumptions is critical, as they often affect data preprocessing, output interpretation, and more.</p>
+<p>To expedite the reading process, it helps to know where to find necessary details. Typically, the most crucial sections in a research paper are:</p>
+<ol type="1">
+<li><p><strong>Abstract</strong></p>
+<ul>
+<li>Provides a broad understanding of the paper and its relevance.</li>
+</ul></li>
+<li><p><strong>Figures</strong></p>
+<ul>
+<li>Often encapsulate the paper’s content and are valuable for understanding the model’s workings. However, ensure their accuracy by cross-referencing the textual content.</li>
+</ul>
+<p><img src="https://ahadjawaid.github.io/personal-website/blog/posts/02-implementing-papers-wavenet/assets/wavenet.png" width="100%/"></p></li>
+<li><p><strong>Introduction</strong></p>
+<ul>
+<li>Highlights the paper’s novelty or significance.</li>
+</ul></li>
+<li><p><strong>Architecture (Can go by other names)</strong></p>
+<ul>
+<li>Contains detailed descriptions of the architecture (usually where most of your time will be spent).</li>
+</ul></li>
+<li><p><strong>Training</strong></p>
+<ul>
+<li>Provides hyperparameters for training, model performance, and other essential information.</li>
+</ul></li>
+<li><p><strong>The appendix</strong></p>
+<ul>
+<li>Often contains implementation details not fitting into the main paper’s flow.</li>
+</ul></li>
+<li><p><strong>Experiements</strong> (Optional)</p>
+<ul>
+<li>Can include important data and parameters used for model training.</li>
+</ul></li>
+</ol>
+</section>
+<section id="implement" class="level3">
+<h3 class="anchored" data-anchor-id="implement">Implement</h3>
+<p>During implementation, the key is not to get overwhelmed by the complexity of the task. Instead, focus on the components you understand, and incrementally build upon them. It’s okay if your code isn’t flawless initially; revisions can be made as you progress.</p>
+</section>
+<section id="visualize-test" class="level3">
+<h3 class="anchored" data-anchor-id="visualize-test">Visualize (Test)</h3>
+<p>After you implement something you need to verify the code works as you expected and to do this you can visualize what the outputs are or what the data looks like by using a library like <a href="https://matplotlib.org/">matplotlib</a>. Also it may help to work in an iteractive enviroment like a <a href="https://jupyter.org/">jupyter notebook</a> so you can immedtialy see the output instead of having to rerun your code everytime. In the same vein of visualizing testing your code with asserts statements or libraries like <a href="https://docs.pytest.org/en/7.3.x/">pytest</a> can help you ensure that your code is working as expected. This will be really useful when you go back to try to figure out why some part of your model may not be working as expected.</p>
+<p>After implementation, verify the accuracy of your code. Visualize the outputs or data structures using libraries like <a href="https://matplotlib.org/">matplotlib</a>, or work in an interactive environment like a <a href="https://jupyter.org/">jupyter notebook</a> for immediate output. Assert statements or testing libraries like <a href="https://docs.pytest.org/en/7.3.x/">pytest</a> can also be helpful to ensure your code performs as expected.</p>
+</section>
+<section id="repeat" class="level3">
+<h3 class="anchored" data-anchor-id="repeat">Repeat</h3>
+<p>The crux of this process lies in repetition and rapid iteration. Although you might start slow, as you build your knowledge base and develop greater abstractions, the speed of your work will increase. Additionally, this iterative process will enhance your programming skills and your ability to refine your codebase.</p>
+</section>
+</section>
+<section id="conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
+<p>In summary, the methodology I formulated and the key lessons I learned during my initial experience implementing a research paper can be encapsulated in four words: read, implement, visualize, and repeat. I hope you find this post beneficial, and I welcome any feedback or suggestions you might have. Thank you!</p>
+
+
+</section>
+
+<a onclick="window.scrollTo(0, 0); return false;" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a> ]]></description>
+  <category>Deep Learning</category>
+  <category>Research</category>
+  <category>Independent Study</category>
+  <guid>https://ahadjawaid.github.io/personal-website/blog/posts/02-implementing-papers-wavenet/index.html</guid>
+  <pubDate>Mon, 05 Jun 2023 07:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Neural network: The universal function</title>
+  <dc:creator>Ahad Jawaid</dc:creator>
+  <link>https://ahadjawaid.github.io/personal-website/blog/posts/01-the-universal-function/index.html</link>
+  <description><![CDATA[ 
+
+
+
+<p>Have you ever imagined a single machine that can adapt to any role given to it? It could be a screw, a tire, a screen or any other task you could think of. That’s what a neural network is for software — a function that can perform any task.</p>
+<p>Initially, when I learned about neural networks, it seemed like a highly abstract concept that emulated the brain. However, after reading books such as Deep Learning by Ian Goodfellow and The Deep Learning practical coder by Jeremy Howard, I came to realize that a neural network is nothing more than a function that can be adjusted to perform any task we require of it.</p>
+<section id="what-exactly-is-a-function" class="level2">
+<h2 class="anchored" data-anchor-id="what-exactly-is-a-function">What exactly is a function?</h2>
+<p>A function is a mapping of an input to an output. For instance, an addition function could take two numbers as inputs and output their sum.</p>
+</section>
+<section id="adjustable-function" class="level2">
+<h2 class="anchored" data-anchor-id="adjustable-function">Adjustable function</h2>
+<p>An adjustable function, on the other hand, is a function that has weights or parameters that regulate how the inputs are modified to generate a specific output. For example, a function f that takes two numbers as inputs can be expressed as</p>
+<blockquote class="blockquote">
+<p><code>f(input1, input2) = weight1 * input1 + weight2 * input2</code></p>
+</blockquote>
+<p>Here, we can change the function by adjusting the weights.</p>
+</section>
+<section id="how-can-an-adjustable-function-learn-a-task" class="level2">
+<h2 class="anchored" data-anchor-id="how-can-an-adjustable-function-learn-a-task">How can an adjustable function learn a task?</h2>
+<p>Now that we have established what an adjustable function is, let’s look at how we can use it to solve a problem. The process of adjusting the weights in the function to accomplish a task involves three main steps:</p>
+<pre><code>1. Get output from the function
+2. Check how wrong the output is compared to 3. the desired output
+4. Adjust the weights to make the output look more like the desired output</code></pre>
+<p>This process can be illustrated in the following diagram:</p>
+<p><img src="https://ahadjawaid.github.io/personal-website/blog/posts/01-the-universal-function/assets/model.png" width="100%"></p>
+<p>As simple as this may seem, this is the core of how a neural network learns a task. It starts by guessing an output, and then we adjust the weights to make it look more like the desired output.</p>
+</section>
+<section id="adjusting-the-weights-automatically" class="level2">
+<h2 class="anchored" data-anchor-id="adjusting-the-weights-automatically">Adjusting the weights automatically</h2>
+<p>Adjusting the weights automatically is where it gets interesting. Let’s assume you’re playing a game where someone has a number in mind, and you have to guess it. Every time you make a guess, they tell you whether you’re close or far. If you randomly pick the numbers at random, you’d get nowhere. But adding two simple steps to the process can solve this problem:</p>
+<pre><code>1. A method to determine how far you are from the desired output (output error method)
+2.A method for finding the direction and extent of the weights to be changed (method for determining how to adjust weights)</code></pre>
+</section>
+<section id="output-error-method" class="level2">
+<h2 class="anchored" data-anchor-id="output-error-method">Output Error Method</h2>
+<p>To find how far we are from the desired output, we can subtract our function’s output and the desired output,</p>
+<blockquote class="blockquote">
+<p><code>f(input1, input2) = 5</code> <code>goal_function(input1, input2) = 10</code> <code>error = 5–10 = -5</code></p>
+</blockquote>
+<p>The problem with this method is that it could give us negative values, which can be problematic when attempting to minimize the error. To address this issue, we can bound the method by taking the absolute value of the subtraction (positive number).</p>
+<blockquote class="blockquote">
+<p><code>error = | 5–10 | = 5</code></p>
+</blockquote>
+</section>
+<section id="method-for-determining-how-to-adjust-weights" class="level2">
+<h2 class="anchored" data-anchor-id="method-for-determining-how-to-adjust-weights">Method for determining how to adjust weights</h2>
+<p>The last addition to adjust the weights automatically is to find the direction and extent of the weights to be changed. We can accomplish this by using a concept from calculus known as the derivative, which is the slope of the function at a specific point. By finding the slope or derivative, we can determine the direction and amount to change the weights.</p>
+<p><img src="https://ahadjawaid.github.io/personal-website/blog/posts/01-the-universal-function/assets/tanget.png" width="100%"></p>
+<p>So in this illustration, we can find that the slope at point one is two by using the rise-over run of the tangent line (a line that touches the function at a point). We can use this slope or derivative to determine in what direction and how much to change the weights. This is done because of a property that a derivative has, which is when the derivative is zero, it is at the minimum or maximum (or saddle point) of the function. We can take advantage of this property with our method of measuring the error to find the minimum of the error.</p>
+<p>So if we keep adjusting the weights and the derivative gets smaller, we are approaching a minimum or maximum (or saddle point). To ensure we are finding the minimum and not the maximum error, we need to figure out what direction we should change the weights. This can be done simply by subtracting the derivative to act as we descend to the minimum. Putting it together</p>
+<p>The heart of deep learning lies in the ability of neural networks to learn any task by going through five steps. These are:</p>
+<pre><code>1. Input data into the function
+2. Compare the output to the error function (loss function)
+3. Take the derivative of the error function with respect to the weights
+4. Subtract the derivative of the weights from the weights
+5. Repeat until the error is small</code></pre>
+<p><img src="https://ahadjawaid.github.io/personal-website/blog/posts/01-the-universal-function/assets/universal-function.png" width="100%"></p>
+<p>Everything else is focused on making the training process efficient and timely.</p>
+</section>
+<section id="the-universal-function" class="level2">
+<h2 class="anchored" data-anchor-id="the-universal-function">The Universal Function</h2>
+<p>In conclusion, the neural network is a powerful tool that allows software to adapt to any role given to them. At first glance, it may seem like an abstract concept, but it is nothing more guessing and checking then improving. What’s fascinating about this is that the improvement can be made automatically by using concepts from calculus like the derivative, which allows us to determine how to improve. With these tools, the neural network can learn any task and solve most problem thrown its way.</p>
+<p>Today, we see the applications of neural networks in various fields, including speech recognition, image and pattern recognition, and natural language processing, to name a few. The possibilities of what we can achieve with this technology are endless, and we are only scratching the surface of what it can do.</p>
+
+
+</section>
+
+<a onclick="window.scrollTo(0, 0); return false;" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a> ]]></description>
+  <category>Deep Learning</category>
+  <category>Neueral Networks</category>
+  <guid>https://ahadjawaid.github.io/personal-website/blog/posts/01-the-universal-function/index.html</guid>
+  <pubDate>Thu, 23 Feb 2023 08:00:00 GMT</pubDate>
+</item>
+</channel>
+</rss>
