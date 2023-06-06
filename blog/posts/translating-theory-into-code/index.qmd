@@ -1,8 +1,8 @@
 ---
-title: "Implementing my first deep learning research paper"
+title: "Translating Theory into Code: A Student's Guide to Implementing Research Papers"
 author: "Ahad Jawaid"
 date: "2023-06-05"
-categories: [Deep Learning, Research, Independent Study]
+categories: [Deep Learning, Research, Undergradute]
 draft: false
 ---
 
