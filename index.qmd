@@ -32,14 +32,13 @@ listing:
 ---
 
 :::{#about}
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+I'm a Software Engineer, Researcher, and a Student. This is where I share my experiences, lessons, and projects I work on. I usually work on projects related to artificial intelligence and software engineering. Currently, I am a Software Engineer Intern at Amazon and previously I did research at my university.
 
-Read more about me [here](about.qmd).
-
+You can read more about me [here](about.qmd).
 
 :::
 
-## Blog
+## Recent Posts
 Click [here](blog/index.qmd) to check out my blog.
 
 :::{#landing-posts}

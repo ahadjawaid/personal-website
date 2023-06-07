@@ -14,10 +14,6 @@
     ]
   },
   {
-    "listing": "/talks/index.html",
-    "items": []
-  },
-  {
     "listing": "/talks.html",
     "items": [
       "/talks/deep-learning-with-fastai/index.html"

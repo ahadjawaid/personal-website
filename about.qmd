@@ -5,6 +5,7 @@ page-layout: full
 back-to-top-navigation: false
 
 about:
+  id: about
   template: solana
   image: assets/profile.png
   links:
@@ -22,7 +23,13 @@ about:
       href: mailto:ahadjawaid0@gmail.com
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis.
+:::{#about}
+I’m curious individual who is broadly interested in topics related to creating intelligent agents.
+
+Currently I'm a Software Development Engineer at Amazon, working on the spoken understanding team at Alexa smart home. Before that I was an Undergraduate Researcher at labs at my university. I'm currently a senior computer science major at The University of Texas at Dallas.
+
+I enjoy reading ML papers, reading books, playing musical instruments, and running.
+:::
 
 ::::{.panel-tabset}
 
