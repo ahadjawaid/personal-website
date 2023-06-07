@@ -12,7 +12,7 @@
 <generator>quarto-1.4.122</generator>
 <lastBuildDate>Mon, 05 Jun 2023 07:00:00 GMT</lastBuildDate>
 <item>
-  <title>Translating Theory into Code: A Student’s Guide to Implementing Research Papers</title>
+  <title>From Paper to Code: A Guide to Implement Research</title>
   <dc:creator>Ahad Jawaid</dc:creator>
   <link>https://ahadjawaid.github.io/personal-website/blog/posts/translating-theory-into-code/index.html</link>
   <description><![CDATA[ 
@@ -21,96 +21,58 @@
 
 <section id="introduction" class="level2">
 <h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
-<p>Earlier this year, I embarked on an endeavor to implement a few deep learning research papers from scratch. My goal was to chronicle this journey not only for my own reference but also to offer a useful guide to others interested in similar projects. It’s also a reflective exercise, allowing me to assess my experience and identify areas for improvement. I welcome your feedback and hope you find value in this blog post.</p>
-<section id="context" class="level3">
-<h3 class="anchored" data-anchor-id="context">Context</h3>
-<p>My journey started with an aspiration to understand deep learning on a deeper level. To facilitate this, I registered for an independent study course at my university, under the supervision of a professor, which allowed me to set specific goals. These goals were designed to emulate the tasks of a deep learning researcher:</p>
-<blockquote class="blockquote">
-<ol type="1">
-<li>Read 30 research papers</li>
-<li>Implement a research paper</li>
-<li>Write a paper</li>
-</ol>
-</blockquote>
-<p>I had choosen these goals after watching many videos on what researcher do and what makes a good one. A notable video I watched was on giving career advice for researchers.</p>
-<p>These objectives were influenced by numerous videos I watched on the roles and qualities of a good researcher, notably <a href="https://www.youtube.com/watch?v=733m6qBH-jI">Andrew Ng’s video</a> video offering career advice for researchers.</p>
-<p>Armed with my goals, the next step was choosing a subject to research. I considered two fascinating topics: reinforcement learning and speech synthesis. The latter appealed to me particularly due to my interest in audiobooks and their associated costs. I pitched these topics to various professors at my university. On the recommendation of a friend, I reached out to a particular professor known for his expertise and guidance in independent studies. He responded positively to the idea of speech synthesis but suggested adding a layer of complexity: introducing emotions into the mix. Equipped with this unique topic and my predetermined goals, I delved into extensive reading to garner a more profound understanding of the subject matter.</p>
+<p>Recently, I’ve been diving into the practice of implementing deep learning research papers. This post is designed to guide you through this process, sharing my key insights along the way.</p>
+<p>Starting with an independent study course at university, I explored deep learning intensively. To streamline the journey of understanding and implementing such papers, I’ve distilled the process into four steps:</p>
+<p><img src="https://ahadjawaid.github.io/personal-website/blog/posts/translating-theory-into-code/assets/read_code_visualize_diagram.svg" class="img-fluid"></p>
+<p>Let’s break each one down.</p>
 </section>
-</section>
-<section id="inspiration" class="level2">
-<h2 class="anchored" data-anchor-id="inspiration">Inspiration</h2>
-<p>In the process of reviewing multiple papers, I quickly noticed that <a href="https://arxiv.org/abs/1609.03499">WaveNet</a> was a significant architecture that kick-started the deep learning revolution in speech synthesis. Although intrigued by this paper, the idea of implementing an entire deep learning architecture felt daunting. My initial approach was to seek out existing implementations online. Many were overly complicated, with code extending into hundreds of lines, until I stumbled upon a simple and comprehendible implementation on <a href="https://github.com/golbin/WaveNet">github</a>. This version presented the architecture in a clear, digestible format that made it feel more like a manageable programming problem than an intimidating task.</p>
-</section>
-<section id="implementation" class="level2">
-<h2 class="anchored" data-anchor-id="implementation">Implementation</h2>
-<p>After some procrastination and coursework delays, I finally mustered the courage to attempt the implementation. Drawing on lessons from the <a href="https://www.fast.ai/">fastai</a> course, I realized the importance of starting small with concepts I understood, gradually building up from there. I initiated the process with basic tensor multiplication using a convolution kernel (typically a small n x n matrix) and gradually advanced by visualizing each successive step.</p>
-<p>In my experience, the implementation process can be distilled into four primary steps:</p>
-<blockquote class="blockquote">
-<ol type="1">
-<li>Read</li>
-<li>Implement</li>
-<li>Visualize (Test)</li>
-<li>Repeat Steps 1-3</li>
-</ol>
-</blockquote>
-<p>This iterative process, accompanied by ample time and persistence, enables the implementation of any concept, although I recommend starting small to avoid discouragement and an excessively lengthy process. Next, I delve deeper into each of these steps.</p>
-<section id="read" class="level3">
-<h3 class="anchored" data-anchor-id="read">Read</h3>
-<p>Reading is an indispensable step, yet it’s easy to misstep when attempting to implement a paper. The goal isn’t to memorize every word but to understand the core functionality of the process. To achieve this, focus on the essentials:</p>
-<blockquote class="blockquote">
-<ol type="1">
-<li>What are the inputs and outputs</li>
-<li>What change is occuring to the data</li>
-<li>What are the assumptions</li>
-</ol>
-</blockquote>
-<p>Understanding the inputs and outputs is vital as it forms the basis for implementing and testing your model. The transformation of the data is the core of your implementation—it’s the heart of your code. And finally, being aware of the assumptions is critical, as they often affect data preprocessing, output interpretation, and more.</p>
+<section id="read" class="level2">
+<h2 class="anchored" data-anchor-id="read">Read</h2>
+<p>Reading a research paper should be focused on understanding the process rather than memorizing details. Pay attention to the inputs, outputs, data transformations, and assumptions.</p>
+<p><img src="https://ahadjawaid.github.io/personal-website/blog/posts/translating-theory-into-code/assets/questions.svg" class="img-fluid"></p>
 <p>To expedite the reading process, it helps to know where to find necessary details. Typically, the most crucial sections in a research paper are:</p>
 <ol type="1">
-<li><p><strong>Abstract</strong></p>
+<li><strong>Abstract</strong>
 <ul>
 <li>Provides a broad understanding of the paper and its relevance.</li>
 </ul></li>
-<li><p><strong>Figures</strong></p>
+<li><strong>Figures</strong>
 <ul>
 <li>Often encapsulate the paper’s content and are valuable for understanding the model’s workings. However, ensure their accuracy by cross-referencing the textual content.</li>
-</ul>
-<p><img src="https://ahadjawaid.github.io/personal-website/blog/posts/translating-theory-into-code/assets/wavenet.png" width="100%/"></p></li>
-<li><p><strong>Introduction</strong></p>
+</ul></li>
+<li><strong>Introduction</strong>
 <ul>
 <li>Highlights the paper’s novelty or significance.</li>
 </ul></li>
-<li><p><strong>Architecture (Can go by other names)</strong></p>
+<li><strong>Architecture (Can go by other names)</strong>
 <ul>
 <li>Contains detailed descriptions of the architecture (usually where most of your time will be spent).</li>
 </ul></li>
-<li><p><strong>Training</strong></p>
+<li><strong>Training</strong>
 <ul>
 <li>Provides hyperparameters for training, model performance, and other essential information.</li>
 </ul></li>
-<li><p><strong>The appendix</strong></p>
+<li><strong>The appendix</strong>
 <ul>
 <li>Often contains implementation details not fitting into the main paper’s flow.</li>
 </ul></li>
-<li><p><strong>Experiements</strong> (Optional)</p>
+<li><strong>Experiements</strong> (Optional)
 <ul>
 <li>Can include important data and parameters used for model training.</li>
 </ul></li>
 </ol>
 </section>
-<section id="implement" class="level3">
-<h3 class="anchored" data-anchor-id="implement">Implement</h3>
+<section id="implement" class="level2">
+<h2 class="anchored" data-anchor-id="implement">Implement</h2>
 <p>During implementation, the key is not to get overwhelmed by the complexity of the task. Instead, focus on the components you understand, and incrementally build upon them. It’s okay if your code isn’t flawless initially; revisions can be made as you progress.</p>
 </section>
-<section id="visualize-test" class="level3">
-<h3 class="anchored" data-anchor-id="visualize-test">Visualize (Test)</h3>
-<p>After you implement something you need to verify the code works as you expected and to do this you can visualize what the outputs are or what the data looks like by using a library like <a href="https://matplotlib.org/">matplotlib</a>. Also it may help to work in an iteractive enviroment like a <a href="https://jupyter.org/">jupyter notebook</a> so you can immedtialy see the output instead of having to rerun your code everytime. In the same vein of visualizing testing your code with asserts statements or libraries like <a href="https://docs.pytest.org/en/7.3.x/">pytest</a> can help you ensure that your code is working as expected. This will be really useful when you go back to try to figure out why some part of your model may not be working as expected.</p>
-<p>After implementation, verify the accuracy of your code. Visualize the outputs or data structures using libraries like <a href="https://matplotlib.org/">matplotlib</a>, or work in an interactive environment like a <a href="https://jupyter.org/">jupyter notebook</a> for immediate output. Assert statements or testing libraries like <a href="https://docs.pytest.org/en/7.3.x/">pytest</a> can also be helpful to ensure your code performs as expected.</p>
+<section id="visualize" class="level2">
+<h2 class="anchored" data-anchor-id="visualize">Visualize</h2>
+<p>Post-implementation, validate your code. Use libraries like <a href="https://matplotlib.org/">matplotlib</a> to visualize the outputs, or tools like <a href="https://docs.pytest.org/en/7.3.x/">pytest</a> to perform tests. Working in an interactive environment like a <a href="https://jupyter.org/">jupyter notebook</a> can also be helpful.</p>
 </section>
-<section id="repeat" class="level3">
-<h3 class="anchored" data-anchor-id="repeat">Repeat</h3>
-<p>The crux of this process lies in repetition and rapid iteration. Although you might start slow, as you build your knowledge base and develop greater abstractions, the speed of your work will increase. Additionally, this iterative process will enhance your programming skills and your ability to refine your codebase.</p>
-</section>
+<section id="repeat" class="level2">
+<h2 class="anchored" data-anchor-id="repeat">Repeat</h2>
+<p>The key to successful implementation is repetition. Even if you start slowly, your pace will increase as you build your knowledge and develop better abstractions. This process also improves your programming skills.</p>
 </section>
 <section id="conclusion" class="level2">
 <h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
@@ -120,9 +82,7 @@
 </section>
 
 <a onclick="window.scrollTo(0, 0); return false;" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a> ]]></description>
-  <category>Deep Learning</category>
   <category>Research</category>
-  <category>Undergradute</category>
   <guid>https://ahadjawaid.github.io/personal-website/blog/posts/translating-theory-into-code/index.html</guid>
   <pubDate>Mon, 05 Jun 2023 07:00:00 GMT</pubDate>
 </item>
@@ -203,6 +163,7 @@
   <category>Neueral Networks</category>
   <guid>https://ahadjawaid.github.io/personal-website/blog/posts/the-universal-function/index.html</guid>
   <pubDate>Thu, 23 Feb 2023 08:00:00 GMT</pubDate>
+  <media:content url="https://ahadjawaid.github.io/personal-website/blog/posts/the-universal-function/assets/filling-machine.png" medium="image" type="image/png" height="144" width="144"/>
 </item>
 </channel>
 </rss>

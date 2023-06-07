@@ -1,0 +1,16 @@
+---
+title: "Deep learning with fast.ai"
+author: "Ahad Jawaid"
+date: "2023-06-05"
+categories: [Deep Learning]
+image: assets/brain.png
+draft: false
+Venue: "Sciences, 800 W Campbell Rd, Richardson, TX, Room 1.210"
+Location: "Richardson, Texas, US"
+---
+
+Workshop on deep learning and introducing transfer learning. This work shop was hosted by me and Ibad to teach students how to use the library fast.ai to perform transfer learning on a image classification task.
+
+[Video Link](https://www.youtube.com/live/K5_KzXeL_Tc)
+
+[Github Repository Link](https://github.com/ahadjawaid/fastai-workshop)

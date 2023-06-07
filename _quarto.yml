@@ -37,6 +37,10 @@ website:
         href: blog/index.qmd
         icon: newspaper
 
+      - text: Talks
+        href: talks.qmd
+        icon: megaphone
+
       - text: About
         href: about.qmd
         icon: person
@@ -69,6 +73,7 @@ website:
     card-style: summary_large_image
     creator: "@_ahadj_"
     site: "@_ahadj_"
+    
   open-graph:
     description: "Ahad Jawaid's Website"
     image: clouds.png

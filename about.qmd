@@ -1,8 +1,11 @@
 ---
 title: "Ahad Jawaid"
 comments: false
+page-layout: full
+back-to-top-navigation: false
+
 about:
-  template: trestles
+  template: solana
   image: assets/profile.png
   links:
     - icon: twitter
@@ -21,11 +24,93 @@ about:
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis.
 
-## Education
+::::{.panel-tabset}
 
-**The University of Texas at Dallas** | Richardson, TX
-B.S in Computer Science | Expected Graduation: May 2024
+# Experience
 
-## Experience
+::: {.d-flex .justify-content-between}
+::: {}
+**Software Developer Engineer Intern**  
+*Amazon, Seattle, WA, USA*
+:::
+::: {.text-end}
+May 2023 - Present
+:::
+:::
+- Working with the Spoken Language Understanding (SLU) Team at Alexa Smart Home
 
-Amazon | Software Development Engineer Intern | May 2023 - present
+::: {.d-flex .justify-content-between}
+::: {}
+**Independent Undergraduate Researcher**  
+*The University of Texas at Dallas, Richardson, TX, USA*
+:::
+::: {.text-end}
+January 2023 - May 2023
+:::
+:::
+- Implemented and trained the WaveNet, Fastspeech 1/2, and Transformer architectures from scratch using PyTorch
+- Trained FastSpeech 1/2 with 24M/25M parameters to convergence in 80k steps to generate speech from text
+- Conducted a literature review of ~40 research papers relating to controllability of emotions in speech synthesis
+
+::: {.d-flex .justify-content-between}
+::: {}
+**Undergraduate Researcher**  
+*System Security Research Lab, Richardson, TX, USA*
+:::
+::: {.text-end}
+May 2022 - Septemeber 2022
+:::
+:::
+- Contributed to Deep Graph Library by extending the GNN Explainer functionality for heterogeneous graphs
+- Implemented Bayesian Optimization to tune model hyperparameters and achieved an accuracy increase from 89% to 92% on a 6-way graph classification task
+- Integrated caching on data converter that increased speed by 21% on initial run and 97% on subsequent runs
+- Trained graph-based classification models using PyTorch on 20+ datasets and utilized explainability modules to
+analyze and understand datasets
+
+
+# Education
+
+
+::: {.d-flex .justify-content-between}
+::: {}
+**Bachelors of Science in Computer Science**  
+*The University of Texas at Dallas, Richardson, TX, USA*
+:::
+::: {.text-end}
+*Expected Graduation:* May 2024
+:::
+:::
+
+# Certifications
+
+::: {.d-flex .justify-content-between}
+::: {}
+**Neural Networks and Deep Learning, Deeplearning.ai, Coursera**  
+[Certificate](https://www.coursera.org/account/accomplishments/certificate/Q4TBKHQRZ7YZ)
+:::
+::: {.text-end}
+January, 2023
+:::
+:::
+
+::: {.d-flex .justify-content-between}
+::: {}
+**Structuring Machine Learning Projects Structuring, Deeplearning.ai, Coursera**  
+[Certificate](https://www.coursera.org/account/accomplishments/certificate/6QRKKHEGM3QH)
+:::
+::: {.text-end}
+January, 2023
+:::
+:::
+
+::: {.d-flex .justify-content-between}
+::: {}
+**Certified Developer - Associate, AWS**  
+Credential ID NGJGEZLJFJE4QMWQ
+:::
+::: {.text-end}
+May, 2022
+:::
+:::
+
+::::

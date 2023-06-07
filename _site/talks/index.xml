@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss  xmlns:atom="http://www.w3.org/2005/Atom" 
+      xmlns:media="http://search.yahoo.com/mrss/" 
+      xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+      xmlns:dc="http://purl.org/dc/elements/1.1/" 
+      version="2.0">
+<channel>
+<title>Ahad Jawaid</title>
+<link>https://ahadjawaid.github.io/personal-website/talks/index.html</link>
+<atom:link href="https://ahadjawaid.github.io/personal-website/talks/index.xml" rel="self" type="application/rss+xml"/>
+<description>Ahad Jawaid&#39;s Website!</description>
+<generator>quarto-1.4.122</generator>
+<lastBuildDate>Wed, 07 Jun 2023 16:45:02 GMT</lastBuildDate>
+</channel>
+</rss>
