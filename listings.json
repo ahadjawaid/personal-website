@@ -12,5 +12,11 @@
       "/blog/posts/translating-theory-into-code/index.html",
       "/blog/posts/the-universal-function/index.html"
     ]
+  },
+  {
+    "listing": "/talks.html",
+    "items": [
+      "/talks/deep-learning-with-fastai/index.html"
+    ]
   }
 ]

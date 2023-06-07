@@ -1,5 +1,12 @@
 [
   {
+    "objectID": "talks/deep-learning-with-fastai/index.html",
+    "href": "talks/deep-learning-with-fastai/index.html",
+    "title": "Deep learning with fast.ai",
+    "section": "",
+    "text": "Workshop on deep learning and introducing transfer learning. This work shop was hosted by me and Ibad to teach students how to use the library fast.ai to perform transfer learning on a image classification task.\nVideo Link\nGithub Repository Link\n\n\n\n Back to top"
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "👋 Hey, I’m Ahad",
@@ -11,7 +18,7 @@
     "href": "index.html#blog",
     "title": "👋 Hey, I’m Ahad",
     "section": "Blog",
-    "text": "Blog\nClick here to check out my blog.\n\n\n\n\n  \n\n\n\n\nTranslating Theory into Code: A Student’s Guide to Implementing Research Papers\n\n\n\n\n\n\n\n\n\n\n\n\nJun 5, 2023\n\n\nAhad Jawaid\n\n\n\n\n\n\n  \n\n\n\n\nNeural network: The universal function\n\n\n\n\n\n\n\n\n\n\n\n\nFeb 23, 2023\n\n\nAhad Jawaid\n\n\n\n\n\n\nNo matching items"
+    "text": "Blog\nClick here to check out my blog.\n\n\n\n\n  \n\n\n\n\nFrom Paper to Code: A Guide to Implement Research\n\n\n\n\n\nThis guide covers effective reading, model implementation, code validation, and the power of repetition.\n\n\n\n\n\n\nJun 5, 2023\n\n\nAhad Jawaid\n\n\n\n\n\n\n  \n\n\n\n\nNeural network: The universal function\n\n\n\n\n\n\n\n\n\n\n\n\nFeb 23, 2023\n\n\nAhad Jawaid\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "blog/posts/the-universal-function/index.html",
@@ -74,62 +81,69 @@
     "href": "about.html",
     "title": "Ahad Jawaid",
     "section": "",
-    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis."
-  },
-  {
-    "objectID": "about.html#education",
-    "href": "about.html#education",
-    "title": "Ahad Jawaid",
-    "section": "Education",
-    "text": "Education\nThe University of Texas at Dallas | Richardson, TX B.S in Computer Science | Expected Graduation: May 2024"
-  },
-  {
-    "objectID": "about.html#experience",
-    "href": "about.html#experience",
-    "title": "Ahad Jawaid",
-    "section": "Experience",
-    "text": "Experience\nAmazon | Software Development Engineer Intern | May 2023 - present"
+    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis.\n\nExperienceEducationCertifications\n\n\n\n\nSoftware Developer Engineer Intern\nAmazon, Seattle, WA, USA\n\n\nMay 2023 - Present\n\n\n\nWorking with the Spoken Language Understanding (SLU) Team at Alexa Smart Home\n\n\n\nIndependent Undergraduate Researcher\nThe University of Texas at Dallas, Richardson, TX, USA\n\n\nJanuary 2023 - May 2023\n\n\n\nImplemented and trained the WaveNet, Fastspeech 1/2, and Transformer architectures from scratch using PyTorch\nTrained FastSpeech 1/2 with 24M/25M parameters to convergence in 80k steps to generate speech from text\nConducted a literature review of ~40 research papers relating to controllability of emotions in speech synthesis\n\n\n\nUndergraduate Researcher\nSystem Security Research Lab, Richardson, TX, USA\n\n\nMay 2022 - Septemeber 2022\n\n\n\nContributed to Deep Graph Library by extending the GNN Explainer functionality for heterogeneous graphs\nImplemented Bayesian Optimization to tune model hyperparameters and achieved an accuracy increase from 89% to 92% on a 6-way graph classification task\nIntegrated caching on data converter that increased speed by 21% on initial run and 97% on subsequent runs\nTrained graph-based classification models using PyTorch on 20+ datasets and utilized explainability modules to analyze and understand datasets\n\n\n\n\n\nBachelors of Science in Computer Science\nThe University of Texas at Dallas, Richardson, TX, USA\n\n\nExpected Graduation: May 2024\n\n\n\n\n\n\nNeural Networks and Deep Learning, Deeplearning.ai, Coursera\nCertificate\n\n\nJanuary, 2023\n\n\n\n\nStructuring Machine Learning Projects Structuring, Deeplearning.ai, Coursera\nCertificate\n\n\nJanuary, 2023\n\n\n\n\nCertified Developer - Associate, AWS\nCredential ID NGJGEZLJFJE4QMWQ\n\n\nMay, 2022"
   },
   {
     "objectID": "blog/index.html",
     "href": "blog/index.html",
     "title": "Blog",
     "section": "",
-    "text": "Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n  \n\n\n\n\nTranslating Theory into Code: A Student’s Guide to Implementing Research Papers\n\n\n\n\n\n\n\n\n\n\n\n\n05 June 2023\n\n\nAhad Jawaid\n\n\n6 min\n\n\n\n\n\n\n  \n\n\n\n\nNeural network: The universal function\n\n\n\n\n\n\n\n\n\n\n\n\n23 February 2023\n\n\nAhad Jawaid\n\n\n6 min\n\n\n\n\n\n\nNo matching items\n\n\n\nLoading…\n\n\n\n\n\n Back to top"
+    "text": "Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n  \n\n\n\n\nFrom Paper to Code: A Guide to Implement Research\n\n\n\n\n\nThis guide covers effective reading, model implementation, code validation, and the power of repetition.\n\n\n\n\n\n\n05 June 2023\n\n\nAhad Jawaid\n\n\n2 min\n\n\n\n\n\n\n  \n\n\n\n\nNeural network: The universal function\n\n\n\n\n\n\n\n\n\n\n\n\n23 February 2023\n\n\nAhad Jawaid\n\n\n6 min\n\n\n\n\n\n\nNo matching items\n\n\n\n\n\n\n\n Back to top"
   },
   {
     "objectID": "blog/posts/translating-theory-into-code/index.html",
     "href": "blog/posts/translating-theory-into-code/index.html",
-    "title": "Translating Theory into Code: A Student’s Guide to Implementing Research Papers",
+    "title": "From Paper to Code: A Guide to Implement Research",
     "section": "",
-    "text": "Earlier this year, I embarked on an endeavor to implement a few deep learning research papers from scratch. My goal was to chronicle this journey not only for my own reference but also to offer a useful guide to others interested in similar projects. It’s also a reflective exercise, allowing me to assess my experience and identify areas for improvement. I welcome your feedback and hope you find value in this blog post.\n\n\nMy journey started with an aspiration to understand deep learning on a deeper level. To facilitate this, I registered for an independent study course at my university, under the supervision of a professor, which allowed me to set specific goals. These goals were designed to emulate the tasks of a deep learning researcher:\n\n\nRead 30 research papers\nImplement a research paper\nWrite a paper\n\n\nI had choosen these goals after watching many videos on what researcher do and what makes a good one. A notable video I watched was on giving career advice for researchers.\nThese objectives were influenced by numerous videos I watched on the roles and qualities of a good researcher, notably Andrew Ng’s video video offering career advice for researchers.\nArmed with my goals, the next step was choosing a subject to research. I considered two fascinating topics: reinforcement learning and speech synthesis. The latter appealed to me particularly due to my interest in audiobooks and their associated costs. I pitched these topics to various professors at my university. On the recommendation of a friend, I reached out to a particular professor known for his expertise and guidance in independent studies. He responded positively to the idea of speech synthesis but suggested adding a layer of complexity: introducing emotions into the mix. Equipped with this unique topic and my predetermined goals, I delved into extensive reading to garner a more profound understanding of the subject matter."
+    "text": "Recently, I’ve been diving into the practice of implementing deep learning research papers. This post is designed to guide you through this process, sharing my key insights along the way.\nStarting with an independent study course at university, I explored deep learning intensively. To streamline the journey of understanding and implementing such papers, I’ve distilled the process into four steps:\n\nLet’s break each one down."
   },
   {
     "objectID": "blog/posts/translating-theory-into-code/index.html#introduction",
     "href": "blog/posts/translating-theory-into-code/index.html#introduction",
-    "title": "Translating Theory into Code: A Student’s Guide to Implementing Research Papers",
+    "title": "From Paper to Code: A Guide to Implement Research",
     "section": "",
-    "text": "Earlier this year, I embarked on an endeavor to implement a few deep learning research papers from scratch. My goal was to chronicle this journey not only for my own reference but also to offer a useful guide to others interested in similar projects. It’s also a reflective exercise, allowing me to assess my experience and identify areas for improvement. I welcome your feedback and hope you find value in this blog post.\n\n\nMy journey started with an aspiration to understand deep learning on a deeper level. To facilitate this, I registered for an independent study course at my university, under the supervision of a professor, which allowed me to set specific goals. These goals were designed to emulate the tasks of a deep learning researcher:\n\n\nRead 30 research papers\nImplement a research paper\nWrite a paper\n\n\nI had choosen these goals after watching many videos on what researcher do and what makes a good one. A notable video I watched was on giving career advice for researchers.\nThese objectives were influenced by numerous videos I watched on the roles and qualities of a good researcher, notably Andrew Ng’s video video offering career advice for researchers.\nArmed with my goals, the next step was choosing a subject to research. I considered two fascinating topics: reinforcement learning and speech synthesis. The latter appealed to me particularly due to my interest in audiobooks and their associated costs. I pitched these topics to various professors at my university. On the recommendation of a friend, I reached out to a particular professor known for his expertise and guidance in independent studies. He responded positively to the idea of speech synthesis but suggested adding a layer of complexity: introducing emotions into the mix. Equipped with this unique topic and my predetermined goals, I delved into extensive reading to garner a more profound understanding of the subject matter."
+    "text": "Recently, I’ve been diving into the practice of implementing deep learning research papers. This post is designed to guide you through this process, sharing my key insights along the way.\nStarting with an independent study course at university, I explored deep learning intensively. To streamline the journey of understanding and implementing such papers, I’ve distilled the process into four steps:\n\nLet’s break each one down."
   },
   {
-    "objectID": "blog/posts/translating-theory-into-code/index.html#inspiration",
-    "href": "blog/posts/translating-theory-into-code/index.html#inspiration",
-    "title": "Translating Theory into Code: A Student’s Guide to Implementing Research Papers",
-    "section": "Inspiration",
-    "text": "Inspiration\nIn the process of reviewing multiple papers, I quickly noticed that WaveNet was a significant architecture that kick-started the deep learning revolution in speech synthesis. Although intrigued by this paper, the idea of implementing an entire deep learning architecture felt daunting. My initial approach was to seek out existing implementations online. Many were overly complicated, with code extending into hundreds of lines, until I stumbled upon a simple and comprehendible implementation on github. This version presented the architecture in a clear, digestible format that made it feel more like a manageable programming problem than an intimidating task."
+    "objectID": "blog/posts/translating-theory-into-code/index.html#read",
+    "href": "blog/posts/translating-theory-into-code/index.html#read",
+    "title": "From Paper to Code: A Guide to Implement Research",
+    "section": "Read",
+    "text": "Read\nReading a research paper should be focused on understanding the process rather than memorizing details. Pay attention to the inputs, outputs, data transformations, and assumptions.\n\nTo expedite the reading process, it helps to know where to find necessary details. Typically, the most crucial sections in a research paper are:\n\nAbstract\n\nProvides a broad understanding of the paper and its relevance.\n\nFigures\n\nOften encapsulate the paper’s content and are valuable for understanding the model’s workings. However, ensure their accuracy by cross-referencing the textual content.\n\nIntroduction\n\nHighlights the paper’s novelty or significance.\n\nArchitecture (Can go by other names)\n\nContains detailed descriptions of the architecture (usually where most of your time will be spent).\n\nTraining\n\nProvides hyperparameters for training, model performance, and other essential information.\n\nThe appendix\n\nOften contains implementation details not fitting into the main paper’s flow.\n\nExperiements (Optional)\n\nCan include important data and parameters used for model training."
   },
   {
-    "objectID": "blog/posts/translating-theory-into-code/index.html#implementation",
-    "href": "blog/posts/translating-theory-into-code/index.html#implementation",
-    "title": "Translating Theory into Code: A Student’s Guide to Implementing Research Papers",
-    "section": "Implementation",
-    "text": "Implementation\nAfter some procrastination and coursework delays, I finally mustered the courage to attempt the implementation. Drawing on lessons from the fastai course, I realized the importance of starting small with concepts I understood, gradually building up from there. I initiated the process with basic tensor multiplication using a convolution kernel (typically a small n x n matrix) and gradually advanced by visualizing each successive step.\nIn my experience, the implementation process can be distilled into four primary steps:\n\n\nRead\nImplement\nVisualize (Test)\nRepeat Steps 1-3\n\n\nThis iterative process, accompanied by ample time and persistence, enables the implementation of any concept, although I recommend starting small to avoid discouragement and an excessively lengthy process. Next, I delve deeper into each of these steps.\n\nRead\nReading is an indispensable step, yet it’s easy to misstep when attempting to implement a paper. The goal isn’t to memorize every word but to understand the core functionality of the process. To achieve this, focus on the essentials:\n\n\nWhat are the inputs and outputs\nWhat change is occuring to the data\nWhat are the assumptions\n\n\nUnderstanding the inputs and outputs is vital as it forms the basis for implementing and testing your model. The transformation of the data is the core of your implementation—it’s the heart of your code. And finally, being aware of the assumptions is critical, as they often affect data preprocessing, output interpretation, and more.\nTo expedite the reading process, it helps to know where to find necessary details. Typically, the most crucial sections in a research paper are:\n\nAbstract\n\nProvides a broad understanding of the paper and its relevance.\n\nFigures\n\nOften encapsulate the paper’s content and are valuable for understanding the model’s workings. However, ensure their accuracy by cross-referencing the textual content.\n\n\nIntroduction\n\nHighlights the paper’s novelty or significance.\n\nArchitecture (Can go by other names)\n\nContains detailed descriptions of the architecture (usually where most of your time will be spent).\n\nTraining\n\nProvides hyperparameters for training, model performance, and other essential information.\n\nThe appendix\n\nOften contains implementation details not fitting into the main paper’s flow.\n\nExperiements (Optional)\n\nCan include important data and parameters used for model training.\n\n\n\n\nImplement\nDuring implementation, the key is not to get overwhelmed by the complexity of the task. Instead, focus on the components you understand, and incrementally build upon them. It’s okay if your code isn’t flawless initially; revisions can be made as you progress.\n\n\nVisualize (Test)\nAfter you implement something you need to verify the code works as you expected and to do this you can visualize what the outputs are or what the data looks like by using a library like matplotlib. Also it may help to work in an iteractive enviroment like a jupyter notebook so you can immedtialy see the output instead of having to rerun your code everytime. In the same vein of visualizing testing your code with asserts statements or libraries like pytest can help you ensure that your code is working as expected. This will be really useful when you go back to try to figure out why some part of your model may not be working as expected.\nAfter implementation, verify the accuracy of your code. Visualize the outputs or data structures using libraries like matplotlib, or work in an interactive environment like a jupyter notebook for immediate output. Assert statements or testing libraries like pytest can also be helpful to ensure your code performs as expected.\n\n\nRepeat\nThe crux of this process lies in repetition and rapid iteration. Although you might start slow, as you build your knowledge base and develop greater abstractions, the speed of your work will increase. Additionally, this iterative process will enhance your programming skills and your ability to refine your codebase."
+    "objectID": "blog/posts/translating-theory-into-code/index.html#implement",
+    "href": "blog/posts/translating-theory-into-code/index.html#implement",
+    "title": "From Paper to Code: A Guide to Implement Research",
+    "section": "Implement",
+    "text": "Implement\nDuring implementation, the key is not to get overwhelmed by the complexity of the task. Instead, focus on the components you understand, and incrementally build upon them. It’s okay if your code isn’t flawless initially; revisions can be made as you progress."
+  },
+  {
+    "objectID": "blog/posts/translating-theory-into-code/index.html#visualize",
+    "href": "blog/posts/translating-theory-into-code/index.html#visualize",
+    "title": "From Paper to Code: A Guide to Implement Research",
+    "section": "Visualize",
+    "text": "Visualize\nPost-implementation, validate your code. Use libraries like matplotlib to visualize the outputs, or tools like pytest to perform tests. Working in an interactive environment like a jupyter notebook can also be helpful."
+  },
+  {
+    "objectID": "blog/posts/translating-theory-into-code/index.html#repeat",
+    "href": "blog/posts/translating-theory-into-code/index.html#repeat",
+    "title": "From Paper to Code: A Guide to Implement Research",
+    "section": "Repeat",
+    "text": "Repeat\nThe key to successful implementation is repetition. Even if you start slowly, your pace will increase as you build your knowledge and develop better abstractions. This process also improves your programming skills."
   },
   {
     "objectID": "blog/posts/translating-theory-into-code/index.html#conclusion",
     "href": "blog/posts/translating-theory-into-code/index.html#conclusion",
-    "title": "Translating Theory into Code: A Student’s Guide to Implementing Research Papers",
+    "title": "From Paper to Code: A Guide to Implement Research",
     "section": "Conclusion",
     "text": "Conclusion\nIn summary, the methodology I formulated and the key lessons I learned during my initial experience implementing a research paper can be encapsulated in four words: read, implement, visualize, and repeat. I hope you find this post beneficial, and I welcome any feedback or suggestions you might have. Thank you!"
+  },
+  {
+    "objectID": "talks.html",
+    "href": "talks.html",
+    "title": "Talks",
+    "section": "",
+    "text": "Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n  \n\n\n\n\nDeep learning with fast.ai\n\n\n\n\n\n\n\n\n\n\n\n\n05 June 2023\n\n\nAhad Jawaid\n\n\n\n\n\n\nNo matching items\n\n\n\n\n\n\n Back to top"
   }
 ]
