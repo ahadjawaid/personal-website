@@ -24,7 +24,7 @@ about:
 ---
 
 :::{#about}
-I’m curious individual who is broadly interested in topics related to creating intelligent agents.
+I’m a curious individual who is broadly interested in topics related to creating intelligent agents.
 
 Currently I'm a Software Development Engineer at Amazon, working on the spoken understanding team at Alexa smart home. Before that I was an Undergraduate Researcher at labs at my university. I'm currently a senior computer science major at The University of Texas at Dallas.
 

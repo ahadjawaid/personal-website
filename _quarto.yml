@@ -21,6 +21,8 @@ website:
     tools:
       - icon: twitter
         href: https://twitter.com\_ahadj_
+      - icon: linkedin
+        href: https://www.linkedin.com/in/ahad-jawaid
       - icon: github
         menu:
           - text: Source Code
@@ -51,6 +53,8 @@ website:
     right:
       - icon: twitter
         href: https://twitter.com\_ahadj_
+      - icon: linkedin
+        href: https://www.linkedin.com/in/ahad-jawaid
       - icon: github
         href: https://github.com/ahadjawaid/personal-website
 
