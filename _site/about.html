@@ -177,7 +177,7 @@ ul.task-list li input[type="checkbox"] {
 </div>
 
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true">Experience</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">Education</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false">Certifications</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true">Experience</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">Education</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false">Projects</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-4" role="tab" aria-controls="tabset-1-4" aria-selected="false">Organizations</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-5-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-5" role="tab" aria-controls="tabset-1-5" aria-selected="false">Certifications</a></li></ul>
 <div class="tab-content">
 <div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
 <div class="d-flex justify-content-between">
@@ -234,6 +234,203 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 <div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
+<div class="d-flex justify-content-between">
+<div>
+<p><strong>MiniAI</strong><br>
+<em>PyTorch, Python, fast.ai, Numba</em></p>
+</div>
+<div class="text-end">
+<p>April 2023</p>
+</div>
+</div>
+<ul>
+<li>Reimplemented PyTorch’s AutoGrad, Parallel DataLoader, Dataset, Module, Optimizer, and Sampler from scratch</li>
+<li>Created a Learner class that utilizes callback functions to allow for flexible experimentation with models</li>
+<li>Implemented MLP, RNN, LSTM, AWD-LSTM, Auto Encoder, ResNet, Transformer, GPT, and BERT models</li>
+</ul>
+<div class="d-flex justify-content-between">
+<div>
+<p><strong>Speech Emotion Classifier</strong><br>
+<em>PyTorch, Python, Librosa, fast.ai, multiprocessing</em></p>
+</div>
+<div class="text-end">
+<p>February 2023</p>
+</div>
+</div>
+<ul>
+<li>Fine-tuned a ResNet image recognition model on mel-spectrogram images of speech resulting in an accuracy of 98% on the TESS dataset and 92% accuracy on ESD dataset</li>
+<li>Preprocessed dataset 83.3% faster by using multiple processes to apply Mel-spectrogram transformations</li>
+</ul>
+<div class="d-flex justify-content-between">
+<div>
+<p><strong>Text Emotion Classifier</strong><br>
+<em>PyTorch, Hugging Face, Gradio, Pandas</em></p>
+</div>
+<div class="text-end">
+<p>February 2023</p>
+</div>
+</div>
+<ul>
+<li>Utilized hugging face transformers to fine tune deberta model to classify emotions resulting in a 99% accuracy on validation and test set and deployed the model on hugging face spaces using Gradio’s interface</li>
+</ul>
+<div class="d-flex justify-content-between">
+<div>
+<p><strong>Robo Rev</strong><br>
+<em>PyTorch, Hugging Face, Python, C++, OpenAI</em></p>
+</div>
+<div class="text-end">
+<p>January 2023</p>
+</div>
+</div>
+<ul>
+<li>Coordinated a 4-member team to create an autonomous robotic dog that can execute natural language commands</li>
+<li>Improved WER of HuBert speech recognition model by finetuning on an augmented dataset including background noise and low-quality audio clips, resulting in a decrease of WER from 12.3 to 6.1 when tested on real audio inputs</li>
+<li>Leveraged GPT to generate responses, and developed a movement algorithm to control the agent’s movements</li>
+</ul>
+<div class="d-flex justify-content-between">
+<div>
+<p><strong>Ambient</strong><br>
+<em>TensorFlow, Keras, React, Docker, Flask, Python, JavaScript</em></p>
+</div>
+<div class="text-end">
+<p>November 2022</p>
+</div>
+</div>
+<ul>
+<li>Developed a speech emotion recognition model using a convolutional neural network (CNN) trained on 4 datasets, achieving an accuracy of 68% on an 8-class classification task</li>
+<li>Integrated the model into a web application, allowing for real-time analysis of voice files with a latency of 150 ms</li>
+<li>Led a team of 4 in the creation, prototyping, design, development, and presentation of the project, resulting in a 3rd place finish out of 1000 participants in the CBRE challenge at HackUTD</li>
+</ul>
+<div class="d-flex justify-content-between">
+<div>
+<p><strong>Optimine</strong><br>
+<em>React, Express, MongoDB, Node, Javascript</em></p>
+</div>
+<div class="text-end">
+<p>September 2022</p>
+</div>
+</div>
+<ul>
+<li>Led a team of 6 to develop and launch a sentiment analysis website within a 5-month period</li>
+<li>Programmed API routes for real-time mining and inference, resulting in a latency of 3.2 seconds per topic request with the ability to mine and process 100+ tweets per request</li>
+<li>Applied an agile methodology to the development process, generating functional and non-functional requirements and creating various diagrams and wireframes</li>
+</ul>
+<div class="d-flex justify-content-between">
+<div>
+<p><strong>Docker API App </strong><br>
+<em>TypeScript, Node, Express, Mongoose, MongoDB, Docker</em></p>
+</div>
+<div class="text-end">
+<p>July 2022</p>
+</div>
+</div>
+<ul>
+<li>Built a REST API containing 5 endpoints with Express that accessed user data from the MongoDB database using Mongoose. And containerized application for platform-agnostic deployment using Docker</li>
+<li>Defined TypeScript interfaces and custom types to enforce static type error handling for aggregated data objects throughout the app which guaranteed scalability and minimized errors</li>
+</ul>
+<div class="d-flex justify-content-between">
+<div>
+<p><strong>Survey Full-Stack App</strong><br>
+<em>Node, Express, React, Redux, MongoDB/Mongoose, OAuth, Stripe, Twilio</em></p>
+</div>
+<div class="text-end">
+<p>April 2022</p>
+</div>
+</div>
+<ul>
+<li>Built a REST API containing 5 endpoints with Express that accessed user data from the MongoDB database using Mongoose. And containerized application for platform-agnostic deployment using Docker</li>
+<li>Defined TypeScript interfaces and custom types to enforce static type error handling for aggregated data objects throughout the app which guaranteed scalability and minimized errors</li>
+</ul>
+<div class="d-flex justify-content-between">
+<div>
+<p><strong>Personal Portfolio</strong><br>
+<em>Sass, HTML, CSS, JavaScript</em></p>
+</div>
+<div class="text-end">
+<p>February 2022</p>
+</div>
+</div>
+<ul>
+<li>Styled website using Sass and formatted using the 7-1 Sass architecture and BEM naming convention for more maintainable and readable code by dividing up 1000+ lines of code into smaller files</li>
+<li>Developed a responsive website using media queries and styled 8+ components from scratch</li>
+</ul>
+<div class="d-flex justify-content-between">
+<div>
+<p><strong>Bank Statement Summarizer</strong><br>
+<em>Python, Pandas, Watchdog</em></p>
+</div>
+<div class="text-end">
+<p>July 2021</p>
+</div>
+</div>
+<ul>
+<li>Built a parser written in Python that accessed a local CSV file using Pandas and obtained the user’s transaction history then computed relevant metrics and displayed the information in a pseudo financial statement</li>
+<li>Assembled an event listener using Watchdog that deleted, relocated, and kept the latest CSV files for parsing</li>
+<li>Assisted users with locating unusual activities by displaying a summarized list of transactions</li>
+</ul>
+<div class="d-flex justify-content-between">
+<div>
+<p><strong>Password Manager</strong><br>
+<em>Sass, HTML, CSS, JavaScript</em></p>
+</div>
+<div class="text-end">
+<p>May 2021</p>
+</div>
+</div>
+<ul>
+<li>Implemented password encryption/decryption using AES symmetric algorithm with SQLite used for storage</li>
+<li>Decoupled old functions/classes, which resulted in an increase in password retrieval speeds by 20%</li>
+<li>Designed and developed a Tkinter UI containing password retrieval and collection interfaces</li>
+</ul>
+</div>
+<div id="tabset-1-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-4-tab">
+<div class="d-flex justify-content-between">
+<div>
+<p><strong>Artificial Intelligence Society</strong><br>
+<em>Development Officer</em></p>
+</div>
+<div class="text-end">
+<p>October 2022 – Present</p>
+</div>
+</div>
+<div class="d-flex justify-content-between">
+<div>
+<p><strong>Association of Computing Machinery</strong><br>
+<em>Community Member, Mentor, Mentee, TIP Participant</em></p>
+</div>
+<div class="text-end">
+<p>January 2022 – Present</p>
+</div>
+</div>
+<div class="d-flex justify-content-between">
+<div>
+<p><strong>FinTech UTD</strong><br>
+<em>Developer</em></p>
+</div>
+<div class="text-end">
+<p>September 2022 – Novemeber 2022</p>
+</div>
+</div>
+<div class="d-flex justify-content-between">
+<div>
+<p><strong>Comet Marketing</strong><br>
+<em>Director of Web Development</em></p>
+</div>
+<div class="text-end">
+<p>August 2022 – October 2022</p>
+</div>
+</div>
+<div class="d-flex justify-content-between">
+<div>
+<p><strong>UX Club</strong><br>
+<em>Member</em></p>
+</div>
+<div class="text-end">
+<p>January 2022 – May 2022</p>
+</div>
+</div>
+</div>
+<div id="tabset-1-5" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-5-tab">
 <div class="d-flex justify-content-between">
 <div>
 <p><strong>Neural Networks and Deep Learning, Deeplearning.ai, Coursera</strong><br>

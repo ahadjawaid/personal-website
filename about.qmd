@@ -33,6 +33,7 @@ I enjoy reading ML papers, reading books, playing musical instruments, and runni
 
 ::::{.panel-tabset}
 
+
 # Experience
 
 ::: {.d-flex .justify-content-between}
@@ -77,7 +78,6 @@ analyze and understand datasets
 
 # Education
 
-
 ::: {.d-flex .justify-content-between}
 ::: {}
 **Bachelors of Science in Computer Science**  
@@ -87,6 +87,206 @@ analyze and understand datasets
 *Expected Graduation:* May 2024
 :::
 :::
+
+
+# Projects
+
+::: {.d-flex .justify-content-between}
+::: {}
+**MiniAI**  
+*PyTorch, Python, fast.ai, Numba*
+:::
+::: {.text-end}
+April 2023
+:::
+:::
+- Reimplemented PyTorch’s AutoGrad, Parallel DataLoader, Dataset, Module, Optimizer, and Sampler from scratch
+- Created a Learner class that utilizes callback functions to allow for flexible experimentation with models
+- Implemented MLP, RNN, LSTM, AWD-LSTM, Auto Encoder, ResNet, Transformer, GPT, and BERT models
+
+::: {.d-flex .justify-content-between}
+::: {}
+**Speech Emotion Classifier**  
+*PyTorch, Python, Librosa, fast.ai, multiprocessing*
+:::
+::: {.text-end}
+February 2023
+:::
+:::
+- Fine-tuned a ResNet image recognition model on mel-spectrogram images of speech resulting in an accuracy of
+98% on the TESS dataset and 92% accuracy on ESD dataset
+- Preprocessed dataset 83.3% faster by using multiple processes to apply Mel-spectrogram transformations
+
+::: {.d-flex .justify-content-between}
+::: {}
+**Text Emotion Classifier**  
+*PyTorch, Hugging Face, Gradio, Pandas*
+:::
+::: {.text-end}
+February 2023
+:::
+:::
+- Utilized hugging face transformers to fine tune deberta model to classify emotions resulting in a 99% accuracy on validation and test set and deployed the model on hugging face spaces using Gradio’s interface
+
+::: {.d-flex .justify-content-between}
+::: {}
+**Robo Rev**  
+*PyTorch, Hugging Face, Python, C++, OpenAI*
+:::
+::: {.text-end}
+January 2023
+:::
+:::
+- Coordinated a 4-member team to create an autonomous robotic dog that can execute natural language commands
+- Improved WER of HuBert speech recognition model by finetuning on an augmented dataset including background
+noise and low-quality audio clips, resulting in a decrease of WER from 12.3 to 6.1 when tested on real audio inputs
+- Leveraged GPT to generate responses, and developed a movement algorithm to control the agent’s movements
+
+::: {.d-flex .justify-content-between}
+::: {}
+**Ambient**  
+*TensorFlow, Keras, React, Docker, Flask, Python, JavaScript*
+:::
+::: {.text-end}
+November 2022
+:::
+:::
+- Developed a speech emotion recognition model using a convolutional neural network (CNN) trained on 4 datasets,
+achieving an accuracy of 68% on an 8-class classification task
+- Integrated the model into a web application, allowing for real-time analysis of voice files with a latency of 150 ms
+- Led a team of 4 in the creation, prototyping, design, development, and presentation of the project, resulting in a 3rd place finish out of 1000 participants in the CBRE challenge at HackUTD
+
+::: {.d-flex .justify-content-between}
+::: {}
+**Optimine**  
+*React, Express, MongoDB, Node, Javascript*
+:::
+::: {.text-end}
+September 2022
+:::
+:::
+- Led a team of 6 to develop and launch a sentiment analysis website within a 5-month period
+- Programmed API routes for real-time mining and inference, resulting in a latency of 3.2 seconds per topic request with the ability to mine and process 100+ tweets per request
+- Applied an agile methodology to the development process, generating functional and non-functional requirements and creating various diagrams and wireframes
+
+::: {.d-flex .justify-content-between}
+::: {}
+**Docker API App **  
+*TypeScript, Node, Express, Mongoose, MongoDB, Docker*
+:::
+::: {.text-end}
+July 2022
+:::
+:::
+- Built a REST API containing 5 endpoints with Express that accessed user data from the MongoDB database using Mongoose. And containerized application for platform-agnostic deployment using Docker
+- Defined TypeScript interfaces and custom types to enforce static type error handling for aggregated data objects throughout the app which guaranteed scalability and minimized errors
+
+::: {.d-flex .justify-content-between}
+::: {}
+**Survey Full-Stack App**  
+*Node, Express, React, Redux, MongoDB/Mongoose, OAuth, Stripe, Twilio*
+:::
+::: {.text-end}
+April 2022
+:::
+:::
+- Built a REST API containing 5 endpoints with Express that accessed user data from the MongoDB database using Mongoose. And containerized application for platform-agnostic deployment using Docker
+- Defined TypeScript interfaces and custom types to enforce static type error handling for aggregated data objects throughout the app which guaranteed scalability and minimized errors
+
+::: {.d-flex .justify-content-between}
+::: {}
+**Personal Portfolio**  
+*Sass, HTML, CSS, JavaScript*
+:::
+::: {.text-end}
+February 2022
+:::
+:::
+- Styled website using Sass and formatted using the 7-1 Sass architecture and BEM naming convention for more maintainable and readable code by dividing up 1000+ lines of code into smaller files
+- Developed a responsive website using media queries and styled 8+ components from scratch
+
+
+::: {.d-flex .justify-content-between}
+::: {}
+**Bank Statement Summarizer**  
+*Python, Pandas, Watchdog*
+:::
+::: {.text-end}
+July 2021
+:::
+:::
+- Built a parser written in Python that accessed a local CSV file using Pandas and obtained the user’s transaction history then computed relevant metrics and displayed the information in a pseudo financial statement
+- Assembled an event listener using Watchdog that deleted, relocated, and kept the latest CSV files for parsing
+- Assisted users with locating unusual activities by displaying a summarized list of transactions
+
+
+::: {.d-flex .justify-content-between}
+::: {}
+**Password Manager**  
+*Sass, HTML, CSS, JavaScript*
+:::
+::: {.text-end}
+May 2021
+:::
+:::
+- Implemented password encryption/decryption using AES symmetric algorithm with SQLite used for storage
+- Decoupled old functions/classes, which resulted in an increase in password retrieval speeds by 20%
+- Designed and developed a Tkinter UI containing password retrieval and collection interfaces
+
+
+# Organizations
+
+::: {.d-flex .justify-content-between}
+::: {}
+**Artificial Intelligence Society**  
+*Development Officer*
+:::
+::: {.text-end}
+October 2022 – Present
+:::
+:::
+
+::: {.d-flex .justify-content-between}
+::: {}
+**Association of Computing Machinery**  
+*Community Member, Mentor, Mentee, TIP Participant*
+:::
+::: {.text-end}
+January 2022 – Present
+:::
+:::
+
+::: {.d-flex .justify-content-between}
+::: {}
+**FinTech UTD**  
+*Developer*
+:::
+::: {.text-end}
+September 2022 – Novemeber 2022
+:::
+:::
+
+::: {.d-flex .justify-content-between}
+::: {}
+**Comet Marketing**  
+*Director of Web Development*
+:::
+::: {.text-end}
+August 2022 – October 2022
+:::
+:::
+
+::: {.d-flex .justify-content-between}
+::: {}
+**UX Club**  
+*Member*
+:::
+::: {.text-end}
+January 2022 – May 2022
+:::
+:::
+
+
 
 # Certifications
 
@@ -119,5 +319,6 @@ Credential ID NGJGEZLJFJE4QMWQ
 May, 2022
 :::
 :::
+
 
 ::::
