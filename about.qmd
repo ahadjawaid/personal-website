@@ -56,9 +56,10 @@ May 2023 - Present
 January 2023 - May 2023
 :::
 :::
-- Implemented and trained the WaveNet, Fastspeech 1/2, and Transformer architectures from scratch using PyTorch
-- Trained FastSpeech 1/2 with 24M/25M parameters to convergence in 80k steps to generate speech from text
-- Conducted a literature review of ~40 research papers relating to controllability of emotions in speech synthesis
+- Implemented and trained the WaveNet and Fastspeech 1/2 architectures from scratch for the generative speech task
+- Trained FastSpeech 1/2 with to convergence in 80k steps less than the paper by normalizing target speech
+- Designed, and documented novel framework to allow for quick experimentation with the FastSpeech model
+- Conducted literature review of ~40 research papers relating to controllability of emotions in speech synthesis
 
 ::: {.d-flex .justify-content-between}
 ::: {}
