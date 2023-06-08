@@ -1,7 +1,7 @@
 ---
 title: "Deep learning with fast.ai"
 author: "Ahad Jawaid"
-date: "2023-06-05"
+date: "2023-03-22"
 categories: [Deep Learning]
 image: assets/brain.png
 draft: false
