@@ -10,7 +10,7 @@
 <atom:link href="https://ahadjawaid.github.io/personal-website/talks.xml" rel="self" type="application/rss+xml"/>
 <description>Ahad Jawaid&#39;s Website!</description>
 <generator>quarto-1.4.122</generator>
-<lastBuildDate>Mon, 05 Jun 2023 07:00:00 GMT</lastBuildDate>
+<lastBuildDate>Wed, 22 Mar 2023 07:00:00 GMT</lastBuildDate>
 <item>
   <title>Deep learning with fast.ai</title>
   <dc:creator>Ahad Jawaid</dc:creator>
@@ -28,7 +28,7 @@
 <a onclick="window.scrollTo(0, 0); return false;" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a> ]]></description>
   <category>Deep Learning</category>
   <guid>https://ahadjawaid.github.io/personal-website/talks/deep-learning-with-fastai/index.html</guid>
-  <pubDate>Mon, 05 Jun 2023 07:00:00 GMT</pubDate>
+  <pubDate>Wed, 22 Mar 2023 07:00:00 GMT</pubDate>
   <media:content url="https://ahadjawaid.github.io/personal-website/talks/deep-learning-with-fastai/assets/brain.png" medium="image" type="image/png" height="144" width="144"/>
 </item>
 </channel>
