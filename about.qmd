@@ -7,7 +7,7 @@ back-to-top-navigation: false
 about:
   id: about
   template: solana
-  image: assets/profile.jpeg
+  image: assets/profile.jpg
   links:
     - icon: twitter
       text: Twitter
