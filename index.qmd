@@ -6,7 +6,7 @@ back-to-top-navigation: false
 about:
   id: about
   template: jolla
-  image: assets/profile.png
+  image: assets/profile.jpeg
   links:
     - icon: twitter
       text: Twitter
