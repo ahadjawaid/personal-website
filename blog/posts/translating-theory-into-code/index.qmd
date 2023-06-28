@@ -1,6 +1,6 @@
 ---
 title: "From Paper to Code: A Guide to Implement Research"
-description: This  guide covers effective reading, model implementation, code validation, and the power of repetition.
+description: This guide covers effective reading, model implementation, code validation, and the power of repetition.
 author: "Ahad Jawaid"
 date: "2023-06-05"
 categories: [Research]
