@@ -77,6 +77,13 @@
     "text": "The Universal Function\nIn conclusion, the neural network is a powerful tool that allows software to adapt to any role given to them. At first glance, it may seem like an abstract concept, but it is nothing more guessing and checking then improving. What’s fascinating about this is that the improvement can be made automatically by using concepts from calculus like the derivative, which allows us to determine how to improve. With these tools, the neural network can learn any task and solve most problem thrown its way.\nToday, we see the applications of neural networks in various fields, including speech recognition, image and pattern recognition, and natural language processing, to name a few. The possibilities of what we can achieve with this technology are endless, and we are only scratching the surface of what it can do."
   },
   {
+    "objectID": "blog/index.html",
+    "href": "blog/index.html",
+    "title": "Blog",
+    "section": "",
+    "text": "Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n  \n\n\n\n\nIntroduction to Deep Reinforcement Learning\n\n\n\n\n\n\n\n\n\n\n\n\n27 June 2023\n\n\nAhad Jawaid\n\n\n1 min\n\n\n\n\n\n\n  \n\n\n\n\nFrom Paper to Code: A Guide to Implement Research\n\n\n\n\n\nThis guide covers effective reading, model implementation, code validation, and the power of repetition.\n\n\n\n\n\n\n05 June 2023\n\n\nAhad Jawaid\n\n\n2 min\n\n\n\n\n\n\n  \n\n\n\n\nNeural network: The universal function\n\n\n\n\n\n\n\n\n\n\n\n\n23 February 2023\n\n\nAhad Jawaid\n\n\n6 min\n\n\n\n\n\n\nNo matching items\n\n\n\n\n\n\n\n Back to top"
+  },
+  {
     "objectID": "about.html",
     "href": "about.html",
     "title": "Ahad Jawaid",
@@ -84,11 +91,53 @@
     "text": "Twitter\n  \n  \n    \n     Github\n  \n  \n    \n     LinkedIn\n  \n  \n    \n     Email\n  \n\n      \nI’m a curious individual who is broadly interested in topics related to creating intelligent agents.\nCurrently I’m a Software Development Engineer at Amazon, working on the spoken understanding team at Alexa smart home. Before that I was an Undergraduate Researcher at labs at my university. I’m currently a senior computer science major at The University of Texas at Dallas.\nI enjoy reading ML papers, reading books, playing musical instruments, and running.\n\n    \n    \n  \n\n\n\nExperienceEducationOrganizationsCertifications\n\n\n\n\nSoftware Developer Engineer Intern\nAmazon, Seattle, WA, USA\n\n\nMay 2023 - Present\n\n\n\n\nIndependent Undergraduate Researcher\nThe University of Texas at Dallas, Richardson, TX, USA\n\n\nJanuary 2023 - May 2023\n\n\n\n\nUndergraduate Researcher\nSystem Security Research Lab, Richardson, TX, USA\n\n\nMay 2022 - Septemeber 2022\n\n\n\n\n\n\nBachelors of Science in Computer Science\nThe University of Texas at Dallas, Richardson, TX, USA\n\n\nExpected Graduation: May 2024\n\n\n\n\n\n\nArtificial Intelligence Society\nDevelopment Officer\n\n\nOctober 2022 – Present\n\n\n\n\nAssociation of Computing Machinery\nCommunity Member, Mentor, Mentee, TIP Participant\n\n\nJanuary 2022 – Present\n\n\n\n\nFinTech UTD\nDeveloper\n\n\nSeptember 2022 – Novemeber 2022\n\n\n\n\nComet Marketing\nDirector of Web Development\n\n\nAugust 2022 – October 2022\n\n\n\n\nUX Club\nMember\n\n\nJanuary 2022 – May 2022\n\n\n\n\n\n\nNeural Networks and Deep Learning, Deeplearning.ai, Coursera\nCertificate\n\n\nJanuary, 2023\n\n\n\n\nStructuring Machine Learning Projects Structuring, Deeplearning.ai, Coursera\nCertificate\n\n\nJanuary, 2023\n\n\n\n\nCertified Developer - Associate, AWS\nCredential ID NGJGEZLJFJE4QMWQ\n\n\nMay, 2022"
   },
   {
-    "objectID": "blog/index.html",
-    "href": "blog/index.html",
-    "title": "Blog",
+    "objectID": "blog/posts/introduction-to-deep-reinforcement-learning/index.html",
+    "href": "blog/posts/introduction-to-deep-reinforcement-learning/index.html",
+    "title": "Introduction to Deep Reinforcement Learning",
     "section": "",
-    "text": "Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n  \n\n\n\n\nIntroduction to Deep Reinforcement Learning\n\n\n\n\n\n\n\n\n\n\n\n\n27 June 2023\n\n\nAhad Jawaid\n\n\n1 min\n\n\n\n\n\n\n  \n\n\n\n\nFrom Paper to Code: A Guide to Implement Research\n\n\n\n\n\nThis guide covers effective reading, model implementation, code validation, and the power of repetition.\n\n\n\n\n\n\n05 June 2023\n\n\nAhad Jawaid\n\n\n2 min\n\n\n\n\n\n\n  \n\n\n\n\nNeural network: The universal function\n\n\n\n\n\n\n\n\n\n\n\n\n23 February 2023\n\n\nAhad Jawaid\n\n\n6 min\n\n\n\n\n\n\nNo matching items\n\n\n\n\n\n\n\n Back to top"
+    "text": "Artificial Intelligence (AI) is a domain of computer science dedicated to developing software capable of exhibiting attributes of intelligence."
+  },
+  {
+    "objectID": "blog/posts/introduction-to-deep-reinforcement-learning/index.html#artificial-intelligence-ai",
+    "href": "blog/posts/introduction-to-deep-reinforcement-learning/index.html#artificial-intelligence-ai",
+    "title": "Introduction to Deep Reinforcement Learning",
+    "section": "",
+    "text": "Artificial Intelligence (AI) is a domain of computer science dedicated to developing software capable of exhibiting attributes of intelligence."
+  },
+  {
+    "objectID": "blog/posts/introduction-to-deep-reinforcement-learning/index.html#machine-learning-ml",
+    "href": "blog/posts/introduction-to-deep-reinforcement-learning/index.html#machine-learning-ml",
+    "title": "Introduction to Deep Reinforcement Learning",
+    "section": "Machine Learning (ML)",
+    "text": "Machine Learning (ML)\n\nMachine learning, a subset of AI, tackles problems necessitating intelligent solutions by learning from data.\nSupervised Learning (SL): A method that learns from labeled data.\n\nE.g., handwritten-digit-recognition\n\nUnsupervised Learning (UL): A method that learns from unlabeled data\n\nE.g., customer segmentaiton\n\nReinforcement Learning (RL): A method that learns from trial and error\n\nE.g., pong-playing agent"
+  },
+  {
+    "objectID": "blog/posts/introduction-to-deep-reinforcement-learning/index.html#deep-learning-dl",
+    "href": "blog/posts/introduction-to-deep-reinforcement-learning/index.html#deep-learning-dl",
+    "title": "Introduction to Deep Reinforcement Learning",
+    "section": "Deep Learning (DL)",
+    "text": "Deep Learning (DL)\n\nDeep Learning employs multi-layered non-linear function approximations, also known as neural networks, to address ML tasks. Essentially, it is a suite of techniques that utilize neural networks to solve ML challenges.\n\n\n\nDeep Reinforcement Learning (DRL)\n\nDeep Reinforcement Learning learns through trial and error from feedback that’s simultaneously sequentially, evaluative, and sampled by leveraging non-linear function approximation (neural networks)."
+  },
+  {
+    "objectID": "blog/posts/introduction-to-deep-reinforcement-learning/index.html#reinforcement-learning-rl",
+    "href": "blog/posts/introduction-to-deep-reinforcement-learning/index.html#reinforcement-learning-rl",
+    "title": "Introduction to Deep Reinforcement Learning",
+    "section": "Reinforcement Learning (RL)",
+    "text": "Reinforcement Learning (RL)\n\nSimilar fields\n\nReinforcement Learning (RL): Investigates methods of resolving intricate sequential decision-making problems under uncertain conditions.\nControl Theory (CT): Examines methods of controlling complex known dynamic systems.\nOperations Research (OR): Investigates decision-making under uncertain conditions, generally featuring a larger action space than in DRL.\nPsychology: Studies human behavior, which frequently encapsulates complex sequential decision-making problems under uncertainty.\n\n\n\n\nAgent and Enviroment\n\nAgent: Refers exclusively to the decision-making entity.\n\nIf you are training a robot arm to pick up a toy. Only the code that makes decision is the agent not the robot arm\n\nEnvironment: Includes everything external to the agent, beyond the agent’s control, and everything that follows the agent’s decisions.\n\nIf you are training a robot arm to pick up a toy. objects to be picked up, the tray where the objects lay, the wind, and the arm are parts of the environment\n\n\n\n\n\nStates and Observations\n\nState Space: The set of all possible variables and values that can represent the state of the environment.\nState: A comprehensive description of the environment, or an instantiation of the state space.\nObservation: A partial or incomplete description of the environment.\n\n\n\n\nReinforcement Leraning Cycle\n\nTransition Function: The mapping from the agent’s action to a potentially new state.\nReward Function: The mapping from the action taken to the potential reward signal.\n\nGoals are defined via the reward function.\n\nModel: A set of the transitions and rewards.\n\n\n\nAgent’s Improvement process:\n\nInteract with the environment.\nEvaluates its behavior.\nImproves its responses.\n\n\n\nAgent’s can be designed to learn:\n\nPolicy: The mapping from observations to actions.\nModels: A model of the environment on mappings.\nValue Functions: The mapping of a state to its estimated value.\n\n\n\n\nExperiences\n\nTime Step: A single cycle of interaction between the agent and the environment.\nExperience: The set consisting of the state, the action, the reward, and the new state in a single time step.\n\n\n\nEpisodic Task: Tasks that have a natural ending or goes on finitely many step.\n\nE.g., video games\n\nContinuing Task: Tasks that don’t have a natural ending or could go on indefinitely.\n\nE.g., learning forward motion\n\n\n\n\nCredit Assignment Problem\n\nTemporal Credit Assignment Problem: the challenge in determining which state and/or action is responsible for a reward the agent recieves\n\nUsually occurs when the agent may have delayed rewards from an action or state that caused it hence the temporal aspect of the problem\n\n\n\n\n\nExploration vs. Exploitation\n\nEvaluative Feedback: Feedback that provides an indication of performance but not correctness.\nExploration versus Exploitation trade-off: The balance between collecting new information from the environment and using known information to maximize rewards.\n\n\n\n\nSampled Feedback\n\nLearning from sparse or weak feedback becomes more challenging with samples only. The agent must be capable of generalizing to learn from sampled feedback.\n\n\n\n\nTypes of Agents\n\nPolicy-based: Designed to approximate policies.\nModel-based: Designed to approximate models.\nValue-based: Designed to approximate value functions.\nActor-critic: Designed to approximate both policies and value functions.\n\n\n\nPros and Cons\nStrength: Reinforcement learning excels in mastering specific tasks.\nWeaknesses: To learn a well-performing policy, it generally requires millions of samples."
+  },
+  {
+    "objectID": "blog/posts/introduction-to-deep-reinforcement-learning/index.html#history-of-deep-reinforcement-learning",
+    "href": "blog/posts/introduction-to-deep-reinforcement-learning/index.html#history-of-deep-reinforcement-learning",
+    "title": "Introduction to Deep Reinforcement Learning",
+    "section": "History of Deep Reinforcement Learning",
+    "text": "History of Deep Reinforcement Learning\n\nAlan Turing - 1930: Developed the Turing Test, a test of a machine’s ability to exhibit intelligent behavior indistinguishable from that of a human.\nJohn McCarthy - 1955: Coined the term “Artificial Intelligence”.\nAndrew Ng - 2002: Trained an autonomous helicopter to perform stunts by observing human-expert flights using inverse reinforcement learning.\nNate Kohl and Peter Stone - 2002: Applied policy-gradient methods to train a soccer-playing robot.\nMnih et al. - 2013, 2015: Introduced the DQN algorithm, which learned to play Atari games from raw pixels.\n\n\n\nSilver et al. - 2014: Released the deterministic policy gradient (DPG) algorithm.\nLillicrap et al. - 2015: Improved DPG with deep deterministic policy gradient (DDPG)\nSchulman et al. - 2016: Released trust region policy optimization (TRPO) and generalized advantage estimation (GAE) methods.\nSergey Levine et al. - 2016: Published Guided Policy Search (GPS)\nSilver et al. - 2016: Demonstrated AlphaGo\n…"
+  },
+  {
+    "objectID": "blog/posts/introduction-to-deep-reinforcement-learning/index.html#references",
+    "href": "blog/posts/introduction-to-deep-reinforcement-learning/index.html#references",
+    "title": "Introduction to Deep Reinforcement Learning",
+    "section": "References",
+    "text": "References\nMorales, M. (2020). Grokking Deep Reinforcement Learning. Originally Published: October 15, 2020.\nAll figures are sourced from this book."
   },
   {
     "objectID": "blog/posts/translating-theory-into-code/index.html",
@@ -145,54 +194,5 @@
     "title": "Talks",
     "section": "",
     "text": "Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n  \n\n\n\n\nDeep learning with fast.ai\n\n\n\n\n\n\n\n\n\n\n\n\n22 March 2023\n\n\nAhad Jawaid\n\n\n\n\n\n\nNo matching items\n\n\n\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "blog/posts/introduction-to-deep-reinforcement-learning/index.html",
-    "href": "blog/posts/introduction-to-deep-reinforcement-learning/index.html",
-    "title": "Introduction to Deep Reinforcement Learning",
-    "section": "",
-    "text": "Artificial Intelligence (AI) is a domain of computer science dedicated to developing software capable of exhibiting attributes of intelligence."
-  },
-  {
-    "objectID": "blog/posts/introduction-to-deep-reinforcement-learning/index.html#machine-learning-ml",
-    "href": "blog/posts/introduction-to-deep-reinforcement-learning/index.html#machine-learning-ml",
-    "title": "Introduction to Deep Reinforcement Learning",
-    "section": "Machine Learning (ML)",
-    "text": "Machine Learning (ML)\n\nMachine learning, a subset of AI, tackles problems necessitating intelligent solutions by learning from data.\nSupervised Learning (SL): A method that learns from labeled data.\n\nE.g., handwritten-digit-recognition\n\nUnsupervised Learning (UL): A method that learns from unlabeled data\n\nE.g., customer segmentaiton\n\nReinforcement Learning (RL): A method that learns from trial and error\n\nE.g., pong-playing agent"
-  },
-  {
-    "objectID": "blog/posts/introduction-to-deep-reinforcement-learning/index.html#deep-learning-dl",
-    "href": "blog/posts/introduction-to-deep-reinforcement-learning/index.html#deep-learning-dl",
-    "title": "Introduction to Deep Reinforcement Learning",
-    "section": "Deep Learning (DL)",
-    "text": "Deep Learning (DL)\n\nDeep Learning employs multi-layered non-linear function approximations, also known as neural networks, to address ML tasks. Essentially, it is a suite of techniques that utilize neural networks to solve ML challenges.\n\n\n\nDeep Reinforcement Learning (DRL)\n\nDeep Reinforcement Learning learns through trial and error from feedback that’s simultaneously sequentially, evaluative, and sampled by leveraging non-linear function approximation (neural networks)."
-  },
-  {
-    "objectID": "blog/posts/introduction-to-deep-reinforcement-learning/index.html#reinforcement-learning-rl",
-    "href": "blog/posts/introduction-to-deep-reinforcement-learning/index.html#reinforcement-learning-rl",
-    "title": "Introduction to Deep Reinforcement Learning",
-    "section": "Reinforcement Learning (RL)",
-    "text": "Reinforcement Learning (RL)\n\nSimilar fields\n\nReinforcement Learning (RL): Investigates methods of resolving intricate sequential decision-making problems under uncertain conditions.\nControl Theory (CT): Examines methods of controlling complex known dynamic systems.\nOperations Research (OR): Investigates decision-making under uncertain conditions, generally featuring a larger action space than in DRL.\nPsychology: Studies human behavior, which frequently encapsulates complex sequential decision-making problems under uncertainty.\n\n\n\n\nAgent and Enviroment\n\nAgent: Refers exclusively to the decision-making entity.\n\nIf you are training a robot arm to pick up a toy. Only the code that makes decision is the agent not the robot arm\n\nEnvironment: Includes everything external to the agent, beyond the agent’s control, and everything that follows the agent’s decisions.\n\nIf you are training a robot arm to pick up a toy. objects to be picked up, the tray where the objects lay, the wind, and the arm are parts of the environment\n\n\n\n\n\nStates and Observations\n\nState Space: The set of all possible variables and values that can represent the state of the environment.\nState: A comprehensive description of the environment, or an instantiation of the state space.\nObservation: A partial or incomplete description of the environment.\n\n\n\n\nReinforcement Leraning Cycle\n\nTransition Function: The mapping from the agent’s action to a potentially new state.\nReward Function: The mapping from the action taken to the potential reward signal.\n\nGoals are defined via the reward function.\n\nModel: A set of the transitions and rewards.\n\n\n\nAgent’s Improvement process:\n\nInteract with the environment.\nEvaluates its behavior.\nImproves its responses.\n\n\n\nAgent’s can be designed to learn:\n\nPolicy: The mapping from observations to actions.\nModels: A model of the environment on mappings.\nValue Functions: The mapping of a state to its estimated value.\n\n\n\n\nExperiences\n\nTime Step: A single cycle of interaction between the agent and the environment.\nExperience: The set consisting of the state, the action, the reward, and the new state in a single time step.\n\n\n\nEpisodic Task: Tasks that have a natural ending or goes on finitely many step.\n\nE.g., video games\n\nContinuing Task: Tasks that don’t have a natural ending or could go on indefinitely.\n\nE.g., learning forward motion\n\n\n\n\nCredit Assignment Problem\n\nTemporal Credit Assignment Problem: the challenge in determining which state and/or action is responsible for a reward the agent recieves\n\nUsually occurs when the agent may have delayed rewards from an action or state that caused it hence the temporal aspect of the problem\n\n\n\n\n\nExploration vs. Exploitation\n\nEvaluative Feedback: Feedback that provides an indication of performance but not correctness.\nExploration versus Exploitation trade-off: The balance between collecting new information from the environment and using known information to maximize rewards.\n\n\n\n\nSampled Feedback\n\nLearning from sparse or weak feedback becomes more challenging with samples only. The agent must be capable of generalizing to learn from sampled feedback.\n\n\n\n\nTypes of Agents\n\nPolicy-based: Designed to approximate policies.\nModel-based: Designed to approximate models.\nValue-based: Designed to approximate value functions.\nActor-critic: Designed to approximate both policies and value functions.\n\n\n\nPros and Cons\nStrength: Reinforcement learning excels in mastering specific tasks.\nWeaknesses: To learn a well-performing policy, it generally requires millions of samples."
-  },
-  {
-    "objectID": "blog/posts/introduction-to-deep-reinforcement-learning/index.html#history-of-deep-reinforcement-learning",
-    "href": "blog/posts/introduction-to-deep-reinforcement-learning/index.html#history-of-deep-reinforcement-learning",
-    "title": "Introduction to Deep Reinforcement Learning",
-    "section": "History of Deep Reinforcement Learning",
-    "text": "History of Deep Reinforcement Learning\n\nAlan Turing - 1930: Developed the Turing Test, a test of a machine’s ability to exhibit intelligent behavior indistinguishable from that of a human.\nJohn McCarthy - 1955: Coined the term “Artificial Intelligence”.\nAndrew Ng - 2002: Trained an autonomous helicopter to perform stunts by observing human-expert flights using inverse reinforcement learning.\nNate Kohl and Peter Stone - 2002: Applied policy-gradient methods to train a soccer-playing robot.\nMnih et al. - 2013, 2015: Introduced the DQN algorithm, which learned to play Atari games from raw pixels.\n\n\n\nSilver et al. - 2014: Released the deterministic policy gradient (DPG) algorithm.\nLillicrap et al. - 2015: Improved DPG with deep deterministic policy gradient (DDPG)\nSchulman et al. - 2016: Released trust region policy optimization (TRPO) and generalized advantage estimation (GAE) methods.\nSergey Levine et al. - 2016: Published Guided Policy Search (GPS)\nSilver et al. - 2016: Demonstrated AlphaGo\n…"
-  },
-  {
-    "objectID": "blog/posts/introduction-to-deep-reinforcement-learning/index.html#artificial-intelligence-ai",
-    "href": "blog/posts/introduction-to-deep-reinforcement-learning/index.html#artificial-intelligence-ai",
-    "title": "Introduction to Deep Reinforcement Learning",
-    "section": "",
-    "text": "Artificial Intelligence (AI) is a domain of computer science dedicated to developing software capable of exhibiting attributes of intelligence."
-  },
-  {
-    "objectID": "blog/posts/introduction-to-deep-reinforcement-learning/index.html#references",
-    "href": "blog/posts/introduction-to-deep-reinforcement-learning/index.html#references",
-    "title": "Introduction to Deep Reinforcement Learning",
-    "section": "References",
-    "text": "References\nMorales, M. (2020). Grokking Deep Reinforcement Learning. Originally Published: October 15, 2020.\nAll figures are sourced from this book."
   }
 ]
