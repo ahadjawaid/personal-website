@@ -124,13 +124,13 @@ categories: [Deep Learning, Reinforcement Learning, Deep Reinforcement Learning]
 * **Evaluative Feedback:** Feedback that provides an indication of performance but not correctness.
 * **Exploration versus Exploitation trade-off:** The balance between collecting new information from the environment and using known information to maximize rewards.
 
-<img src="assets/exploration_vs_exploitation.jpg" width="75%" />
+<img src="assets/exploration_vs_exploitation.jpg" class="responsive-img" />
 
 ### Sampled Feedback
 
 * Learning from sparse or weak feedback becomes more challenging with samples only. The agent must be capable of generalizing to learn from sampled feedback.
 
-<img src="assets/learning_from_sampled_feedback.jpg" width="75%" />
+<img src="assets/learning_from_sampled_feedback.jpg" class="responsive-img" />
 
 ### Types of Agents
 
@@ -156,7 +156,7 @@ categories: [Deep Learning, Reinforcement Learning, Deep Reinforcement Learning]
 * **Nate Kohl and Peter Stone - 2002:** Applied policy-gradient methods to train a soccer-playing robot.
 
 * **Mnih et al. - 2013, 2015:** Introduced the DQN algorithm, which learned to play Atari games from raw pixels.
-    * <img src="assets/atari_dqn.jpg" width="75%" />
+    * <img src="assets/atari_dqn.jpg" class="responsive-img" />
 
 * **Silver et al. - 2014:** Released the deterministic policy gradient (DPG) algorithm.
 

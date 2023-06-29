@@ -2,6 +2,7 @@
   {
     "listing": "/index.html",
     "items": [
+      "/blog/posts/mathmatical-foundations-of-reinforcement-learning/index.html",
       "/blog/posts/introduction-to-deep-reinforcement-learning/index.html",
       "/blog/posts/translating-theory-into-code/index.html",
       "/blog/posts/the-universal-function/index.html"
@@ -10,6 +11,7 @@
   {
     "listing": "/blog/index.html",
     "items": [
+      "/blog/posts/mathmatical-foundations-of-reinforcement-learning/index.html",
       "/blog/posts/introduction-to-deep-reinforcement-learning/index.html",
       "/blog/posts/translating-theory-into-code/index.html",
       "/blog/posts/the-universal-function/index.html"

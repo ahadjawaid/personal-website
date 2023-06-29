@@ -7,10 +7,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Ahad Jawaid">
-<meta name="dcterms.date" content="2023-06-27">
+<meta name="dcterms.date" content="2023-06-28">
 <meta name="description" content="My notes on Deep Reinforcement Learning (DRL) based on the first chapter of the ‘Grokking Deep Reinforcement Learning’ by Miguel Morales.">
 
-<title>Ahad Jawaid - Introduction to Deep Reinforcement Learning</title>
+<title>Ahad Jawaid - Mathmatical Foundations of Reinforcement Learning</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -57,20 +57,16 @@ ul.task-list li input[type="checkbox"] {
 
 
 <link rel="stylesheet" href="../../../styles.css">
-<meta property="og:title" content="Ahad Jawaid - Introduction to Deep Reinforcement Learning">
+<meta property="og:title" content="Ahad Jawaid - Mathmatical Foundations of Reinforcement Learning">
 <meta property="og:description" content="Ahad Jawaid’s Website">
-<meta property="og:image" content="https://ahadjawaid.github.io/personal-website/blog/posts/introduction-to-deep-reinforcement-learning/assets/neural.png">
+<meta property="og:image" content="https://ahadjawaid.github.io/personal-website/blog/posts/mathmatical-foundations-of-reinforcement-learning/assets/blackboard.jpg">
 <meta property="og:site-name" content="Ahad Jawaid">
-<meta property="og:image:height" content="512">
-<meta property="og:image:width" content="512">
 <meta name="twitter:title" content="Ahad Jawaid">
 <meta name="twitter:description" content="Ahad Jawaid’s Website">
-<meta name="twitter:image" content="https://ahadjawaid.github.io/personal-website/blog/posts/introduction-to-deep-reinforcement-learning/assets/neural.png">
+<meta name="twitter:image" content="https://ahadjawaid.github.io/personal-website/blog/posts/mathmatical-foundations-of-reinforcement-learning/assets/blackboard.jpg">
 <meta name="twitter:creator" content="@_ahadj_">
 <meta name="twitter:site" content="@_ahadj_">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image-height" content="512">
-<meta name="twitter:image-width" content="512">
 </head>
 
 <body class="nav-fixed">
@@ -145,27 +141,7 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#artificial-intelligence-ai" id="toc-artificial-intelligence-ai" class="nav-link active" data-scroll-target="#artificial-intelligence-ai">Artificial Intelligence (AI)</a></li>
-  <li><a href="#machine-learning-ml" id="toc-machine-learning-ml" class="nav-link" data-scroll-target="#machine-learning-ml">Machine Learning (ML)</a></li>
-  <li><a href="#deep-learning-dl" id="toc-deep-learning-dl" class="nav-link" data-scroll-target="#deep-learning-dl">Deep Learning (DL)</a>
-  <ul class="collapse">
-  <li><a href="#deep-reinforcement-learning-drl" id="toc-deep-reinforcement-learning-drl" class="nav-link" data-scroll-target="#deep-reinforcement-learning-drl">Deep Reinforcement Learning (DRL)</a></li>
-  </ul></li>
-  <li><a href="#reinforcement-learning-rl" id="toc-reinforcement-learning-rl" class="nav-link" data-scroll-target="#reinforcement-learning-rl">Reinforcement Learning (RL)</a>
-  <ul class="collapse">
-  <li><a href="#similar-fields" id="toc-similar-fields" class="nav-link" data-scroll-target="#similar-fields">Similar fields</a></li>
-  <li><a href="#agent-and-enviroment" id="toc-agent-and-enviroment" class="nav-link" data-scroll-target="#agent-and-enviroment">Agent and Enviroment</a></li>
-  <li><a href="#states-and-observations" id="toc-states-and-observations" class="nav-link" data-scroll-target="#states-and-observations">States and Observations</a></li>
-  <li><a href="#reinforcement-learning-cycle" id="toc-reinforcement-learning-cycle" class="nav-link" data-scroll-target="#reinforcement-learning-cycle">Reinforcement Learning Cycle</a></li>
-  <li><a href="#experiences" id="toc-experiences" class="nav-link" data-scroll-target="#experiences">Experiences</a></li>
-  <li><a href="#credit-assignment-problem" id="toc-credit-assignment-problem" class="nav-link" data-scroll-target="#credit-assignment-problem">Credit Assignment Problem</a></li>
-  <li><a href="#exploration-vs.-exploitation" id="toc-exploration-vs.-exploitation" class="nav-link" data-scroll-target="#exploration-vs.-exploitation">Exploration vs.&nbsp;Exploitation</a></li>
-  <li><a href="#sampled-feedback" id="toc-sampled-feedback" class="nav-link" data-scroll-target="#sampled-feedback">Sampled Feedback</a></li>
-  <li><a href="#types-of-agents" id="toc-types-of-agents" class="nav-link" data-scroll-target="#types-of-agents">Types of Agents</a></li>
-  <li><a href="#pros-and-cons" id="toc-pros-and-cons" class="nav-link" data-scroll-target="#pros-and-cons">Pros and Cons</a></li>
-  </ul></li>
-  <li><a href="#history-of-deep-reinforcement-learning" id="toc-history-of-deep-reinforcement-learning" class="nav-link" data-scroll-target="#history-of-deep-reinforcement-learning">History of Deep Reinforcement Learning</a></li>
-  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
+  <li><a href="#math" id="toc-math" class="nav-link active" data-scroll-target="#math">Math</a></li>
   </ul>
 </nav>
     </div>
@@ -174,7 +150,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Introduction to Deep Reinforcement Learning</h1>
+<h1 class="title">Mathmatical Foundations of Reinforcement Learning</h1>
   <div class="quarto-categories">
     <div class="quarto-category">Deep Learning</div>
     <div class="quarto-category">Reinforcement Learning</div>
@@ -201,7 +177,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">June 27, 2023</p>
+      <p class="date">June 28, 2023</p>
     </div>
   </div>
   
@@ -222,189 +198,8 @@ ul.task-list li input[type="checkbox"] {
     }
 }
 </style>
-<section id="artificial-intelligence-ai" class="level2">
-<h2 class="anchored" data-anchor-id="artificial-intelligence-ai">Artificial Intelligence (AI)</h2>
-<ul>
-<li>Artificial Intelligence (AI) is a domain of computer science dedicated to developing software capable of exhibiting attributes of intelligence.</li>
-</ul>
-<p><img src="assets/subfields_of_artificial_intelligence.jpg" class="responsive-img"></p>
-</section>
-<section id="machine-learning-ml" class="level2">
-<h2 class="anchored" data-anchor-id="machine-learning-ml">Machine Learning (ML)</h2>
-<ul>
-<li>Machine learning, a subset of AI, tackles problems necessitating intelligent solutions by learning from data.</li>
-<li><strong>Supervised Learning (SL):</strong> A method that learns from labeled data.
-<ul>
-<li>E.g., handwritten-digit-recognition</li>
-</ul></li>
-<li><strong>Unsupervised Learning (UL):</strong> A method that learns from unlabeled data
-<ul>
-<li>E.g., customer segmentaiton</li>
-</ul></li>
-<li><strong>Reinforcement Learning (RL):</strong> A method that learns from trial and error
-<ul>
-<li>E.g., pong-playing agent</li>
-</ul></li>
-</ul>
-<p><img src="assets/main_branches_of_machine_learning.jpg" class="responsive-img"></p>
-</section>
-<section id="deep-learning-dl" class="level2">
-<h2 class="anchored" data-anchor-id="deep-learning-dl">Deep Learning (DL)</h2>
-<ul>
-<li>Deep Learning employs multi-layered non-linear function approximations, also known as neural networks, to address ML tasks. Essentially, it is a suite of techniques that utilize neural networks to solve ML challenges.</li>
-</ul>
-<p><img src="assets/deep_learning_is_a_powerful_toolbox.jpg" class="responsive-img"></p>
-<section id="deep-reinforcement-learning-drl" class="level3">
-<h3 class="anchored" data-anchor-id="deep-reinforcement-learning-drl">Deep Reinforcement Learning (DRL)</h3>
-<ul>
-<li>Deep Reinforcement Learning learns through trial and error from feedback that’s simultaneously sequentially, evaluative, and sampled by leveraging non-linear function approximation (neural networks).</li>
-</ul>
-</section>
-</section>
-<section id="reinforcement-learning-rl" class="level2">
-<h2 class="anchored" data-anchor-id="reinforcement-learning-rl">Reinforcement Learning (RL)</h2>
-<section id="similar-fields" class="level3">
-<h3 class="anchored" data-anchor-id="similar-fields">Similar fields</h3>
-<ul>
-<li><strong>Reinforcement Learning (RL):</strong> Investigates methods of resolving intricate sequential decision-making problems under uncertain conditions.</li>
-<li><strong>Control Theory (CT)</strong>: Examines methods of controlling complex known dynamic systems.</li>
-<li><strong>Operations Research (OR)</strong>: Investigates decision-making under uncertain conditions, generally featuring a larger action space than in DRL.</li>
-<li><strong>Psychology</strong>: Studies human behavior, which frequently encapsulates complex sequential decision-making problems under uncertainty.</li>
-</ul>
-<p><img src="assets/the_synergy_between_similar_fields.jpg" class="responsive-img"></p>
-</section>
-<section id="agent-and-enviroment" class="level3">
-<h3 class="anchored" data-anchor-id="agent-and-enviroment">Agent and Enviroment</h3>
-<ul>
-<li><strong>Agent:</strong> Refers exclusively to the decision-making entity.
-<ul>
-<li>For instance, if you are training a robot arm to pick up a toy, the agent is the code that makes the decisions, not the robot arm itself.</li>
-</ul></li>
-<li><strong>Environment:</strong> Includes everything external to the agent, beyond the agent’s control, and everything that follows the agent’s decisions.
-<ul>
-<li>In the context of training a robot arm to pick up a toy, the objects to be picked up, the tray where the objects reside, atmospheric conditions like wind, and even the robot arm itself are all considered parts of the environment.</li>
-</ul></li>
-</ul>
-<p><img src="assets/boundary_between_agent_and_environment.jpg" class="responsive-img"></p>
-</section>
-<section id="states-and-observations" class="level3">
-<h3 class="anchored" data-anchor-id="states-and-observations">States and Observations</h3>
-<ul>
-<li><strong>State Space:</strong> The set of all possible variables and values that can represent the state of the environment.</li>
-<li><strong>State:</strong> A comprehensive description of the environment, or an instantiation of the state space.</li>
-<li><strong>Observation:</strong> A partial or incomplete description of the environment.</li>
-</ul>
-<p><img src="assets/states_vs_observations.jpg" class="responsive-img"></p>
-</section>
-<section id="reinforcement-learning-cycle" class="level3">
-<h3 class="anchored" data-anchor-id="reinforcement-learning-cycle">Reinforcement Learning Cycle</h3>
-<ul>
-<li><strong>Transition Function:</strong> The mapping from the agent’s action to a potentially new state.</li>
-<li><strong>Reward Function:</strong> The mapping from the action taken to the potential reward signal.
-<ul>
-<li>Goals are defined via the reward function.</li>
-</ul></li>
-<li><strong>Model:</strong> A set of the transitions and rewards.</li>
-</ul>
-<p><img src="assets/the_reinforcement_learning_cycle.jpg" class="responsive-img"></p>
-<section id="agents-improvement-process" class="level4">
-<h4 class="anchored" data-anchor-id="agents-improvement-process">Agent’s Improvement process:</h4>
-<ol type="1">
-<li>Interact with the environment.</li>
-<li>Evaluates its behavior.</li>
-<li>Improves its responses.</li>
-</ol>
-</section>
-<section id="agents-can-be-designed-to-learn" class="level4">
-<h4 class="anchored" data-anchor-id="agents-can-be-designed-to-learn">Agent’s can be designed to learn:</h4>
-<ul>
-<li><strong>Policy:</strong> The mapping from observations to actions.</li>
-<li><strong>Models:</strong> A model of the environment on mappings.</li>
-<li><strong>Value Functions:</strong> The mapping of a state to its estimated value.</li>
-</ul>
-</section>
-</section>
-<section id="experiences" class="level3">
-<h3 class="anchored" data-anchor-id="experiences">Experiences</h3>
-<ul>
-<li><strong>Time Step:</strong> A single cycle of interaction between the agent and the environment.</li>
-<li><strong>Experience:</strong> The set consisting of the state, the action, the reward, and the new state in a single time step.</li>
-</ul>
-<p><img src="assets/experience_tuples.jpg" class="responsive-img"></p>
-<ul>
-<li><strong>Episodic Task:</strong> Tasks that have a natural ending or goes on finitely many step.
-<ul>
-<li>E.g., video games</li>
-</ul></li>
-<li><strong>Continuing Task:</strong> Tasks that don’t have a natural ending or could go on indefinitely.
-<ul>
-<li>E.g., learning forward motion</li>
-</ul></li>
-</ul>
-</section>
-<section id="credit-assignment-problem" class="level3">
-<h3 class="anchored" data-anchor-id="credit-assignment-problem">Credit Assignment Problem</h3>
-<ul>
-<li><strong>Temporal Credit Assignment Problem:</strong> the challenge in determining which state and/or action is responsible for a reward the agent recieves
-<ul>
-<li>Usually occurs when the agent may have delayed rewards from an action or state that caused it hence the temporal aspect of the problem</li>
-</ul></li>
-</ul>
-<p><img src="assets/temporal_credit_assignment_problem.jpg" class="responsive-img"></p>
-</section>
-<section id="exploration-vs.-exploitation" class="level3">
-<h3 class="anchored" data-anchor-id="exploration-vs.-exploitation">Exploration vs.&nbsp;Exploitation</h3>
-<ul>
-<li><strong>Evaluative Feedback:</strong> Feedback that provides an indication of performance but not correctness.</li>
-<li><strong>Exploration versus Exploitation trade-off:</strong> The balance between collecting new information from the environment and using known information to maximize rewards.</li>
-</ul>
-<p><img src="assets/exploration_vs_exploitation.jpg" class="responsive-img"></p>
-</section>
-<section id="sampled-feedback" class="level3">
-<h3 class="anchored" data-anchor-id="sampled-feedback">Sampled Feedback</h3>
-<ul>
-<li>Learning from sparse or weak feedback becomes more challenging with samples only. The agent must be capable of generalizing to learn from sampled feedback.</li>
-</ul>
-<p><img src="assets/learning_from_sampled_feedback.jpg" class="responsive-img"></p>
-</section>
-<section id="types-of-agents" class="level3">
-<h3 class="anchored" data-anchor-id="types-of-agents">Types of Agents</h3>
-<ul>
-<li><strong>Policy-based:</strong> Designed to approximate policies.</li>
-<li><strong>Model-based:</strong> Designed to approximate models.</li>
-<li><strong>Value-based:</strong> Designed to approximate value functions.</li>
-<li><strong>Actor-critic:</strong> Designed to approximate both policies and value functions.</li>
-</ul>
-</section>
-<section id="pros-and-cons" class="level3">
-<h3 class="anchored" data-anchor-id="pros-and-cons">Pros and Cons</h3>
-<p><strong>Strength:</strong> Reinforcement learning excels in mastering specific tasks.</p>
-<p><strong>Weaknesses:</strong> To learn a well-performing policy, it generally requires millions of samples.</p>
-</section>
-</section>
-<section id="history-of-deep-reinforcement-learning" class="level2">
-<h2 class="anchored" data-anchor-id="history-of-deep-reinforcement-learning">History of Deep Reinforcement Learning</h2>
-<ul>
-<li><p><strong>Alan Turing - 1930:</strong> Developed the Turing Test, a test of a machine’s ability to exhibit intelligent behavior indistinguishable from that of a human.</p></li>
-<li><p><strong>John McCarthy - 1955:</strong> Coined the term “Artificial Intelligence”.</p></li>
-<li><p><strong>Andrew Ng - 2002:</strong> Trained an autonomous helicopter to perform stunts by observing human-expert flights using inverse reinforcement learning.</p></li>
-<li><p><strong>Nate Kohl and Peter Stone - 2002:</strong> Applied policy-gradient methods to train a soccer-playing robot.</p></li>
-<li><p><strong>Mnih et al.&nbsp;- 2013, 2015:</strong> Introduced the DQN algorithm, which learned to play Atari games from raw pixels.</p>
-<ul>
-<li><img src="assets/atari_dqn.jpg" class="responsive-img"></li>
-</ul></li>
-<li><p><strong>Silver et al.&nbsp;- 2014:</strong> Released the deterministic policy gradient (DPG) algorithm.</p></li>
-<li><p><strong>Lillicrap et al.&nbsp;- 2015:</strong> Improved DPG with deep deterministic policy gradient (DDPG)</p></li>
-<li><p><strong>Schulman et al.&nbsp;- 2016:</strong> Released trust region policy optimization (TRPO) and generalized advantage estimation (GAE) methods.</p></li>
-<li><p><strong>Sergey Levine et al.&nbsp;- 2016:</strong> Published Guided Policy Search (GPS)</p></li>
-<li><p><strong>Silver et al.&nbsp;- 2016:</strong> Demonstrated AlphaGo</p></li>
-<li><p>…</p></li>
-</ul>
-</section>
-<section id="references" class="level2">
-<h2 class="anchored" data-anchor-id="references">References</h2>
-<p>Morales, M. (2020). Grokking Deep Reinforcement Learning. Originally Published: October 15, 2020.</p>
-<p><em>All figures are sourced from this book.</em></p>
+<section id="math" class="level2">
+<h2 class="anchored" data-anchor-id="math">Math</h2>
 
 
 </section>
