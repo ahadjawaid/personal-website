@@ -166,14 +166,14 @@
 <li><strong>Evaluative Feedback:</strong> Feedback that provides an indication of performance but not correctness.</li>
 <li><strong>Exploration versus Exploitation trade-off:</strong> The balance between collecting new information from the environment and using known information to maximize rewards.</li>
 </ul>
-<p><img src="https://ahadjawaid.github.io/personal-website/blog/posts/introduction-to-deep-reinforcement-learning/assets/exploration_vs_exploitation.jpg" width="75%"></p>
+<p><img src="https://ahadjawaid.github.io/personal-website/blog/posts/introduction-to-deep-reinforcement-learning/assets/exploration_vs_exploitation.jpg" class="responsive-img"></p>
 </section>
 <section id="sampled-feedback" class="level3">
 <h3 class="anchored" data-anchor-id="sampled-feedback">Sampled Feedback</h3>
 <ul>
 <li>Learning from sparse or weak feedback becomes more challenging with samples only. The agent must be capable of generalizing to learn from sampled feedback.</li>
 </ul>
-<p><img src="https://ahadjawaid.github.io/personal-website/blog/posts/introduction-to-deep-reinforcement-learning/assets/learning_from_sampled_feedback.jpg" width="75%"></p>
+<p><img src="https://ahadjawaid.github.io/personal-website/blog/posts/introduction-to-deep-reinforcement-learning/assets/learning_from_sampled_feedback.jpg" class="responsive-img"></p>
 </section>
 <section id="types-of-agents" class="level3">
 <h3 class="anchored" data-anchor-id="types-of-agents">Types of Agents</h3>
@@ -199,7 +199,7 @@
 <li><p><strong>Nate Kohl and Peter Stone - 2002:</strong> Applied policy-gradient methods to train a soccer-playing robot.</p></li>
 <li><p><strong>Mnih et al.&nbsp;- 2013, 2015:</strong> Introduced the DQN algorithm, which learned to play Atari games from raw pixels.</p>
 <ul>
-<li><img src="https://ahadjawaid.github.io/personal-website/blog/posts/introduction-to-deep-reinforcement-learning/assets/atari_dqn.jpg" width="75%"></li>
+<li><img src="https://ahadjawaid.github.io/personal-website/blog/posts/introduction-to-deep-reinforcement-learning/assets/atari_dqn.jpg" class="responsive-img"></li>
 </ul></li>
 <li><p><strong>Silver et al.&nbsp;- 2014:</strong> Released the deterministic policy gradient (DPG) algorithm.</p></li>
 <li><p><strong>Lillicrap et al.&nbsp;- 2015:</strong> Improved DPG with deep deterministic policy gradient (DDPG)</p></li>
