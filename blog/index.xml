@@ -86,11 +86,11 @@
 <ul>
 <li><strong>Agent:</strong> Refers exclusively to the decision-making entity.
 <ul>
-<li>If you are training a robot arm to pick up a toy. Only the code that makes decision is the agent not the robot arm</li>
+<li>For instance, if you are training a robot arm to pick up a toy, the agent is the code that makes the decisions, not the robot arm itself.</li>
 </ul></li>
 <li><strong>Environment:</strong> Includes everything external to the agent, beyond the agent’s control, and everything that follows the agent’s decisions.
 <ul>
-<li>If you are training a robot arm to pick up a toy. objects to be picked up, the tray where the objects lay, the wind, and the arm are parts of the environment</li>
+<li>In the context of training a robot arm to pick up a toy, the objects to be picked up, the tray where the objects reside, atmospheric conditions like wind, and even the robot arm itself are all considered parts of the environment.</li>
 </ul></li>
 </ul>
 <p><img src="https://ahadjawaid.github.io/personal-website/blog/posts/introduction-to-deep-reinforcement-learning/assets/boundary_between_agent_and_environment.jpg" class="responsive-img"></p>
@@ -104,8 +104,8 @@
 </ul>
 <p><img src="https://ahadjawaid.github.io/personal-website/blog/posts/introduction-to-deep-reinforcement-learning/assets/states_vs_observations.jpg" class="responsive-img"></p>
 </section>
-<section id="reinforcement-leraning-cycle" class="level3">
-<h3 class="anchored" data-anchor-id="reinforcement-leraning-cycle">Reinforcement Leraning Cycle</h3>
+<section id="reinforcement-learning-cycle" class="level3">
+<h3 class="anchored" data-anchor-id="reinforcement-learning-cycle">Reinforcement Learning Cycle</h3>
 <ul>
 <li><strong>Transition Function:</strong> The mapping from the agent’s action to a potentially new state.</li>
 <li><strong>Reward Function:</strong> The mapping from the action taken to the potential reward signal.
