@@ -62,10 +62,10 @@ categories: [Deep Learning, Reinforcement Learning, Deep Reinforcement Learning]
 ### Agent and Enviroment
 
 * **Agent:** Refers exclusively to the decision-making entity.
-    * If you are training a robot arm to pick up a toy. Only the code that makes decision is the agent not the robot arm
+    * For instance, if you are training a robot arm to pick up a toy, the agent is the code that makes the decisions, not the robot arm itself.
 
 * **Environment:** Includes everything external to the agent, beyond the agent's control, and everything that follows the agent's decisions.
-    * If you are training a robot arm to pick up a toy. objects to be picked up, the tray where the objects lay, the wind, and the arm are parts of the environment
+    * In the context of training a robot arm to pick up a toy, the objects to be picked up, the tray where the objects reside, atmospheric conditions like wind, and even the robot arm itself are all considered parts of the environment.
 
 <img src="assets/boundary_between_agent_and_environment.jpg" class="responsive-img" />
 
@@ -77,7 +77,7 @@ categories: [Deep Learning, Reinforcement Learning, Deep Reinforcement Learning]
 
 <img src="assets/states_vs_observations.jpg" class="responsive-img" />
 
-### Reinforcement Leraning Cycle
+### Reinforcement Learning Cycle
 
 * **Transition Function:** The mapping from the agent's action to a potentially new state.
 * **Reward Function:** The mapping from the action taken to the potential reward signal.
