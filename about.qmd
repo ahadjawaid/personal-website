@@ -34,6 +34,23 @@ I enjoy reading ML papers, reading books, playing musical instruments, and runni
 ::::{.panel-tabset}
 
 
+# Education
+
+::: {.d-flex .justify-content-between}
+::: {}
+**Bachelors of Science in Computer Science**  
+*The University of Texas at Dallas, Richardson, TX, USA*
+:::
+::: {.text-end}
+*Expected Graduation:* May 2024
+:::
+:::
+
+::::
+
+::::{.panel-tabset}
+
+
 # Experience
 
 ::: {.d-flex .justify-content-between}
@@ -66,19 +83,9 @@ May 2022 - Septemeber 2022
 :::
 :::
 
+::::
 
-
-# Education
-
-::: {.d-flex .justify-content-between}
-::: {}
-**Bachelors of Science in Computer Science**  
-*The University of Texas at Dallas, Richardson, TX, USA*
-:::
-::: {.text-end}
-*Expected Graduation:* May 2024
-:::
-:::
+::::{.panel-tabset}
 
 
 # Organizations
@@ -133,6 +140,10 @@ January 2022 – May 2022
 :::
 :::
 
+
+::::
+
+::::{.panel-tabset}
 
 
 # Certifications

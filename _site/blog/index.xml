@@ -99,6 +99,9 @@
 <li>A <em>reward function</em> is what guides the agent to achieve it’s goal. It maps an agent’s state or action to a scalar reward that gives a single of goodness but not correctness of agent’s state or action.</li>
 </ul>
 <p><img src="https://ahadjawaid.github.io/personal-website/blog/posts/mathmatical-foundations-of-reinforcement-learning/assets/reward-function.jpg" class="responsive-img"></p>
+<ul>
+<li><strong>Return:</strong></li>
+</ul>
 </section>
 </section>
 <section id="markov-decision-process-mdps-the-engine-of-the-environment" class="level2">
