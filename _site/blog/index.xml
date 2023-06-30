@@ -30,8 +30,106 @@
     }
 }
 </style>
-<section id="math" class="level2">
-<h2 class="anchored" data-anchor-id="math">Math</h2>
+<section id="components-of-reinforcement-learning" class="level2">
+<h2 class="anchored" data-anchor-id="components-of-reinforcement-learning">Components of Reinforcement Learning</h2>
+<ul>
+<li><strong>Reinforcement Learning:</strong> tackles the problem of complex sequential decision-making under uncertainty.
+<ul>
+<li><em>Complex:</em> refers to the vast state and action spaces of the environment the agent must learn.</li>
+<li><em>Sequential:</em> refers to the delayed consequences of an agent’s actions.</li>
+<li><em>Uncertainty:</em> refers to how we don’t know how the agent’s actions will effect the environment.</li>
+</ul></li>
+</ul>
+<p><img src="https://ahadjawaid.github.io/personal-website/blog/posts/mathmatical-foundations-of-reinforcement-learning/assets/reinforcement-learning-interaction-cycle.jpg" class="responsive-img"></p>
+<section id="the-agent-the-decision-maker" class="level3">
+<h3 class="anchored" data-anchor-id="the-agent-the-decision-maker">The agent: The decision maker</h3>
+<ul>
+<li><strong>Agents:</strong> is an entity that is soley responsible for makeing decisions</li>
+</ul>
+<p><img src="https://ahadjawaid.github.io/personal-website/blog/posts/mathmatical-foundations-of-reinforcement-learning/assets/internal-steps.jpg" class="responsive-img"></p>
+</section>
+<section id="the-environment-everything-else" class="level3">
+<h3 class="anchored" data-anchor-id="the-environment-everything-else">The environment: Everything else</h3>
+<ul>
+<li>The <em>environment</em> includes everything external to the agent, beyond the agent’s control, and everything that follows the agent’s decisions.</li>
+</ul>
+<p><img src="https://ahadjawaid.github.io/personal-website/blog/posts/mathmatical-foundations-of-reinforcement-learning/assets/environment-process.jpg" class="responsive-img"></p>
+<ul>
+<li><strong>Grid World Environment:</strong></li>
+<li><strong>Bandit Environment:</strong></li>
+</ul>
+</section>
+</section>
+<section id="components-of-the-environment" class="level2">
+<h2 class="anchored" data-anchor-id="components-of-the-environment">Components of the Environment:</h2>
+<ul>
+<li>The environment is made up of states, actions, transitions probabilities, and a reward function.</li>
+</ul>
+<section id="states-specific-configurations-of-the-environment" class="level3">
+<h3 class="anchored" data-anchor-id="states-specific-configurations-of-the-environment">States: Specific configurations of the environment</h3>
+<ul>
+<li><p>A <em>state</em> is a complete description of the environment</p></li>
+<li><p><strong>Terminal States:</strong> Is the last state in an eposdic task. All transitions from this state goes back to itself.</p></li>
+<li><p><strong>State Space:</strong> A combiniation of all possible set of variables and value that can describe the environment.</p></li>
+</ul>
+<p><img src="https://ahadjawaid.github.io/personal-website/blog/posts/mathmatical-foundations-of-reinforcement-learning/assets/state-space.jpg" class="responsive-img"></p>
+<ul>
+<li><p><strong>Observation:</strong> Is the set of variables that the agent experiences. It may or maynot be complete as a state must be.</p></li>
+<li><p><strong>Observation Space:</strong> Is all possible values of the variable an agent experiences.</p></li>
+</ul>
+</section>
+<section id="actions-a-mechanism-to-influence-the-environment" class="level3">
+<h3 class="anchored" data-anchor-id="actions-a-mechanism-to-influence-the-environment">Actions: A mechanism to influence the environment</h3>
+<ul>
+<li><p>An <em>action</em> is a choice an agent can make that may or may not influence the environment.</p></li>
+<li><p><strong>Action Space:</strong> The set of all actions in all states.</p></li>
+</ul>
+</section>
+<section id="transition-function-consequences-of-agent-actions" class="level3">
+<h3 class="anchored" data-anchor-id="transition-function-consequences-of-agent-actions">Transition Function: Consequences of agent actions</h3>
+<ul>
+<li>A <em>transition function</em> outputs the probability of getting to a new state given the current state and action the agent will take. So it dictates what are the chances the agent will transition to the next state.</li>
+<li><strong>Stochastic Transitions:</strong> Is a transition that is not gaurenteed to go to one different state but may go to different states with a different probability.</li>
+</ul>
+<p><img src="https://ahadjawaid.github.io/personal-website/blog/posts/mathmatical-foundations-of-reinforcement-learning/assets/transition-function.jpg" class="responsive-img"></p>
+</section>
+<section id="reward-function" class="level3">
+<h3 class="anchored" data-anchor-id="reward-function">Reward Function</h3>
+<ul>
+<li>A <em>reward function</em> is what guides the agent to achieve it’s goal. It maps an agent’s state or action to a scalar reward that gives a single of goodness but not correctness of agent’s state or action.</li>
+</ul>
+<p><img src="https://ahadjawaid.github.io/personal-website/blog/posts/mathmatical-foundations-of-reinforcement-learning/assets/reward-function.jpg" class="responsive-img"></p>
+</section>
+</section>
+<section id="markov-decision-process-mdps-the-engine-of-the-environment" class="level2">
+<h2 class="anchored" data-anchor-id="markov-decision-process-mdps-the-engine-of-the-environment">Markov Decision Process (MDPs): The engine of the environment</h2>
+<ul>
+<li>model virtually any complex sequential decision-making problem under uncer- tainty in a way that RL agents can interact with and learn to solve solely through experience.</li>
+</ul>
+<section id="markov-property" class="level3">
+<h3 class="anchored" data-anchor-id="markov-property">Markov Property</h3>
+<p><img src="https://ahadjawaid.github.io/personal-website/blog/posts/mathmatical-foundations-of-reinforcement-learning/assets/markov-property.jpg" class="responsive-img"></p>
+</section>
+<section id="horizon-time-changes-whats-optimal" class="level3">
+<h3 class="anchored" data-anchor-id="horizon-time-changes-whats-optimal">Horizon: Time changes what’s optimal</h3>
+</section>
+<section id="discount-the-future-is-uncertain-value-it-less" class="level3">
+<h3 class="anchored" data-anchor-id="discount-the-future-is-uncertain-value-it-less">Discount: The future is uncertain, value it less</h3>
+<p><img src="https://ahadjawaid.github.io/personal-website/blog/posts/mathmatical-foundations-of-reinforcement-learning/assets/effect-of-discount-factor.jpg" class="responsive-img"></p>
+<p><img src="https://ahadjawaid.github.io/personal-website/blog/posts/mathmatical-foundations-of-reinforcement-learning/assets/discount-factor.jpg" class="responsive-img"></p>
+</section>
+<section id="extensions-to-mdps" class="level3">
+<h3 class="anchored" data-anchor-id="extensions-to-mdps">Extensions to MDPs</h3>
+</section>
+<section id="putting-it-all-together" class="level3">
+<h3 class="anchored" data-anchor-id="putting-it-all-together">Putting it all together</h3>
+<p><img src="https://ahadjawaid.github.io/personal-website/blog/posts/mathmatical-foundations-of-reinforcement-learning/assets/mdps-vs-pomdps.jpg" class="responsive-img"></p>
+</section>
+</section>
+<section id="references" class="level2">
+<h2 class="anchored" data-anchor-id="references">References</h2>
+<p>Morales, M. (2020). Grokking Deep Reinforcement Learning. Originally Published: October 15, 2020.</p>
+<p><em>All figures are sourced from this book.</em></p>
 
 
 </section>
@@ -107,7 +205,7 @@
 <section id="similar-fields" class="level3">
 <h3 class="anchored" data-anchor-id="similar-fields">Similar fields</h3>
 <ul>
-<li><strong>Reinforcement Learning (RL):</strong> Investigates methods of resolving intricate sequential decision-making problems under uncertain conditions.</li>
+<li><strong>Reinforcement Learning (RL):</strong> Investigates methods of resolving complex sequential decision-making problems under uncertain conditions.</li>
 <li><strong>Control Theory (CT)</strong>: Examines methods of controlling complex known dynamic systems.</li>
 <li><strong>Operations Research (OR)</strong>: Investigates decision-making under uncertain conditions, generally featuring a larger action space than in DRL.</li>
 <li><strong>Psychology</strong>: Studies human behavior, which frequently encapsulates complex sequential decision-making problems under uncertainty.</li>

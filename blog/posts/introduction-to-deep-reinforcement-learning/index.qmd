@@ -52,7 +52,7 @@ categories: [Deep Learning, Reinforcement Learning, Deep Reinforcement Learning]
 
 ### Similar fields
 
-* **Reinforcement Learning (RL):** Investigates methods of resolving intricate sequential decision-making problems under uncertain conditions.
+* **Reinforcement Learning (RL):** Investigates methods of resolving complex sequential decision-making problems under uncertain conditions.
 * **Control Theory (CT)**: Examines methods of controlling complex known dynamic systems.
 * **Operations Research (OR)**: Investigates decision-making under uncertain conditions, generally featuring a larger action space than in DRL.
 * **Psychology**: Studies human behavior, which frequently encapsulates complex sequential decision-making problems under uncertainty.
