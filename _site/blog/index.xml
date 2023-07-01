@@ -12,7 +12,7 @@
 <generator>quarto-1.4.122</generator>
 <lastBuildDate>Wed, 28 Jun 2023 07:00:00 GMT</lastBuildDate>
 <item>
-  <title>Mathmatical Foundations of Reinforcement Learning</title>
+  <title>Modeling the Reinforcement Learning Problem</title>
   <dc:creator>Ahad Jawaid</dc:creator>
   <link>https://ahadjawaid.github.io/personal-website/blog/posts/mathmatical-foundations-of-reinforcement-learning/index.html</link>
   <description><![CDATA[ 
@@ -30,99 +30,165 @@
     }
 }
 </style>
+<p>This post will discuss how to model the reinforcement learning problem using the mathematical framework of a Markov Decision Process (MDP). We’ll cover what an environment is in reinforcement learning, its components, and how to model it through an MDP.</p>
+<p>To understand what we are modeling, we must first familiarize ourselves with the components of reinforcement learning:</p>
 <section id="components-of-reinforcement-learning" class="level2">
 <h2 class="anchored" data-anchor-id="components-of-reinforcement-learning">Components of Reinforcement Learning</h2>
 <ul>
-<li><strong>Reinforcement Learning:</strong> tackles the problem of complex sequential decision-making under uncertainty.
+<li><strong>Reinforcement Learning:</strong> A solution for managing complex, uncertain sequential decision-making.
 <ul>
-<li><em>Complex:</em> refers to the vast state and action spaces of the environment the agent must learn.</li>
-<li><em>Sequential:</em> refers to the delayed consequences of an agent’s actions.</li>
-<li><em>Uncertainty:</em> refers to how we don’t know how the agent’s actions will effect the environment.</li>
+<li><em>Complex:</em> Pertains to the large scale of the state and action spaces that the agent needs to navigate.</li>
+<li><em>Sequential:</em> Denotes the delayed effect of an agent’s actions, essentially the credit assignment problem.</li>
+<li><em>Uncertainty:</em> Highlights the unpredictability of the impact of an agent’s actions on the environment, tying to balance the exploration vs exploitation trade-off.</li>
 </ul></li>
 </ul>
 <p><img src="https://ahadjawaid.github.io/personal-website/blog/posts/mathmatical-foundations-of-reinforcement-learning/assets/reinforcement-learning-interaction-cycle.jpg" class="responsive-img"></p>
 <section id="the-agent-the-decision-maker" class="level3">
 <h3 class="anchored" data-anchor-id="the-agent-the-decision-maker">The agent: The decision maker</h3>
 <ul>
-<li><strong>Agents:</strong> is an entity that is soley responsible for makeing decisions</li>
+<li><strong>Agents:</strong> These are entities solely responsible for making decisions that may influence the environment.</li>
 </ul>
 <p><img src="https://ahadjawaid.github.io/personal-website/blog/posts/mathmatical-foundations-of-reinforcement-learning/assets/internal-steps.jpg" class="responsive-img"></p>
+<ul>
+<li><strong>Agent’s Improvement Process:</strong>
+<ol type="1">
+<li>Interact</li>
+<li>Evaluate</li>
+<li>Improve</li>
+</ol></li>
+</ul>
 </section>
 <section id="the-environment-everything-else" class="level3">
 <h3 class="anchored" data-anchor-id="the-environment-everything-else">The environment: Everything else</h3>
 <ul>
-<li>The <em>environment</em> includes everything external to the agent, beyond the agent’s control, and everything that follows the agent’s decisions.</li>
+<li>The <em>environment</em> symbolizes the problem at hand. It encapsulates everything external to the agent, anything that’s beyond the agent’s control but responds to the agent’s decisions.</li>
 </ul>
 <p><img src="https://ahadjawaid.github.io/personal-website/blog/posts/mathmatical-foundations-of-reinforcement-learning/assets/environment-process.jpg" class="responsive-img"></p>
-<ul>
-<li><strong>Grid World Environment:</strong></li>
-<li><strong>Bandit Environment:</strong></li>
-</ul>
+<p>Pay attention to how we try to emulate the possible reactions of the environment to the agent’s actions.</p>
 </section>
 </section>
-<section id="components-of-the-environment" class="level2">
-<h2 class="anchored" data-anchor-id="components-of-the-environment">Components of the Environment:</h2>
+<section id="unraveling-the-environment" class="level2">
+<h2 class="anchored" data-anchor-id="unraveling-the-environment">Unraveling the Environment:</h2>
 <ul>
-<li>The environment is made up of states, actions, transitions probabilities, and a reward function.</li>
+<li>The environment encompasses states, actions, transition probabilities, and a reward function.</li>
 </ul>
 <section id="states-specific-configurations-of-the-environment" class="level3">
 <h3 class="anchored" data-anchor-id="states-specific-configurations-of-the-environment">States: Specific configurations of the environment</h3>
 <ul>
-<li><p>A <em>state</em> is a complete description of the environment</p></li>
-<li><p><strong>Terminal States:</strong> Is the last state in an eposdic task. All transitions from this state goes back to itself.</p></li>
-<li><p><strong>State Space:</strong> A combiniation of all possible set of variables and value that can describe the environment.</p></li>
+<li><p>A <em>state</em> provides a comprehensive description of the environment.</p></li>
+<li><p><strong>State Space:</strong> An combiniation of all possible variables and values that can characterize the environment.</p></li>
 </ul>
 <p><img src="https://ahadjawaid.github.io/personal-website/blog/posts/mathmatical-foundations-of-reinforcement-learning/assets/state-space.jpg" class="responsive-img"></p>
 <ul>
-<li><p><strong>Observation:</strong> Is the set of variables that the agent experiences. It may or maynot be complete as a state must be.</p></li>
-<li><p><strong>Observation Space:</strong> Is all possible values of the variable an agent experiences.</p></li>
+<li><p><strong>Initial States:</strong> A subset of states where the agent starts in the environment.</p></li>
+<li><p><strong>Terminal States:</strong> The final state in an episodic task, any transition from this state will leads back to itself.</p></li>
+<li><p><strong>Observation:</strong> The set of variables that the agent perceives. It might not be as comprehensive as a state.</p></li>
+<li><p><strong>Observation Space:</strong> All possible values of the variables observed by the agent.</p></li>
 </ul>
 </section>
 <section id="actions-a-mechanism-to-influence-the-environment" class="level3">
 <h3 class="anchored" data-anchor-id="actions-a-mechanism-to-influence-the-environment">Actions: A mechanism to influence the environment</h3>
 <ul>
-<li><p>An <em>action</em> is a choice an agent can make that may or may not influence the environment.</p></li>
+<li><p>An <em>action</em> signifies a choice that an agent can make to potentially alter the environment. The set of actions available to an agent may vary across states and during the agent’s learning process.</p></li>
 <li><p><strong>Action Space:</strong> The set of all actions in all states.</p></li>
 </ul>
 </section>
 <section id="transition-function-consequences-of-agent-actions" class="level3">
 <h3 class="anchored" data-anchor-id="transition-function-consequences-of-agent-actions">Transition Function: Consequences of agent actions</h3>
 <ul>
-<li>A <em>transition function</em> outputs the probability of getting to a new state given the current state and action the agent will take. So it dictates what are the chances the agent will transition to the next state.</li>
-<li><strong>Stochastic Transitions:</strong> Is a transition that is not gaurenteed to go to one different state but may go to different states with a different probability.</li>
+<li>A <em>transition function</em> demonstrates how the environment changes in response to an action.</li>
+<li>Denoted as <img src="https://latex.codecogs.com/png.latex?T(s,%20a,%20s')">, where <img src="https://latex.codecogs.com/png.latex?s"> is the current state, <img src="https://latex.codecogs.com/png.latex?a"> is the action taken, and <img src="https://latex.codecogs.com/png.latex?s'"> is the resulting state.</li>
 </ul>
 <p><img src="https://ahadjawaid.github.io/personal-website/blog/posts/mathmatical-foundations-of-reinforcement-learning/assets/transition-function.jpg" class="responsive-img"></p>
+<ul>
+<li><p><strong>Stochastic Transitions:</strong> Transitions that don’t guarantee a single resulting state but could lead to multiple states, each with a different probability.</p></li>
+<li><p>In RL, we often assume that transition distributions remain stationary, whether they’re stochastic or deterministic. While this assumption can be relaxed to some degree, for most agents, the transitions must at least appear stationary.</p></li>
+</ul>
 </section>
 <section id="reward-function" class="level3">
 <h3 class="anchored" data-anchor-id="reward-function">Reward Function</h3>
 <ul>
-<li>A <em>reward function</em> is what guides the agent to achieve it’s goal. It maps an agent’s state or action to a scalar reward that gives a single of goodness but not correctness of agent’s state or action.</li>
+<li><p>A <em>reward function</em> steers the agent towards its goal. It maps a state or an action to a scalar reward, indicative of the goodness but not necessarily the correctness of the agent’s state or action.</p></li>
+<li><p>Reward signals supervise your agent. A denser reward signal leads to quicker learning but imposes more bias on the agent’s task-solving approach. Conversely, a sparser (less frequent) reward signal results in a less biased agent, potentially leading to novel, emergent behavior.</p></li>
+<li><p><strong>Return:</strong> The sum of the rewards collected in a single episode.</p></li>
 </ul>
 <p><img src="https://ahadjawaid.github.io/personal-website/blog/posts/mathmatical-foundations-of-reinforcement-learning/assets/reward-function.jpg" class="responsive-img"></p>
+</section>
+<section id="common-types-of-environments" class="level3">
+<h3 class="anchored" data-anchor-id="common-types-of-environments">Common Types of Environments:</h3>
 <ul>
-<li><strong>Return:</strong></li>
+<li><strong>Grid-World Environment:</strong> An environment that is a square grid of any size.
+<ul>
+<li><strong>Walk / Corridor:</strong> A type of grid-world environment with a single row.</li>
+</ul></li>
+<li><strong>Bandit Environment:</strong> An environment with a single non-terminal state, named ‘bandit’ as an analogy to a slot machine that can empty your pockets as bandits do.</li>
 </ul>
+<section id="ways-to-represent-an-environment" class="level4">
+<h4 class="anchored" data-anchor-id="ways-to-represent-an-environment">Ways to represent an environment:</h4>
+<p><img src="https://ahadjawaid.github.io/personal-website/blog/posts/mathmatical-foundations-of-reinforcement-learning/assets/bandit-walk.jpg" class="responsive-img"></p>
+<p><img src="https://ahadjawaid.github.io/personal-website/blog/posts/mathmatical-foundations-of-reinforcement-learning/assets/bandit-walk-graph.jpg" class="responsive-img"></p>
+<p><strong>Table Form</strong></p>
+<p><img src="https://ahadjawaid.github.io/personal-website/blog/posts/mathmatical-foundations-of-reinforcement-learning/assets/bandit-walk-table.jpg" class="responsive-img"></p>
+</section>
 </section>
 </section>
 <section id="markov-decision-process-mdps-the-engine-of-the-environment" class="level2">
 <h2 class="anchored" data-anchor-id="markov-decision-process-mdps-the-engine-of-the-environment">Markov Decision Process (MDPs): The engine of the environment</h2>
 <ul>
-<li>model virtually any complex sequential decision-making problem under uncer- tainty in a way that RL agents can interact with and learn to solve solely through experience.</li>
+<li><p><em>Markov Decision Processes (MDPs)</em> is a mathematical framework for modeling complex decision-making problems under uncertainty. It consists of system states, per-state actions, a transition function, a reward signal, a horizon, a discount factor, and an initial state distribution.</p></li>
+<li><p>In RL, it’s often assumed that all environments operate based on an underlying MDP, whether this assumption holds true or not.</p></li>
 </ul>
 <section id="markov-property" class="level3">
 <h3 class="anchored" data-anchor-id="markov-property">Markov Property</h3>
+<ul>
+<li>For a state to have the markov property, it must contain all necessary variables to make it independent of all other states.</li>
+<li>More formally, the probability of the next state, given the current state and action, is independent of the history of interactions.</li>
+</ul>
 <p><img src="https://ahadjawaid.github.io/personal-website/blog/posts/mathmatical-foundations-of-reinforcement-learning/assets/markov-property.jpg" class="responsive-img"></p>
+<ul>
+<li>The markov assumption is useful as it allows us to keep the number of variables in a state to a minimum since the more variables you add, the longer it will take the agent to learn.. This is advantageous when designing an agent capable of learning a task. However, completely adhering to the markov assumption may be impractical or even impossible.</li>
+</ul>
 </section>
 <section id="horizon-time-changes-whats-optimal" class="level3">
 <h3 class="anchored" data-anchor-id="horizon-time-changes-whats-optimal">Horizon: Time changes what’s optimal</h3>
+<ul>
+<li>A time step is a global clock synchronizing all parties and discretizing time.</li>
+<li>An episode is a sequence of consecutive time steps from the start to the end of an episodic task.</li>
+<li>A time step limit is often added to a continuing task to let the agent maximize the return.</li>
+</ul>
+<section id="horizions" class="level4">
+<h4 class="anchored" data-anchor-id="horizions">Horizions:</h4>
+<ul>
+<li><strong>Planning Horizon:</strong> It’s the temporal scale of the task from the agent’s perspective.</li>
+<li><strong>Finite Horizon:</strong> It’s a planning horizon that terminates after a specific number of steps.</li>
+<li><strong>Infite / Indefinite Horizon:</strong> It’s an unlimited planning horizon, assuming that the task can continue indefinitely.</li>
+<li><strong>Greedy Horizon:</strong> It’s a planning horizon of a single time step.</li>
+</ul>
+</section>
 </section>
 <section id="discount-the-future-is-uncertain-value-it-less" class="level3">
 <h3 class="anchored" data-anchor-id="discount-the-future-is-uncertain-value-it-less">Discount: The future is uncertain, value it less</h3>
+<ul>
+<li>To handle the possibility of infinite sequences of interactions, we must convey to the agent that immediate rewards are more valuable than future ones. This concept is handled by introducing a <em>discount factor</em> that reduces the value of future rewards, stabilizing the learning of the task.</li>
+<li>Moreover, the more we look into the future, the more uncertainty we accumulate. Introducing a discount factor discounts these highly uncertain future rewards, preventing them from affecting our value estimates significantly.</li>
+</ul>
 <p><img src="https://ahadjawaid.github.io/personal-website/blog/posts/mathmatical-foundations-of-reinforcement-learning/assets/effect-of-discount-factor.jpg" class="responsive-img"></p>
+<ul>
+<li>The discount factor, <img src="https://latex.codecogs.com/png.latex?%5Cgamma"> or gamma, reduces the variance of the value prediction by considering future, more uncertain, rewards less than immediate ones, fostering urgency in the agent.</li>
+</ul>
 <p><img src="https://ahadjawaid.github.io/personal-website/blog/posts/mathmatical-foundations-of-reinforcement-learning/assets/discount-factor.jpg" class="responsive-img"></p>
 </section>
 <section id="extensions-to-mdps" class="level3">
 <h3 class="anchored" data-anchor-id="extensions-to-mdps">Extensions to MDPs</h3>
+<ul>
+<li><strong>Partially observable Markov decision process (POMDP):</strong> When the agent can’t fully observe the environment state.</li>
+<li><strong>Factored Markov decision process (FMDP):</strong> It compactly represents the transition and reward functions, enabling the representation of large MDPs.</li>
+<li><strong>Continuous [Time|Action|State] Markov decision process:</strong> When either time, action, state, or any combination of them are continuous.</li>
+<li><strong>Relational Markov decision process (RMDP):</strong> It allows combining probabilistic and relational knowledge.</li>
+<li><strong>Semi-Markov decision process (SMDP):</strong> It allows the inclusion of abstract actions that take multiple time steps to complete.</li>
+<li><strong>Multi-agent Markov decision process (MMDP):</strong> It allows multiple agents in the same environment.</li>
+<li><strong>Decentralized Markov decision process (Dec-MDP):</strong> It allows multiple agents to collaborate and maximize a common reward.</li>
+</ul>
 </section>
 <section id="putting-it-all-together" class="level3">
 <h3 class="anchored" data-anchor-id="putting-it-all-together">Putting it all together</h3>
