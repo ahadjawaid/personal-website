@@ -6,7 +6,7 @@
   </url>
   <url>
     <loc>https://ahadjawaid.github.io/personal-website/index.html</loc>
-    <lastmod>2023-06-23T03:36:44.407Z</lastmod>
+    <lastmod>2023-07-01T21:18:26.758Z</lastmod>
   </url>
   <url>
     <loc>https://ahadjawaid.github.io/personal-website/blog/posts/the-universal-function/index.html</loc>
@@ -18,7 +18,7 @@
   </url>
   <url>
     <loc>https://ahadjawaid.github.io/personal-website/about.html</loc>
-    <lastmod>2023-06-30T02:22:30.418Z</lastmod>
+    <lastmod>2023-07-01T21:21:20.538Z</lastmod>
   </url>
   <url>
     <loc>https://ahadjawaid.github.io/personal-website/blog/posts/introduction-to-deep-reinforcement-learning/index.html</loc>
@@ -35,5 +35,9 @@
   <url>
     <loc>https://ahadjawaid.github.io/personal-website/blog/posts/mathmatical-foundations-of-reinforcement-learning/index.html</loc>
     <lastmod>2023-07-01T21:15:12.728Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ahadjawaid.github.io/personal-website/blog/posts/modeling-reinforcement-learning-problem/index.html</loc>
+    <lastmod>2023-07-01T21:22:26.878Z</lastmod>
   </url>
 </urlset>
