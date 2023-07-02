@@ -35,7 +35,7 @@
 <section id="components-of-reinforcement-learning" class="level2">
 <h2 class="anchored" data-anchor-id="components-of-reinforcement-learning">Components of Reinforcement Learning</h2>
 <ul>
-<li><strong>Reinforcement Learning:</strong> A solution for managing complex, uncertain sequential decision-making.
+<li><em>Reinforcement Learning</em> is A solution for managing complex, uncertain sequential decision-making.
 <ul>
 <li><em>Complex:</em> Pertains to the large scale of the state and action spaces that the agent needs to navigate.</li>
 <li><em>Sequential:</em> Denotes the delayed effect of an agent’s actions, essentially the credit assignment problem.</li>
@@ -70,13 +70,13 @@
 <section id="unraveling-the-environment" class="level2">
 <h2 class="anchored" data-anchor-id="unraveling-the-environment">Unraveling the Environment:</h2>
 <ul>
-<li>The environment encompasses states, actions, transition probabilities, and a reward function.</li>
+<li>The environment is made up of states, actions, transition probabilities, and a reward function.</li>
 </ul>
 <section id="states-specific-configurations-of-the-environment" class="level3">
 <h3 class="anchored" data-anchor-id="states-specific-configurations-of-the-environment">States: Specific configurations of the environment</h3>
 <ul>
 <li><p>A <em>state</em> provides a comprehensive description of the environment.</p></li>
-<li><p><strong>State Space:</strong> An combiniation of all possible variables and values that can characterize the environment.</p></li>
+<li><p><strong>State Space:</strong> A combiniation of all possible variables and values that can characterize the environment.</p></li>
 </ul>
 <p><img src="https://ahadjawaid.github.io/personal-website/blog/posts/modeling-reinforcement-learning-problem/assets/state-space.jpg" class="responsive-img"></p>
 <ul>
