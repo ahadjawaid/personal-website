@@ -96,7 +96,7 @@
 <section id="transition-function-consequences-of-agent-actions" class="level3">
 <h3 class="anchored" data-anchor-id="transition-function-consequences-of-agent-actions">Transition Function: Consequences of agent actions</h3>
 <ul>
-<li>A <em>transition function</em> demonstrates how the environment changes in response to an action.</li>
+<li>A <em>transition function</em> determines how the environment changes in response to an action.</li>
 <li>Denoted as <img src="https://latex.codecogs.com/png.latex?T(s,%20a,%20s')">, where <img src="https://latex.codecogs.com/png.latex?s"> is the current state, <img src="https://latex.codecogs.com/png.latex?a"> is the action taken, and <img src="https://latex.codecogs.com/png.latex?s'"> is the resulting state.</li>
 </ul>
 <p><img src="https://ahadjawaid.github.io/personal-website/blog/posts/modeling-reinforcement-learning-problem/assets/transition-function.jpg" class="responsive-img"></p>
@@ -121,7 +121,7 @@
 <ul>
 <li><strong>Walk / Corridor:</strong> A type of grid-world environment with a single row.</li>
 </ul></li>
-<li><strong>Bandit Environment:</strong> An environment with a single non-terminal state, named ‘bandit’ as an analogy to a slot machine that can empty your pockets as bandits do.</li>
+<li><strong>Bandit Environment:</strong> An environment with a single non-terminal state, named ‘bandit’ as an analogy to a slot machine that will empty your pockets the same way bandits do.</li>
 </ul>
 <section id="ways-to-represent-an-environment" class="level4">
 <h4 class="anchored" data-anchor-id="ways-to-represent-an-environment">Ways to represent an environment:</h4>
@@ -141,30 +141,24 @@
 <section id="markov-property" class="level3">
 <h3 class="anchored" data-anchor-id="markov-property">Markov Property</h3>
 <ul>
-<li>For a state to have the markov property, it must contain all necessary variables to make it independent of all other states.</li>
+<li>For a state to have the <em>markov property</em>, it must contain all necessary variables to make it independent of all other states.</li>
 <li>More formally, the probability of the next state, given the current state and action, is independent of the history of interactions.</li>
 </ul>
 <p><img src="https://ahadjawaid.github.io/personal-website/blog/posts/modeling-reinforcement-learning-problem/assets/markov-property.jpg" class="responsive-img"></p>
 <ul>
-<li>The markov assumption is useful as it allows us to keep the number of variables in a state to a minimum since the more variables you add, the longer it will take the agent to learn.. This is advantageous when designing an agent capable of learning a task. However, completely adhering to the markov assumption may be impractical or even impossible.</li>
+<li>The markov assumption is useful as it allows us to keep the number of variables in a state to a minimum since the more variables you add, the longer it will take the agent to learn. However, completely adhering to the markov assumption may be impractical or even impossible.</li>
 </ul>
 </section>
 <section id="horizon-time-changes-whats-optimal" class="level3">
 <h3 class="anchored" data-anchor-id="horizon-time-changes-whats-optimal">Horizon: Time changes what’s optimal</h3>
 <ul>
-<li>A time step is a global clock synchronizing all parties and discretizing time.</li>
-<li>An episode is a sequence of consecutive time steps from the start to the end of an episodic task.</li>
-<li>A time step limit is often added to a continuing task to let the agent maximize the return.</li>
+<li><p>A <em>time step</em> is a global clock synchronizing all parties and discretizing time.</p></li>
+<li><p>An <em>episode</em> is a sequence of consecutive time steps from the start to the end of an episodic task.</p></li>
+<li><p><strong>Planning Horizon:</strong> It’s the temporal depth the agent must plan for.</p></li>
+<li><p><strong>Finite Horizon:</strong> It’s a planning horizon that terminates after a specific number of steps.</p></li>
+<li><p><strong>Infite / Indefinite Horizon:</strong> It’s an unlimited planning horizon, assuming that the task can continue indefinitely.</p></li>
+<li><p><strong>Greedy Horizon:</strong> It’s a planning horizon of a single time step.</p></li>
 </ul>
-<section id="horizions" class="level4">
-<h4 class="anchored" data-anchor-id="horizions">Horizions:</h4>
-<ul>
-<li><strong>Planning Horizon:</strong> It’s the temporal scale of the task from the agent’s perspective.</li>
-<li><strong>Finite Horizon:</strong> It’s a planning horizon that terminates after a specific number of steps.</li>
-<li><strong>Infite / Indefinite Horizon:</strong> It’s an unlimited planning horizon, assuming that the task can continue indefinitely.</li>
-<li><strong>Greedy Horizon:</strong> It’s a planning horizon of a single time step.</li>
-</ul>
-</section>
 </section>
 <section id="discount-the-future-is-uncertain-value-it-less" class="level3">
 <h3 class="anchored" data-anchor-id="discount-the-future-is-uncertain-value-it-less">Discount: The future is uncertain, value it less</h3>
