@@ -56,14 +56,14 @@ website:
       - icon: linkedin
         href: https://www.linkedin.com/in/ahad-jawaid
       - icon: github
-        href: https://github.com/ahadjawaid/personal-website
+        href: https://github.com/ahadjawaid/ahadjawaid.github.io
 
   comments:
     giscus:
-      repo: ahadjawaid/personal-website
+      repo: ahadjawaid/ahadjawaid.github.io
       repo-id: R_kgDOJrWaMQ
-      category: Giscus Comments
-      category-id: DIC_kwDOJrWaMc4CXAID
+      category: Announcements
+      category-id: DIC_kwDOJrWaMc4CXAIC
       mapping: title
       reactions-enabled: true
       loading: lazy
