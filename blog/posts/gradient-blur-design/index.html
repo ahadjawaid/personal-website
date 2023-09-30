@@ -6,8 +6,11 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Ahad Jawaid">
+<meta name="dcterms.date" content="2023-08-13">
+<meta name="description" content="Discover how to craft captivating gradient designs with a misty blur effect using Figma, transforming your website’s look with a trendy backdrop.">
 
-<title>Ahad Jawaid - Blog</title>
+<title>Ahad Jawaid - How to create soft gradient blurs!</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,24 +23,56 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/quarto-nav/headroom.min.js"></script>
-<link href="../favicon.ico" rel="icon">
-<script src="../site_libs/quarto-listing/list.min.js"></script>
-<script src="../site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-html/quarto.js"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
+<link href="../../../favicon.ico" rel="icon">
+<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "language": {
     "search-no-results-text": "No results",
@@ -52,35 +87,6 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-posts .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-title','listing-subtitle','listing-author','listing-description','listing-date','listing-image','listing-reading-time',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] }],
-      
-      searchColumns: ["listing-title","listing-date","listing-author"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-posts'] = new List('listing-posts', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-Q9WDH7ENSQ"></script>
 
 <script type="text/javascript">
@@ -92,20 +98,22 @@ gtag('config', 'G-Q9WDH7ENSQ', { 'anonymize_ip': true});
 </script>
 <style>html{ scroll-behavior: smooth; }</style>
 
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<link rel="stylesheet" href="../styles.css">
-<link rel="alternate" type="application/rss+xml" title="Ahad Jawaid" href="index.xml" data-external="1"><meta property="og:title" content="Ahad Jawaid - Blog">
+<link rel="stylesheet" href="../../../styles.css">
+<meta property="og:title" content="Ahad Jawaid - How to create soft gradient blurs!">
 <meta property="og:description" content="Ahad Jawaid’s Website">
-<meta property="og:image" content="https://ahadjawaid.github.io/personal-website/blog/clouds.png">
+<meta property="og:image" content="https://ahadjawaid.github.io/personal-website/blog/posts/gradient-blur-design/assets/website-gradient.png">
 <meta property="og:site-name" content="Ahad Jawaid">
+<meta property="og:image:height" content="1732">
+<meta property="og:image:width" content="3230">
 <meta name="twitter:title" content="Ahad Jawaid">
 <meta name="twitter:description" content="Ahad Jawaid’s Website">
-<meta name="twitter:image" content="https://ahadjawaid.github.io/personal-website/blog/assets/clouds.png">
+<meta name="twitter:image" content="https://ahadjawaid.github.io/personal-website/blog/posts/gradient-blur-design/assets/website-gradient.png">
 <meta name="twitter:creator" content="@_ahadj_">
 <meta name="twitter:site" content="@_ahadj_">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image-height" content="1732">
+<meta name="twitter:image-width" content="3230">
 </head>
 
 <body class="nav-fixed">
@@ -115,10 +123,10 @@ gtag('config', 'G-Q9WDH7ENSQ', { 'anonymize_ip': true});
     <nav class="navbar navbar-expand-lg navbar-dark ">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="../index.html" class="navbar-brand navbar-brand-logo">
-    <img src="../assets/chip.png" alt="computer chip icon" class="navbar-logo">
+    <a href="../../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../../assets/chip.png" alt="computer chip icon" class="navbar-logo">
     </a>
-    <a class="navbar-brand" href="../index.html">
+    <a class="navbar-brand" href="../../../index.html">
     <span class="navbar-title">Ahad Jawaid</span>
     </a>
   </div>
@@ -128,22 +136,22 @@ gtag('config', 'G-Q9WDH7ENSQ', { 'anonymize_ip': true});
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../index.html" rel="" target=""><i class="bi bi-house-door" role="img">
+    <a class="nav-link" href="../../../index.html" rel="" target=""><i class="bi bi-house-door" role="img">
 </i> 
  <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="../blog/index.html" rel="" target="" aria-current="page"><i class="bi bi-newspaper" role="img">
+    <a class="nav-link" href="../../../blog/index.html" rel="" target=""><i class="bi bi-newspaper" role="img">
 </i> 
  <span class="menu-text">Blog</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../talks.html" rel="" target=""><i class="bi bi-megaphone" role="img">
+    <a class="nav-link" href="../../../talks.html" rel="" target=""><i class="bi bi-megaphone" role="img">
 </i> 
  <span class="menu-text">Talks</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../about.html" rel="" target=""><i class="bi bi-person" role="img">
+    <a class="nav-link" href="../../../about.html" rel="" target=""><i class="bi bi-person" role="img">
 </i> 
  <span class="menu-text">About</span></a>
   </li>  
@@ -176,21 +184,58 @@ gtag('config', 'G-Q9WDH7ENSQ', { 'anonymize_ip': true});
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(4)</span></div><div class="category" data-category="Deep Learning">Deep Learning <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Deep Reinforcement Learning">Deep Reinforcement Learning <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Neueral Networks">Neueral Networks <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Notes">Notes <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Research">Research <span class="quarto-category-count">(1)</span></div></div></div>
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#step-by-step-guide-to-nailing-that-gradient-vibe" id="toc-step-by-step-guide-to-nailing-that-gradient-vibe" class="nav-link active" data-scroll-target="#step-by-step-guide-to-nailing-that-gradient-vibe">Step-by-Step Guide to Nailing That Gradient Vibe:</a>
+  <ul class="collapse">
+  <li><a href="#fire-up-figma" id="toc-fire-up-figma" class="nav-link" data-scroll-target="#fire-up-figma">1. Fire Up Figma!</a></li>
+  <li><a href="#shape-time" id="toc-shape-time" class="nav-link" data-scroll-target="#shape-time">2. Shape Time!</a></li>
+  <li><a href="#paint-the-townany-color-you-want" id="toc-paint-the-townany-color-you-want" class="nav-link" data-scroll-target="#paint-the-townany-color-you-want">3. Paint the Town…Any Color You Want!</a></li>
+  <li><a href="#round-those-edges-if-thats-your-thing" id="toc-round-those-edges-if-thats-your-thing" class="nav-link" data-scroll-target="#round-those-edges-if-thats-your-thing">4. Round Those Edges (If That’s Your Thing)</a></li>
+  <li><a href="#the-mega-secret-sauce-the-blur" id="toc-the-mega-secret-sauce-the-blur" class="nav-link" data-scroll-target="#the-mega-secret-sauce-the-blur">5. The MEGA Secret Sauce: The Blur!</a></li>
+  <li><a href="#group-em-up-together" id="toc-group-em-up-together" class="nav-link" data-scroll-target="#group-em-up-together">6. Group ’Em Up together!</a></li>
+  <li><a href="#time-to-export" id="toc-time-to-export" class="nav-link" data-scroll-target="#time-to-export">7. Time to export!</a></li>
+  <li><a href="#deploy-it-on-your-site" id="toc-deploy-it-on-your-site" class="nav-link" data-scroll-target="#deploy-it-on-your-site">8. Deploy it on Your Site:</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Blog</h1>
-</div>
+<h1 class="title">How to create soft gradient blurs!</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">Web Design</div>
+    <div class="quarto-category">UI/UX</div>
+  </div>
+  </div>
 
+<div>
+  <div class="description">
+    Discover how to craft captivating gradient designs with a misty blur effect using Figma, transforming your website’s look with a trendy backdrop.
+  </div>
+</div>
 
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Ahad Jawaid </p>
+          </div>
+  </div>
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">August 13, 2023</p>
+    </div>
+  </div>
   
     
   </div>
@@ -198,163 +243,111 @@ gtag('config', 'G-Q9WDH7ENSQ', { 'anonymize_ip': true});
 
 </header>
 
-<div id="listing-posts" class="quarto-listing quarto-listing-container-default">
-<div class="listing-actions-group">
-   <div class="input-group input-group-sm quarto-listing-sort">
-     <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
-     <select id="listing-posts-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-posts'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
-       <option value="" disabled="" selected="" hidden="">Order By</option>
-       <option value="index" data-direction="asc">Default</option>
-         <option value="listing-date-sort" data-direction="asc">
-          Date - Oldest
-        </option>
-         <option value="listing-date-sort" data-direction="desc">
-          Date - Newest
-        </option>
-         <option value="listing-author" data-direction="asc">
-          Author
-        </option>
-     </select>
-  </div>
-    <div class="input-group input-group-sm quarto-listing-filter">
-      <span class="input-group-text"><i class="bi bi-search"></i></span>
-      <input type="text" class="search form-control" placeholder="Filter">
-    </div>
-</div>
-<div class="list quarto-listing-default">
-<div class="quarto-post image-left" data-index="0" data-categories="Deep Reinforcement Learning,Notes" data-listing-date-sort="1688187600000" data-listing-file-modified-sort="1688751570496" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6">
-<div class="thumbnail">
-<p><a href="../blog/posts/modeling-reinforcement-learning-problem/index.html"> <img src="../blog/posts/modeling-reinforcement-learning-problem/assets/blackboard.jpg" class="thumbnail-image"> </a></p>
-</div>
-<div class="body">
-<a href="../blog/posts/modeling-reinforcement-learning-problem/index.html">
-<h3 class="no-anchor listing-title">
-Modeling the Reinforcement Learning Problem
-</h3>
-<div class="listing-subtitle">
+<style>
+.responsive-img {
+    width: 100%;
+    margin: auto;
+}
 
-</div>
-<div class="listing-description">
-<p>My notes on the second chapter of ‘Grokking Deep Reinforcement Learning’ by Miguel Morales. This post covers the components of the environment and how to model it using Markov Decision Processes (MDPs).</p>
-</div>
-</a>
-</div>
-<div class="metadata">
-<a href="../blog/posts/modeling-reinforcement-learning-problem/index.html">
-<div class="listing-date">
-01 July 2023
-</div>
-<div class="listing-author">
-Ahad Jawaid
-</div>
-<div class="listing-reading-time">
-6 min
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-left" data-index="1" data-categories="Deep Reinforcement Learning,Notes" data-listing-date-sort="1687842000000" data-listing-file-modified-sort="1688751559453" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5">
-<div class="thumbnail">
-<p><a href="../blog/posts/introduction-to-deep-reinforcement-learning/index.html"> <img src="../blog/posts/introduction-to-deep-reinforcement-learning/assets/neural.png" class="thumbnail-image"> </a></p>
-</div>
-<div class="body">
-<a href="../blog/posts/introduction-to-deep-reinforcement-learning/index.html">
-<h3 class="no-anchor listing-title">
-Introduction to Deep Reinforcement Learning
-</h3>
-<div class="listing-subtitle">
+@media (min-width: 992px) {
+    .responsive-img {
+        width: 75%;
+    }
+}
 
-</div>
-<div class="listing-description">
-<p>My notes on Deep Reinforcement Learning (DRL) based on the first chapter of the ‘Grokking Deep Reinforcement Learning’ by Miguel Morales.</p>
-</div>
-</a>
-</div>
-<div class="metadata">
-<a href="../blog/posts/introduction-to-deep-reinforcement-learning/index.html">
-<div class="listing-date">
-27 June 2023
-</div>
-<div class="listing-author">
-Ahad Jawaid
-</div>
-<div class="listing-reading-time">
-5 min
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-left" data-index="2" data-categories="Research" data-listing-date-sort="1685941200000" data-listing-file-modified-sort="1687907939588" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2">
-<div class="thumbnail">
-<p><a href="../blog/posts/translating-theory-into-code/index.html"> <p class="card-img-top"><img src="posts/translating-theory-into-code/assets/read_code_visualize_diagram.svg"  class="thumbnail-image card-img"/></p> </a></p>
-</div>
-<div class="body">
-<a href="../blog/posts/translating-theory-into-code/index.html">
-<h3 class="no-anchor listing-title">
-From Paper to Code: A Guide to Implement Research
-</h3>
-<div class="listing-subtitle">
+.sidebar-responsive-img {
+    height: 50%;
+    margin: auto;
+}
 
-</div>
-<div class="listing-description">
-<p>This guide covers effective reading, model implementation, code validation, and the power of repetition.</p>
-</div>
-</a>
-</div>
-<div class="metadata">
-<a href="../blog/posts/translating-theory-into-code/index.html">
-<div class="listing-date">
-05 June 2023
-</div>
-<div class="listing-author">
-Ahad Jawaid
-</div>
-<div class="listing-reading-time">
-2 min
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-left" data-index="3" data-categories="Deep Learning,Neueral Networks" data-listing-date-sort="1677132000000" data-listing-file-modified-sort="1686157949350" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6">
-<div class="thumbnail">
-<p><a href="../blog/posts/the-universal-function/index.html"> <img src="../blog/posts/the-universal-function/assets/filling-machine.png" class="thumbnail-image"> </a></p>
-</div>
-<div class="body">
-<a href="../blog/posts/the-universal-function/index.html">
-<h3 class="no-anchor listing-title">
-Neural network: The universal function
-</h3>
-<div class="listing-subtitle">
-
-</div>
-<div class="listing-description">
-Have you ever imagined a single machine that can adapt to any role given to it? It could be a screw, a tire, a screen or any other task you could think of. That’s what a…
-</div>
-</a>
-</div>
-<div class="metadata">
-<a href="../blog/posts/the-universal-function/index.html">
-<div class="listing-date">
-23 February 2023
-</div>
-<div class="listing-author">
-Ahad Jawaid
-</div>
-<div class="listing-reading-time">
-6 min
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div>
-<!-- <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScVt6aoQxaGWjDt3PDdusS0lHSEcyQVdPCwlll3zimZpuxpUw/viewform?embedded=true" width="640" height="583" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe> -->
+@media (min-width: 992px) {
+    .sidebar-responsive-img {
+        width: 45%;
+    }
+}
+</style>
+<p>Ever been eyeballin’ those fancy gradient designs on swanky websites and thought, “How on earth…?” Well, I got the answer for you! I did the work you don’t have to and went down the rabbit hole and guess what? I found the gold at the end of the rainbow! And yep, it’s not just a funky HTML trick. I’ve been there, tried that, got that T-shirt.</p>
+<p><img src="assets/zfellows-landing.png" class="responsive-img"></p>
+<p>Alright, spoiler alert! The magic happens in Figma. Yep, that’s the secret sauce, or rather, our tool for cookin’ up some gradient goodness. Let’s get started!</p>
+<section id="step-by-step-guide-to-nailing-that-gradient-vibe" class="level2">
+<h2 class="anchored" data-anchor-id="step-by-step-guide-to-nailing-that-gradient-vibe">Step-by-Step Guide to Nailing That Gradient Vibe:</h2>
+<section id="fire-up-figma" class="level3">
+<h3 class="anchored" data-anchor-id="fire-up-figma">1. Fire Up Figma!</h3>
+<ul>
+<li>Hop on figma and start a fresh design file.</li>
+</ul>
+<p><img src="assets/1-new-design.png" class="responsive-img"></p>
+<ul>
+<li>Fancy a rectangle to get things in perspective? Go for it. If not, you do you!</li>
+</ul>
+<p><img src="assets/2-bg-rectangle.png" class="responsive-img"></p>
+</section>
+<section id="shape-time" class="level3">
+<h3 class="anchored" data-anchor-id="shape-time">2. Shape Time!</h3>
+<ul>
+<li>Create shape that meets your fancy.</li>
+<li>I’m gonna choose a rectangle because, heck, maybe I’m more square than I thought. :)</li>
+</ul>
+<p><img src="assets/3-rectangle.png" class="responsive-img"></p>
+</section>
+<section id="paint-the-townany-color-you-want" class="level3">
+<h3 class="anchored" data-anchor-id="paint-the-townany-color-you-want">3. Paint the Town…Any Color You Want!</h3>
+<ul>
+<li>Hit that fill color and choose your jam.</li>
+</ul>
+<p><img src="assets/4-select-color.png" class="responsive-img"></p>
+<ul>
+<li>Wanna level up? Use Gradients! Mix and match and watch the magic.</li>
+<li>Mini tip: If colors got you stumped, check out <a href="https://coolors.co/palettes/trending">coolors.co</a> It’s like a candy store for color lovers!</li>
+</ul>
+<p><img src="assets/coloors-palettes.png" class="responsive-img"></p>
+</section>
+<section id="round-those-edges-if-thats-your-thing" class="level3">
+<h3 class="anchored" data-anchor-id="round-those-edges-if-thats-your-thing">4. Round Those Edges (If That’s Your Thing)</h3>
+<ul>
+<li>Me? I like ’em rounded. Because, why not?</li>
+</ul>
+<p><img src="assets/5-round.png" class="responsive-img"></p>
+</section>
+<section id="the-mega-secret-sauce-the-blur" class="level3">
+<h3 class="anchored" data-anchor-id="the-mega-secret-sauce-the-blur">5. The MEGA Secret Sauce: The Blur!</h3>
+<ul>
+<li>This one is the game-changer! Dive into ‘Effects’, pop that dropdown, and bam! – LAYER BLUR! Smack that button and get your blur on. Go wild!</li>
+</ul>
+<p><img src="assets/6-blur-effect.png" class="sidebar-responsive-img"></p>
+<p><img src="assets/6.5-blur-effect.png" class="sidebar-responsive-img"></p>
+<p><img src="assets/6.7-blur-effect.png" class="sidebar-responsive-img"></p>
+<p><img src="assets/6.9-blur-effect.png" class="responsive-img"></p>
+<p><img src="assets/7-blured-image.png" class="responsive-img"></p>
+</section>
+<section id="group-em-up-together" class="level3">
+<h3 class="anchored" data-anchor-id="group-em-up-together">6. Group ’Em Up together!</h3>
+<ul>
+<li>If you went all out with a bunch of shapes, nows you change to group ’em together. For my Mac buddies: <code>cmd + g</code>, and for the Windows gang: <code>ctrl + g</code>. No judgment. ;)</li>
+</ul>
+</section>
+<section id="time-to-export" class="level3">
+<h3 class="anchored" data-anchor-id="time-to-export">7. Time to export!</h3>
+<ul>
+<li>Get your design exported. SVG’s is my preferred method, but hey, mix it up if you’re feelin’ spicy. Don’t forget to toss it into your website’s folder.</li>
+</ul>
+<p><img src="assets/8-export.png" class="sidebar-responsive-img"></p>
+<p><img src="assets/8.5-select-export-type.png" class="sidebar-responsive-img"></p>
+<p><img src="assets/8.7-export-img.png" class="sidebar-responsive-img"></p>
+<p>Last step? Let’s show off that beauty on your website!</p>
+</section>
+<section id="deploy-it-on-your-site" class="level3">
+<h3 class="anchored" data-anchor-id="deploy-it-on-your-site">8. Deploy it on Your Site:</h3>
+<ul>
+<li>Slide that gradient goodness into your site:</li>
+</ul>
+<div class="sourceCode" id="cb1"><pre class="sourceCode html code-with-copy"><code class="sourceCode html"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;img</span> <span class="er">src</span><span class="ot">=</span><span class="st">"path/to/cloud"</span> <span class="er">alt</span><span class="ot">=</span><span class="st">"Your Gradient Magic"</span> <span class="kw">/&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><img src="assets/website-gradient.png" class="responsive-img"></p>
+<p>And boom! You’re now rocking a website background that’s got all the vibes. Go on, bask in the gradient glory you just whipped up!</p>
 
 
-
+</section>
+</section>
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -654,6 +647,10 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
+<script src="https://giscus.app/client.js" data-repo="ahadjawaid/ahadjawaid.github.io" data-repo-id="R_kgDOJrWaMQ" data-category="Announcements" data-category-id="DIC_kwDOJrWaMc4CXAIC" data-mapping="title" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="top" data-theme="light" data-lang="en" crossorigin="anonymous" data-loading="lazy" async="">
+</script>
+<input type="hidden" id="giscus-base-theme" value="light">
+<input type="hidden" id="giscus-alt-theme" value="light">
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
@@ -690,5 +687,5 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
-<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
+<script src="../../../site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>

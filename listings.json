@@ -20,6 +20,8 @@
   {
     "listing": "/talks.html",
     "items": [
+      "/talks/intro-deep-learning-1/index.html",
+      "/talks/intro-ml-mondays/index.html",
       "/talks/deep-learning-with-fastai/index.html"
     ]
   }

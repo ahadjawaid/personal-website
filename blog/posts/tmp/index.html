@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.4.122">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Ahad Jawaid">
+<meta name="dcterms.date" content="2023-07-07">
+<meta name="description" content="My notes on Deep Reinforcement Learning (DRL) based on the first chapter of the ‘Grokking Deep Reinforcement Learning’ by Miguel Morales.">
+
+<title>Ahad Jawaid - Balancing Immediate and Long-term Goals: An Introduction to Policy Optimization in Reinforcement Learning</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
+<link href="../../../favicon.ico" rel="icon">
+<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-Q9WDH7ENSQ"></script>
+
+<script type="text/javascript">
+
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-Q9WDH7ENSQ', { 'anonymize_ip': true});
+</script>
+<style>html{ scroll-behavior: smooth; }</style>
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<link rel="stylesheet" href="../../../styles.css">
+<meta property="og:title" content="Ahad Jawaid - Balancing Immediate and Long-term Goals: An Introduction to Policy Optimization in Reinforcement Learning">
+<meta property="og:description" content="Ahad Jawaid’s Website">
+<meta property="og:image" content="https://ahadjawaid.github.io/personal-website/blog/posts/tmp/assets/robot.png">
+<meta property="og:site-name" content="Ahad Jawaid">
+<meta property="og:image:height" content="512">
+<meta property="og:image:width" content="512">
+<meta name="twitter:title" content="Ahad Jawaid">
+<meta name="twitter:description" content="Ahad Jawaid’s Website">
+<meta name="twitter:image" content="https://ahadjawaid.github.io/personal-website/blog/posts/tmp/assets/robot.png">
+<meta name="twitter:creator" content="@_ahadj_">
+<meta name="twitter:site" content="@_ahadj_">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image-height" content="512">
+<meta name="twitter:image-width" content="512">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="../../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../../assets/chip.png" alt="computer chip icon" class="navbar-logo">
+    </a>
+    <a class="navbar-brand" href="../../../index.html">
+    <span class="navbar-title">Ahad Jawaid</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../../index.html" rel="" target=""><i class="bi bi-house-door" role="img">
+</i> 
+ <span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../blog/index.html" rel="" target=""><i class="bi bi-newspaper" role="img">
+</i> 
+ <span class="menu-text">Blog</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../talks.html" rel="" target=""><i class="bi bi-megaphone" role="img">
+</i> 
+ <span class="menu-text">Talks</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../about.html" rel="" target=""><i class="bi bi-person" role="img">
+</i> 
+ <span class="menu-text">About</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+          <div class="quarto-navbar-tools tools-wide">
+    <a href="https://twitter.com\_ahadj_" rel="" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-twitter"></i></a>
+    <a href="https://www.linkedin.com/in/ahad-jawaid" rel="" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-linkedin"></i></a>
+    <div class="dropdown">
+      <a href="" title="" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" aria-label=""><i class="bi bi-github"></i></a>
+      <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="quarto-navigation-tool-dropdown-0">
+          <li>
+            <a class="dropdown-item quarto-navbar-tools-item" href="https://github.com/ahadjawaid/personal-website">
+            Source Code
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item quarto-navbar-tools-item" href="https://github.com/ahadjawaid/personal-website/issues">
+            Report Bug
+            </a>
+          </li>
+      </ul>
+    </div>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#agents-objective-and-the-concept-of-return" id="toc-agents-objective-and-the-concept-of-return" class="nav-link active" data-scroll-target="#agents-objective-and-the-concept-of-return"><strong>Agent’s Objective and The Concept of Return</strong></a>
+  <ul class="collapse">
+  <li><a href="#policies-per-state-action-prescriptions" id="toc-policies-per-state-action-prescriptions" class="nav-link" data-scroll-target="#policies-per-state-action-prescriptions"><strong>Policies: Per-state Action Prescriptions</strong></a></li>
+  <li><a href="#state-value-function-what-to-expect-from-here" id="toc-state-value-function-what-to-expect-from-here" class="nav-link" data-scroll-target="#state-value-function-what-to-expect-from-here"><strong>State-Value Function: What to Expect From Here?</strong></a></li>
+  <li><a href="#action-value-function-what-should-i-expect-from-here-if-i-do-this" id="toc-action-value-function-what-should-i-expect-from-here-if-i-do-this" class="nav-link" data-scroll-target="#action-value-function-what-should-i-expect-from-here-if-i-do-this"><strong>Action-Value Function: What Should I Expect from Here if I Do This?</strong></a></li>
+  <li><a href="#action-advantage-function-how-much-better-if-i-do-that" id="toc-action-advantage-function-how-much-better-if-i-do-that" class="nav-link" data-scroll-target="#action-advantage-function-how-much-better-if-i-do-that"><strong>Action-Advantage Function: How Much Better if I Do That?</strong></a></li>
+  <li><a href="#the-objective-of-a-decision-making-agent" id="toc-the-objective-of-a-decision-making-agent" class="nav-link" data-scroll-target="#the-objective-of-a-decision-making-agent"><strong>The Objective of a Decision-Making Agent</strong></a></li>
+  <li><a href="#policies-per-state-action-prescriptions-1" id="toc-policies-per-state-action-prescriptions-1" class="nav-link" data-scroll-target="#policies-per-state-action-prescriptions-1"><strong>Policies: Per-state Action Prescriptions</strong></a></li>
+  <li><a href="#state-value-function-what-to-expect-from-here-1" id="toc-state-value-function-what-to-expect-from-here-1" class="nav-link" data-scroll-target="#state-value-function-what-to-expect-from-here-1"><strong>State-Value Function: What to Expect from Here?</strong></a></li>
+  <li><a href="#action-value-function-what-should-i-expect-from-here-if-i-do-this-1" id="toc-action-value-function-what-should-i-expect-from-here-if-i-do-this-1" class="nav-link" data-scroll-target="#action-value-function-what-should-i-expect-from-here-if-i-do-this-1"><strong>Action-Value Function: What Should I Expect from Here if I Do This?</strong></a></li>
+  <li><a href="#action-advantage-function-how-much-better-if-i-do-that-1" id="toc-action-advantage-function-how-much-better-if-i-do-that-1" class="nav-link" data-scroll-target="#action-advantage-function-how-much-better-if-i-do-that-1"><strong>Action-Advantage Function: How Much Better if I Do That?</strong></a></li>
+  </ul></li>
+  <li><a href="#optimality-striving-for-the-best" id="toc-optimality-striving-for-the-best" class="nav-link" data-scroll-target="#optimality-striving-for-the-best"><strong>Optimality: Striving for the Best</strong></a>
+  <ul class="collapse">
+  <li><a href="#optimal-policies-and-optimality" id="toc-optimal-policies-and-optimality" class="nav-link" data-scroll-target="#optimal-policies-and-optimality"><strong>Optimal Policies and Optimality</strong></a></li>
+  <li><a href="#planning-optimal-sequences-of-actions-policy-iteration-and-value-iteration" id="toc-planning-optimal-sequences-of-actions-policy-iteration-and-value-iteration" class="nav-link" data-scroll-target="#planning-optimal-sequences-of-actions-policy-iteration-and-value-iteration"><strong>Planning Optimal Sequences of Actions: Policy Iteration and Value Iteration</strong></a></li>
+  </ul></li>
+  <li><a href="#wrapping-up" id="toc-wrapping-up" class="nav-link" data-scroll-target="#wrapping-up"><strong>Wrapping up</strong></a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Balancing Immediate and Long-term Goals: An Introduction to Policy Optimization in Reinforcement Learning</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">Deep Learning</div>
+    <div class="quarto-category">Reinforcement Learning</div>
+    <div class="quarto-category">Deep Reinforcement Learning</div>
+    <div class="quarto-category">Notes</div>
+  </div>
+  </div>
+
+<div>
+  <div class="description">
+    My notes on Deep Reinforcement Learning (DRL) based on the first chapter of the ‘Grokking Deep Reinforcement Learning’ by Miguel Morales.
+  </div>
+</div>
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Ahad Jawaid </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">July 7, 2023</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+</header>
+
+<style>
+.responsive-img {
+    width: 100%;
+}
+
+@media (min-width: 992px) {
+    .responsive-img {
+        width: 75%;
+    }
+}
+</style>
+<p>In this installment of our journey through the intriguing world of reinforcement learning (RL), we are going to delve deeper into the process of learning from interaction. More specifically, we’ll explore how an agent can formulate a plan and balance immediate versus long-term goals to maximize its overall rewards.</p>
+<p>In previous discussions, we established the foundation of Markov Decision Processes (MDPs), a formal framework for sequential decision-making problems. And while we explored the motivation behind using MDPs, we didn’t quite examine how to <em>solve</em> them. So, how can an agent decide on an optimal course of action in any given state? What does optimality even mean in this context? Let’s dive in.</p>
+<section id="agents-objective-and-the-concept-of-return" class="level2">
+<h2 class="anchored" data-anchor-id="agents-objective-and-the-concept-of-return"><strong>Agent’s Objective and The Concept of Return</strong></h2>
+<p>In an MDP, an agent interacts with the environment over a sequence of time steps, taking actions, transitioning between states, and accruing rewards. As we already learned, the concept of <em>return</em> plays a crucial role. It’s the cumulative reward an agent receives over an episode. Here, we note an interesting perspective - while return can be viewed as the accumulated rewards from past time steps, we could also think of it as the expected rewards from future time steps.</p>
+<p><img src="assets/return.png" class="responsive-img"></p>
+<p>At first glance, one might think that the agent’s objective is to maximize the return. However, that doesn’t capture the full picture - an agent should aim to maximize the <em>expected return</em>, not just the realized rewards. Why? Because the ‘expected’ part takes into account the probabilities of those returns. Thus, the agent wants to maximize the chance of getting a good return, not just any return, irrespective of its likelihood.</p>
+<section id="policies-per-state-action-prescriptions" class="level3">
+<h3 class="anchored" data-anchor-id="policies-per-state-action-prescriptions"><strong>Policies: Per-state Action Prescriptions</strong></h3>
+<p>To achieve the goal of maximizing expected return, an agent needs a <em>policy</em>, denoted as π. It’s a guide that prescribes an action for each non-terminal state. This policy is like a universal plan that takes into account every possible state. A policy can be stochastic, meaning it can either directly prescribe an action or provide a probability distribution over possible actions.</p>
+<p><img src="assets/compare_policy.png" class="responsive-img"></p>
+<p>Now, given a policy, how can we decide which one is better? How can we compare different policies? This brings us to the concepts of state-value functions and action-value functions.</p>
+</section>
+<section id="state-value-function-what-to-expect-from-here" class="level3">
+<h3 class="anchored" data-anchor-id="state-value-function-what-to-expect-from-here"><strong>State-Value Function: What to Expect From Here?</strong></h3>
+<p>The state-value function allows us to compute the expected return starting from every state, considering the agent follows a particular policy π. Although calculating the value of a state might seem challenging (since the value of one state might depend on another), it is achievable using dynamic programming methods.</p>
+<p><img src="assets/state-value-function.png" class="responsive-img"></p>
+</section>
+<section id="action-value-function-what-should-i-expect-from-here-if-i-do-this" class="level3">
+<h3 class="anchored" data-anchor-id="action-value-function-what-should-i-expect-from-here-if-i-do-this"><strong>Action-Value Function: What Should I Expect from Here if I Do This?</strong></h3>
+<p>Another key function in reinforcement learning is the <em>action-value function</em>, often referred to as the <em>Q-function</em>. It provides the expected return if an agent follows policy π after taking action ‘a’ in a state ‘s’. The Q-function helps capture the dynamics of the environment, which, in turn, aids in improving policies.</p>
+<p><img src="assets/action-value.png" class="responsive-img"></p>
+</section>
+<section id="action-advantage-function-how-much-better-if-i-do-that" class="level3">
+<h3 class="anchored" data-anchor-id="action-advantage-function-how-much-better-if-i-do-that"><strong>Action-Advantage Function: How Much Better if I Do That?</strong></h3>
+<p>Further, the <em>action-advantage function</em> shows the difference between the action-value function and the state-value function for a given state-action pair under policy π. It effectively quantifies how much better it is to take an action ‘a’ compared to following the policy’s default action in a state ‘s’.</p>
+<p><img src="assets/action-advantage.png" class="responsive-img"> ## <strong>Optimality</strong></p>
+<p>So, what is optimality in this context? When we say something is optimal, we mean it’s the best</p>
+</section>
+<section id="the-objective-of-a-decision-making-agent" class="level3">
+<h3 class="anchored" data-anchor-id="the-objective-of-a-decision-making-agent"><strong>The Objective of a Decision-Making Agent</strong></h3>
+<p>As we start our journey into reinforcement learning, let’s first focus on the objective of a decision-making agent. In reinforcement learning, an agent is rewarded for its actions, providing it with motivation to achieve its goals. These rewards are summed up across one episode of interaction with the environment to calculate the <em>return</em>. This accumulation of rewards provides a straightforward benchmark for the agent’s performance, leading us to think that an agent’s objective could simply be to maximize the return.</p>
+<p>However, this perspective isn’t entirely accurate. While maximizing the return might be an effective strategy in certain scenarios, it doesn’t take into account the probabilities or uncertainties inherent in the environment. What an agent should really optimize for is the <em>expected return</em>, which takes into account the likelihood of obtaining different returns.</p>
+</section>
+<section id="policies-per-state-action-prescriptions-1" class="level3">
+<h3 class="anchored" data-anchor-id="policies-per-state-action-prescriptions-1"><strong>Policies: Per-state Action Prescriptions</strong></h3>
+<p>A <em>policy</em>, denoted by <span class="math inline">\(\pi\)</span>, is a mapping from states to actions. It is essentially a strategy that the agent uses to decide what action to take in a given state. In a deterministic policy, the agent takes a specific action for each state. However, in a stochastic policy, the policy provides a probability distribution over actions, adding an element of randomness to the agent’s actions.</p>
+<p>A good policy balances immediate and long-term rewards, factoring in both the current state of the environment and potential future states. This principle is the crux of the <em>dynamic programming</em> approach, which we will explore later.</p>
+</section>
+<section id="state-value-function-what-to-expect-from-here-1" class="level3">
+<h3 class="anchored" data-anchor-id="state-value-function-what-to-expect-from-here-1"><strong>State-Value Function: What to Expect from Here?</strong></h3>
+<p>As we consider policies, we naturally want to compare them to find the best one. To do this, we need to compute the expected return starting from every state, considering the full trajectory of possible future states under a given policy. This is the purpose of the <em>state-value function</em>.</p>
+<p>Formally, the value of a state <span class="math inline">\(s\)</span> under policy <span class="math inline">\(\pi\)</span>, denoted as <span class="math inline">\(V^{\pi}(s)\)</span>, is the expected return when starting from state <span class="math inline">\(s\)</span> and following policy <span class="math inline">\(\pi\)</span>. However, the state-value function is recursive in nature; the value of each state is dependent on the value of future states.</p>
+</section>
+<section id="action-value-function-what-should-i-expect-from-here-if-i-do-this-1" class="level3">
+<h3 class="anchored" data-anchor-id="action-value-function-what-should-i-expect-from-here-if-i-do-this-1"><strong>Action-Value Function: What Should I Expect from Here if I Do This?</strong></h3>
+<p>While the state-value function gives us the expected return for starting at a certain state and following a policy, we also need to know the expected return for taking a specific action in a certain state. This is where the <em>action-value function</em>, or <em>Q-function</em>, comes in.</p>
+<p>The action-value function, <span class="math inline">\(Q^{\pi}(s,a)\)</span>, gives the expected return if the agent is in state <span class="math inline">\(s\)</span>, takes action <span class="math inline">\(a\)</span>, and then follows policy <span class="math inline">\(\pi\)</span>. Like the state-value function, it is also recursive, but it adds an additional level of detail by considering specific actions.</p>
+</section>
+<section id="action-advantage-function-how-much-better-if-i-do-that-1" class="level3">
+<h3 class="anchored" data-anchor-id="action-advantage-function-how-much-better-if-i-do-that-1"><strong>Action-Advantage Function: How Much Better if I Do That?</strong></h3>
+<p>While knowing the expected returns from certain actions in certain states is useful, we might also want to know how much better one action is compared to others. The <em>action-advantage function</em>, <span class="math inline">\(A^{\pi}(s,a)\)</span>, provides this comparison.</p>
+<p>The action-advantage function measures the difference between the action-value function for a certain action in a state and the state-value function for that state under a given policy. Essentially, it gives a measure of how much better it is to take a particular action over others suggested by the policy in a given state.</p>
+</section>
+</section>
+<section id="optimality-striving-for-the-best" class="level2">
+<h2 class="anchored" data-anchor-id="optimality-striving-for-the-best"><strong>Optimality: Striving for the Best</strong></h2>
+<section id="optimal-policies-and-optimality" class="level3">
+<h3 class="anchored" data-anchor-id="optimal-policies-and-optimality"><strong>Optimal Policies and Optimality</strong></h3>
+<p>Now, we’ve touched a bit on the notion of optimality while discussing the policy improvement process. So, what exactly does ‘optimal’ mean in the context of RL? Optimality is the state in which a policy can’t be improved any further. In other words, an optimal policy is one that yields expected returns greater than or equal to any other policy, for all possible states. Notably, there could be multiple optimal policies that are equivalent.</p>
+<p>Applying this concept of optimality to our value and Q functions can give us the optimal Q function and the optimal value function. In an optimal policy, the optimal Q function can be obtained with a one-step search using the optimal value function, and vice versa. This one-step lookahead process can provide a significant advantage for our agent in navigating the decision-making landscape.</p>
+</section>
+<section id="planning-optimal-sequences-of-actions-policy-iteration-and-value-iteration" class="level3">
+<h3 class="anchored" data-anchor-id="planning-optimal-sequences-of-actions-policy-iteration-and-value-iteration"><strong>Planning Optimal Sequences of Actions: Policy Iteration and Value Iteration</strong></h3>
+<p>When the environment dynamics are known, you can iteratively compute equations for the optimal Q and V functions to obtain the optimal policy. We can use two key strategies here: <em>policy iteration</em> and <em>value iteration</em>.</p>
+<section id="policy-evaluation-rating-policies" class="level4">
+<h4 class="anchored" data-anchor-id="policy-evaluation-rating-policies"><strong>Policy Evaluation: Rating Policies</strong></h4>
+<p>Policy evaluation refers to the estimation of a value function from a policy and an MDP. By ‘rating’ policies in this way, we can learn how good a policy is in terms of the expected return from each state.</p>
+<p>In policy evaluation, we start with an initial value function (often arbitrarily initialized), then iteratively update this function until it converges to the true value function for the given policy. This iterative method uses a technique known as ‘bootstrapping’, where an estimate is updated based on other estimates.</p>
+</section>
+<section id="policy-improvement-using-ratings-to-get-better" class="level4">
+<h4 class="anchored" data-anchor-id="policy-improvement-using-ratings-to-get-better"><strong>Policy Improvement: Using Ratings to Get Better</strong></h4>
+<p>Having evaluated the quality of a policy, the next step is to find better policies. This process is known as policy improvement. Using the policy-evaluation phase’s output, we generate a Q-function, then construct a new, improved policy that’s greedy with respect to this Q-function.</p>
+</section>
+<section id="policy-iteration-improving-upon-improved-behaviors" class="level4">
+<h4 class="anchored" data-anchor-id="policy-iteration-improving-upon-improved-behaviors"><strong>Policy Iteration: Improving Upon Improved Behaviors</strong></h4>
+<p>Policy iteration combines the steps of policy evaluation and policy improvement, alternately evaluating and improving the policy until it no longer changes. This procedure ensures the convergence of the algorithm towards an optimal policy.</p>
+<p>A key note: when multiple actions yield identical Q-values, you mustn’t break ties randomly. Random tie-breaking could lead to erratic behavior and instability in the learning process.</p>
+</section>
+<section id="value-iteration-improving-behaviors-early" class="level4">
+<h4 class="anchored" data-anchor-id="value-iteration-improving-behaviors-early"><strong>Value Iteration: Improving Behaviors Early</strong></h4>
+<p>While policy iteration has a separate policy evaluation step that iterates until convergence before a policy improvement step, value iteration has a more aggressive approach. Value iteration truncates the policy evaluation phase and initiates the policy improvement phase after just one pass through the state space. This strategy allows the value estimates to propagate through the states more quickly.</p>
+</section>
+</section>
+</section>
+<section id="wrapping-up" class="level2">
+<h2 class="anchored" data-anchor-id="wrapping-up"><strong>Wrapping up</strong></h2>
+<p>In this post, we’ve journeyed through the process of solving an MDP, focusing on dynamic programming approaches. Remember, the end goal of an RL agent is not to maximize raw returns, but to maximize the expected return, factoring in the probability of getting those returns.</p>
+<p>With the tools we’ve discussed, you can equip an RL agent to tackle complex decision-making tasks, iterating between evaluation and improvement of policies to navigate towards the optimal solution.</p>
+<p>Stay tuned for our next deep dive into reinforcement learning, where we’ll discuss how RL agents can learn directly from interactions with the environment when the environment’s dynamics are unknown. Until then, happy learning!</p>
+
+
+</section>
+
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    if (id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        for (let i = 0; i < 2; i++) {
+          container.appendChild(note.children[i].cloneNode(true));
+        }
+        return container.innerHTML
+      } else {
+        return note.innerHTML;
+      }
+    } else {
+      return note.innerHTML;
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      try { hash = new URL(url).hash; } catch {}
+      const id = hash.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note !== null) {
+        try {
+          const html = processXRef(id, note);
+          instance.setContent(html);
+        } finally {
+          instance.enable();
+          instance.show();
+        }
+      } else {
+        // See if we can fetch this
+        fetch(url.split('#')[0])
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.getElementById(id);
+          console.log(htmlDoc.body.innerHTML);
+          if (note !== null) {
+            const html = processXRef(id, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<script src="https://giscus.app/client.js" data-repo="ahadjawaid/ahadjawaid.github.io" data-repo-id="R_kgDOJrWaMQ" data-category="Announcements" data-category-id="DIC_kwDOJrWaMc4CXAIC" data-mapping="title" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="top" data-theme="light" data-lang="en" crossorigin="anonymous" data-loading="lazy" async="">
+</script>
+<input type="hidden" id="giscus-base-theme" value="light">
+<input type="hidden" id="giscus-alt-theme" value="light">
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>Copyright 2023, Ahad Jawaid</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://twitter.com\_ahadj_">
+      <i class="bi bi-twitter" role="img">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://www.linkedin.com/in/ahad-jawaid">
+      <i class="bi bi-linkedin" role="img">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/ahadjawaid/ahadjawaid.github.io">
+      <i class="bi bi-github" role="img">
+</i> 
+    </a>
+  </li>  
+</ul>
+    </div>
+  </div>
+</footer>
+
+
+
+<script src="../../../site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>
