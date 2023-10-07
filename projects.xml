@@ -76,6 +76,14 @@
   <media:content url="https://ahadjawaid.github.io/personal-website/assets/optimine.png" medium="image" type="image/png" height="189" width="144"/>
 </item>
 <item>
+  <title>Bookify</title>
+  <link>https://ahadjawaid.github.io/personal-website/</link>
+  <description>Convert book and research paper titles to audio formats for easy listening. Perfect for busy individuals or those with visual impairments.</description>
+  <guid>https://ahadjawaid.github.io/personal-website/</guid>
+  <pubDate>Sun, 16 Apr 2023 05:00:00 GMT</pubDate>
+  <media:content url="https://ahadjawaid.github.io/personal-website/assets/bookify.png" medium="image" type="image/png" height="128" width="144"/>
+</item>
+<item>
   <title>Fintuned Speech Emotion Recognition</title>
   <link>https://ahadjawaid.github.io/personal-website/</link>
   <description>Fine tuned a ResNet image classifer on the speech emotion recongition task.</description>
@@ -130,14 +138,6 @@
   <guid>https://ahadjawaid.github.io/personal-website/</guid>
   <pubDate>Sat, 24 Sep 2022 05:00:00 GMT</pubDate>
   <media:content url="https://ahadjawaid.github.io/personal-website/assets/eco.jpg" medium="image" type="image/jpeg"/>
-</item>
-<item>
-  <title>Bookify</title>
-  <link>https://ahadjawaid.github.io/personal-website/</link>
-  <description>Convert book and research paper titles to audio formats for easy listening. Perfect for busy individuals or those with visual impairments.</description>
-  <guid>https://ahadjawaid.github.io/personal-website/</guid>
-  <pubDate>Sat, 18 Apr 2020 05:00:00 GMT</pubDate>
-  <media:content url="https://ahadjawaid.github.io/personal-website/assets/bookify.png" medium="image" type="image/png" height="128" width="144"/>
 </item>
 </channel>
 </rss>
