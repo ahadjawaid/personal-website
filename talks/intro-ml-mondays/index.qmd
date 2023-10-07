@@ -1,0 +1,16 @@
+---
+title: "Introduction to ML Mondays"
+author: "Ahad Jawaid"
+date: "2023-09-19"
+categories: [ML Mondays]
+image: assets/robot.png
+draft: false
+Venue: "Blackstone, 800 W Campbell Rd, Richardson, TX, "
+Location: "Richardson, Texas, US"
+---
+
+This is the introduction to the ML Monday's series, where we teach students the theory and application behind a lot of the most common artifical intelligence models.
+
+[Video Link](https://www.youtube.com/watch?v=XX9xG0_li2g)
+
+[Github Repository Link](https://github.com/ahadjawaid/ml-mondays/tree/main/workshop-1)

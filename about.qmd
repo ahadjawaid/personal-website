@@ -11,7 +11,7 @@ about:
   links:
     - icon: twitter
       text: Twitter
-      href: https://twitter.com\_ahadj_
+      href: https://twitter.com\ahadj0
     - icon: github
       text: Github
       href: https://github.com/ahadjawaid
@@ -24,7 +24,7 @@ about:
 ---
 
 :::{#about}
-I'm a curious person, deeply interested in subjects related to the creation of intelligent agents. I am currently employed as a Software Development Engineer at Amazon. I am going into the senior year of my Computer Science degree at The University of Texas at Dallas.
+I'm a curious person, deeply interested in subjects related to the creation of intelligent agents. I am currently a researcher at the SML Lab at UTD.
 
 My hobbies include reading Machine Learning papers and books, playing musical instruments, and running.
 :::
@@ -53,17 +53,27 @@ My hobbies include reading Machine Learning papers and books, playing musical in
 
 ::: {.d-flex .justify-content-between}
 ::: {}
-**Software Developer Engineer Intern**  
-*Amazon, Seattle, WA, USA*
+**Researcher**  
+*Speech and Machine Learning Lab, Richardson, TX, USA*
 :::
 ::: {.text-end}
-May 2023 - Present
+August 2023 - Present
 :::
 :::
 
 ::: {.d-flex .justify-content-between}
 ::: {}
-**Independent Undergraduate Researcher**  
+**Software Developer Engineer Intern**  
+*Amazon, Seattle, WA, USA*
+:::
+::: {.text-end}
+May 2023 - August 2023
+:::
+:::
+
+::: {.d-flex .justify-content-between}
+::: {}
+**Researcher**  
 *The University of Texas at Dallas, Richardson, TX, USA*
 :::
 ::: {.text-end}
@@ -73,7 +83,7 @@ January 2023 - May 2023
 
 ::: {.d-flex .justify-content-between}
 ::: {}
-**Undergraduate Researcher**  
+**Research Assistant**  
 *System Security Research Lab, Richardson, TX, USA*
 :::
 ::: {.text-end}
@@ -91,7 +101,7 @@ May 2022 - Septemeber 2022
 ::: {.d-flex .justify-content-between}
 ::: {}
 **Artificial Intelligence Society**  
-*Development Officer*
+*ML Mondays Host, Development Officer*
 :::
 ::: {.text-end}
 October 2022 – Present
@@ -101,7 +111,7 @@ October 2022 – Present
 ::: {.d-flex .justify-content-between}
 ::: {}
 **Association of Computing Machinery**  
-*Community Member, Mentor, Mentee, TIP Participant*
+*CMentor, Mentee, TIP Participant*
 :::
 ::: {.text-end}
 January 2022 – Present

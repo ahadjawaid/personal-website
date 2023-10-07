@@ -4,7 +4,7 @@ author: "Ahad Jawaid"
 date: "2023-06-27"
 image: "assets/neural.png"
 description: My notes on Deep Reinforcement Learning (DRL) based on the first chapter of the 'Grokking Deep Reinforcement Learning' by Miguel Morales.
-categories: [Deep Learning, Reinforcement Learning, Deep Reinforcement Learning, Notes]
+categories: [Deep Reinforcement Learning, Notes]
 ---
 
 <style>

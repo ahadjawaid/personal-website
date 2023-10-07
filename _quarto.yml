@@ -35,6 +35,10 @@ website:
         href: index.qmd
         icon: house-door
 
+      - text: Projects
+        href: projects.qmd
+        icon: folder
+
       - text: Blog
         href: blog/index.qmd
         icon: newspaper
@@ -73,7 +77,7 @@ website:
   twitter-card:
     title: "Ahad Jawaid"
     description: "Ahad Jawaid's Website"
-    image: clouds.png
+    image: assets/clouds.png
     card-style: summary_large_image
     creator: "@_ahadj_"
     site: "@_ahadj_"

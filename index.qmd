@@ -10,7 +10,7 @@ about:
   links:
     - icon: twitter
       text: Twitter
-      href: https://twitter.com\_ahadj_
+      href: https://twitter.com\ahadj0
     - icon: github
       text: Github
       href: https://github.com/ahadjawaid
@@ -32,7 +32,9 @@ listing:
 ---
 
 :::{#about}
-I'm a Software Engineer, Researcher, and Student. Here, I share my experiences, things I've learned, and the projects I've worked on. I mostly work on projects related to artificial intelligence and software engineering. Right now, I'm an Intern Software Engineer at Amazon and before this, I was doing research at my university.
+I'm a Developer and a Researcher who likes to build cool things. Here, I share my experiences, things I've learned, and the projects I've worked on. Right now, I'm a researcher at the SML Lab at UTD and I'm trying to start and launch a product every month until I graduate.
+
+You can view my recent works [here](projects.qmd).
 
 You can find more about me [here](about.qmd).
 

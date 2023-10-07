@@ -1,0 +1,110 @@
+---
+title: Projects
+comments: false
+
+listing:
+  - id: projects
+    sort: 
+      - "date desc"
+    sort-ui: [date, author]
+    feed: true
+    type: grid
+    date-format: "DD MMMM YYYY"
+    fields: [title, description, image]
+    contents:
+     - title: "Bookify"
+       description: "Convert book and research paper titles to audio formats for easy listening. Perfect for busy individuals or those with visual impairments."
+       date: 2020-04-18
+       path: "https://devpost.com/software/bookify-hveapw"
+       image: "assets/bookify.png"
+
+     - title: "Random Leetcode"
+       description: "A website that randomly select a leetcode question from the blind 75 list."
+       date: 2022-09-25
+       path: "https://randomleetcode.vercel.app/"
+       image: "assets/randomlc.png"
+
+     - title: "Robo Rev"
+       description: "Train your own robotic dog companion with voice recognition and object detection abilities."
+       date: 2023-01-31
+       path: "https://devpost.com/software/robo-rev"
+       image: "assets/roborev.jpg"
+
+     - title: "Ambient"
+       description: "Analyze customer service calls to get an overview of your service quality and effectiveness."
+       date: 2022-11-13
+       path: "https://devpost.com/software/ambient-5xmhgo"
+       image: "assets/ambient.png"
+
+     - title: "Eco"
+       description: "Support eco-friendly projects by funding projects."
+       date: 2022-09-24
+       path: "https://devpost.com/software/thing-for-the-thing"
+       image: "assets/eco.jpg"
+
+     - title: "Letter Grade Calculator"
+       description: "A script that let's you caclulate your class's letter grade from your scores and the weightings of you scores."
+       date: 2022-12-04
+       path: "https://github.com/ahadjawaid/grade_calculator"
+       image: "assets/calculator.png"
+
+     - title: "WaveNet Implementation"
+       description: "An implementation of an unconditioned wavenet architecture."
+       date: 2023-03-09
+       path: "https://github.com/ahadjawaid/wavenet"
+       image: "assets/wavenet.png"
+
+     - title: "Fintuned Speech Emotion Recognition"
+       description: "Fine tuned a ResNet image classifer on the speech emotion recongition task."
+       date: 2023-04-09
+       path: "https://github.com/ahadjawaid/ser"
+       image: "assets/ser.png"
+
+     - title: "Optimine"
+       description: "A website that mined data from twitter for specific topics and analyzed their sentiments."
+       date: 2023-04-20
+       path: "https://github.com/ahadjawaid/optimine"
+       image: "assets/optimine.png"
+
+     - title: "Fastspeech 1 / 2"
+       description: "A pytorch implementation of the FastSpeech architecture trained on the text-to-speech task."
+       date: 2023-06-05
+       path: "https://ahadjawaid.github.io/fastspeech/"
+       image: "assets/fastspeech.png"
+
+     - title: "Simple Gridworld"
+       description: "A gridworld used for training reinforcement learning algorithms using the openai's gym library."
+       date: 2023-07-20
+       path: "https://github.com/ahadjawaid/simple-gridworld"
+       image: "assets/gridworld.png"
+
+     - title: "Multi Armed Bandits"
+       description: "A library contained Multi-Armed Bandit environments built ontop of openai's gym library."
+       date: 2023-07-20
+       path: "https://github.com/ahadjawaid/multi-armed-bandits"
+       image: "assets/mab.png"
+
+     - title: "Reinforcement Learning Algorithms"
+       description: "A library filled with my implentation of reinforcement learning algorithms."
+       date: 2023-07-28
+       path: "https://github.com/ahadjawaid/rl-algorithms"
+       image: "assets/robot.png"
+
+     - title: "Paper Leaderboard"
+       description: "We help you find the latest and most promising research papers through a community-driven leaderboard"
+       date: 2023-08-13
+       path: "https://www.paperleaderboard.com/"
+       image: "assets/paperleaderboard.png"
+
+     - title: "Create Your Demo"
+       description: "A studio to create voiceovers for demos."
+       date: 2023-09-13
+       path: "https://www.createyourdemo.com/"
+       image: "assets/mic.png"
+
+     - title: "CS Resume Builder"
+       description: "We give you personalized resume reviews to help you pass the resume screening process."
+       date: 2023-09-23
+       path: "https://www.csresumebuilder.com/"
+       image: "assets/csresumebuilder.svg"
+---

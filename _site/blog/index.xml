@@ -10,7 +10,7 @@
 <atom:link href="https://ahadjawaid.github.io/personal-website/blog/index.xml" rel="self" type="application/rss+xml"/>
 <description>Ahad Jawaid&#39;s Website!</description>
 <generator>quarto-1.4.122</generator>
-<lastBuildDate>Sat, 01 Jul 2023 07:00:00 GMT</lastBuildDate>
+<lastBuildDate>Sat, 01 Jul 2023 05:00:00 GMT</lastBuildDate>
 <item>
   <title>Modeling the Reinforcement Learning Problem</title>
   <dc:creator>Ahad Jawaid</dc:creator>
@@ -198,11 +198,10 @@
 </section>
 
 <a onclick="window.scrollTo(0, 0); return false;" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a> ]]></description>
-  <category>Reinforcement Learning</category>
   <category>Deep Reinforcement Learning</category>
   <category>Notes</category>
   <guid>https://ahadjawaid.github.io/personal-website/blog/posts/modeling-reinforcement-learning-problem/index.html</guid>
-  <pubDate>Sat, 01 Jul 2023 07:00:00 GMT</pubDate>
+  <pubDate>Sat, 01 Jul 2023 05:00:00 GMT</pubDate>
   <media:content url="https://ahadjawaid.github.io/personal-website/blog/posts/modeling-reinforcement-learning-problem/assets/blackboard.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
@@ -412,12 +411,10 @@
 </section>
 
 <a onclick="window.scrollTo(0, 0); return false;" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a> ]]></description>
-  <category>Deep Learning</category>
-  <category>Reinforcement Learning</category>
   <category>Deep Reinforcement Learning</category>
   <category>Notes</category>
   <guid>https://ahadjawaid.github.io/personal-website/blog/posts/introduction-to-deep-reinforcement-learning/index.html</guid>
-  <pubDate>Tue, 27 Jun 2023 07:00:00 GMT</pubDate>
+  <pubDate>Tue, 27 Jun 2023 05:00:00 GMT</pubDate>
   <media:content url="https://ahadjawaid.github.io/personal-website/blog/posts/introduction-to-deep-reinforcement-learning/assets/neural.png" medium="image" type="image/png" height="144" width="144"/>
 </item>
 <item>
@@ -493,7 +490,7 @@
 <a onclick="window.scrollTo(0, 0); return false;" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a> ]]></description>
   <category>Research</category>
   <guid>https://ahadjawaid.github.io/personal-website/blog/posts/translating-theory-into-code/index.html</guid>
-  <pubDate>Mon, 05 Jun 2023 07:00:00 GMT</pubDate>
+  <pubDate>Mon, 05 Jun 2023 05:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Neural network: The universal function</title>
@@ -571,7 +568,7 @@
   <category>Deep Learning</category>
   <category>Neueral Networks</category>
   <guid>https://ahadjawaid.github.io/personal-website/blog/posts/the-universal-function/index.html</guid>
-  <pubDate>Thu, 23 Feb 2023 08:00:00 GMT</pubDate>
+  <pubDate>Thu, 23 Feb 2023 06:00:00 GMT</pubDate>
   <media:content url="https://ahadjawaid.github.io/personal-website/blog/posts/the-universal-function/assets/filling-machine.png" medium="image" type="image/png" height="144" width="144"/>
 </item>
 </channel>

@@ -1,0 +1,39 @@
+---
+title: "Introduction to Deep Reinforcement Learning"
+author: "Ahad Jawaid"
+date: "2023-07-24"
+image: "assets/gold-bars.png"
+draft: True
+description: A comparison of Policy Iteration and Value Iteration and the role of the discount rate (gamma) in reinforcement learning.
+categories: [Deep Reinforcement Learning, Reinforcement Learning]
+---
+
+<style>
+.responsive-img {
+    width: 100%;
+}
+
+@media (min-width: 992px) {
+    .responsive-img {
+        width: 75%;
+    }
+}
+</style>
+
+# Introduction
+
+## Policy Iteration
+
+### Policy Evaluation
+
+### Policy Improvement
+
+## Value Iteration
+
+# A comparison
+
+## The role of gamma
+
+## Reasoning
+
+## Conclusion

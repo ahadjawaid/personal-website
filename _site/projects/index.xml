@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss  xmlns:atom="http://www.w3.org/2005/Atom" 
+      xmlns:media="http://search.yahoo.com/mrss/" 
+      xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+      xmlns:dc="http://purl.org/dc/elements/1.1/" 
+      version="2.0">
+<channel>
+<title>Ahad Jawaid</title>
+<link>https://ahadjawaid.github.io/personal-website/projects/index.html</link>
+<atom:link href="https://ahadjawaid.github.io/personal-website/projects/index.xml" rel="self" type="application/rss+xml"/>
+<description>Ahad Jawaid&#39;s Website!</description>
+<generator>quarto-1.4.122</generator>
+<lastBuildDate>Sat, 23 Sep 2023 05:00:00 GMT</lastBuildDate>
+<item>
+  <title>CS Resume Builder</title>
+  <link>https://ahadjawaid.github.io/personal-website/</link>
+  <description>We give you personalized resume reviews to help you pass the resume screening process.</description>
+  <guid>https://ahadjawaid.github.io/personal-website/</guid>
+  <pubDate>Sat, 23 Sep 2023 05:00:00 GMT</pubDate>
+  <media:content url="https://ahadjawaid.github.io/personal-website/assets/csresumebuilder.svg" medium="image" type="image/svg+xml"/>
+</item>
+<item>
+  <title>Create Your Demo</title>
+  <link>https://ahadjawaid.github.io/personal-website/</link>
+  <description>A studio to create voiceovers for demos.</description>
+  <guid>https://ahadjawaid.github.io/personal-website/</guid>
+  <pubDate>Wed, 13 Sep 2023 05:00:00 GMT</pubDate>
+  <media:content url="https://ahadjawaid.github.io/personal-website/assets/mic.png" medium="image" type="image/png" height="147" width="144"/>
+</item>
+<item>
+  <title>Paper Leaderboard</title>
+  <link>https://ahadjawaid.github.io/personal-website/</link>
+  <description>We help you find the latest and most promising research papers through a community-driven leaderboard</description>
+  <guid>https://ahadjawaid.github.io/personal-website/</guid>
+  <pubDate>Sun, 13 Aug 2023 05:00:00 GMT</pubDate>
+  <media:content url="https://ahadjawaid.github.io/personal-website/assets/paperleaderboard.png" medium="image" type="image/png" height="144" width="144"/>
+</item>
+<item>
+  <title>Reinforcement Learning Algorithms</title>
+  <link>https://ahadjawaid.github.io/personal-website/</link>
+  <description>A library filled with my implentation of reinforcement learning algorithms.</description>
+  <guid>https://ahadjawaid.github.io/personal-website/</guid>
+  <pubDate>Fri, 28 Jul 2023 05:00:00 GMT</pubDate>
+  <media:content url="https://ahadjawaid.github.io/personal-website/assets/robot.png" medium="image" type="image/png" height="144" width="144"/>
+</item>
+<item>
+  <title>Simple Gridworld</title>
+  <link>https://ahadjawaid.github.io/personal-website/</link>
+  <description>A gridworld used for training reinforcement learning algorithms using the openai&#39;s gym library.</description>
+  <guid>https://ahadjawaid.github.io/personal-website/</guid>
+  <pubDate>Thu, 20 Jul 2023 05:00:00 GMT</pubDate>
+  <media:content url="https://ahadjawaid.github.io/personal-website/assets/gridworld.png" medium="image" type="image/png" height="144" width="144"/>
+</item>
+<item>
+  <title>Multi Armed Bandits</title>
+  <link>https://ahadjawaid.github.io/personal-website/</link>
+  <description>A library contained Multi-Armed Bandit environments built ontop of openai&#39;s gym library.</description>
+  <guid>https://ahadjawaid.github.io/personal-website/</guid>
+  <pubDate>Thu, 20 Jul 2023 05:00:00 GMT</pubDate>
+  <media:content url="https://ahadjawaid.github.io/personal-website/assets/mab.png" medium="image" type="image/png" height="144" width="144"/>
+</item>
+<item>
+  <title>Fastspeech 1 / 2</title>
+  <link>https://ahadjawaid.github.io/personal-website/</link>
+  <description>A pytorch implementation of the FastSpeech architecture trained on the text-to-speech task.</description>
+  <guid>https://ahadjawaid.github.io/personal-website/</guid>
+  <pubDate>Mon, 05 Jun 2023 05:00:00 GMT</pubDate>
+  <media:content url="https://ahadjawaid.github.io/personal-website/assets/fastspeech.png" medium="image" type="image/png" height="75" width="144"/>
+</item>
+<item>
+  <title>Optimine</title>
+  <link>https://ahadjawaid.github.io/personal-website/</link>
+  <description>A website that mined data from twitter for specific topics and analyzed their sentiments.</description>
+  <guid>https://ahadjawaid.github.io/personal-website/</guid>
+  <pubDate>Thu, 20 Apr 2023 05:00:00 GMT</pubDate>
+  <media:content url="https://ahadjawaid.github.io/personal-website/assets/optimine.png" medium="image" type="image/png" height="189" width="144"/>
+</item>
+<item>
+  <title>Fintuned Speech Emotion Recognition</title>
+  <link>https://ahadjawaid.github.io/personal-website/</link>
+  <description>Fine tuned a ResNet image classifer on the speech emotion recongition task.</description>
+  <guid>https://ahadjawaid.github.io/personal-website/</guid>
+  <pubDate>Sun, 09 Apr 2023 05:00:00 GMT</pubDate>
+  <media:content url="https://ahadjawaid.github.io/personal-website/assets/ser.png" medium="image" type="image/png" height="86" width="144"/>
+</item>
+<item>
+  <title>WaveNet Implementation</title>
+  <link>https://ahadjawaid.github.io/personal-website/</link>
+  <description>An implementation of an unconditioned wavenet architecture.</description>
+  <guid>https://ahadjawaid.github.io/personal-website/</guid>
+  <pubDate>Thu, 09 Mar 2023 06:00:00 GMT</pubDate>
+  <media:content url="https://ahadjawaid.github.io/personal-website/assets/wavenet.png" medium="image" type="image/png" height="86" width="144"/>
+</item>
+<item>
+  <title>Robo Rev</title>
+  <link>https://ahadjawaid.github.io/personal-website/</link>
+  <description>Train your own robotic dog companion with voice recognition and object detection abilities.</description>
+  <guid>https://ahadjawaid.github.io/personal-website/</guid>
+  <pubDate>Tue, 31 Jan 2023 06:00:00 GMT</pubDate>
+  <media:content url="https://ahadjawaid.github.io/personal-website/assets/roborev.jpg" medium="image" type="image/jpeg"/>
+</item>
+<item>
+  <title>Letter Grade Calculator</title>
+  <link>https://ahadjawaid.github.io/personal-website/</link>
+  <description>A script that let&#39;s you caclulate your class&#39;s letter grade from your scores and the weightings of you scores.</description>
+  <guid>https://ahadjawaid.github.io/personal-website/</guid>
+  <pubDate>Sun, 04 Dec 2022 06:00:00 GMT</pubDate>
+  <media:content url="https://ahadjawaid.github.io/personal-website/assets/calculator.png" medium="image" type="image/png" height="144" width="144"/>
+</item>
+<item>
+  <title>Ambient</title>
+  <link>https://ahadjawaid.github.io/personal-website/</link>
+  <description>Analyze customer service calls to get an overview of your service quality and effectiveness.</description>
+  <guid>https://ahadjawaid.github.io/personal-website/</guid>
+  <pubDate>Sun, 13 Nov 2022 06:00:00 GMT</pubDate>
+  <media:content url="https://ahadjawaid.github.io/personal-website/assets/ambient.png" medium="image" type="image/png" height="108" width="144"/>
+</item>
+<item>
+  <title>Random Leetcode</title>
+  <link>https://ahadjawaid.github.io/personal-website/</link>
+  <description>A website that randomly select a leetcode question from the blind 75 list.</description>
+  <guid>https://ahadjawaid.github.io/personal-website/</guid>
+  <pubDate>Sun, 25 Sep 2022 05:00:00 GMT</pubDate>
+  <media:content url="https://ahadjawaid.github.io/personal-website/assets/randomlc.png" medium="image" type="image/png" height="59" width="144"/>
+</item>
+<item>
+  <title>Eco</title>
+  <link>https://ahadjawaid.github.io/personal-website/</link>
+  <description>Support eco-friendly projects by funding projects.</description>
+  <guid>https://ahadjawaid.github.io/personal-website/</guid>
+  <pubDate>Sat, 24 Sep 2022 05:00:00 GMT</pubDate>
+  <media:content url="https://ahadjawaid.github.io/personal-website/assets/eco.jpg" medium="image" type="image/jpeg"/>
+</item>
+<item>
+  <title>Bookify</title>
+  <link>https://ahadjawaid.github.io/personal-website/</link>
+  <description>Convert book and research paper titles to audio formats for easy listening. Perfect for busy individuals or those with visual impairments.</description>
+  <guid>https://ahadjawaid.github.io/personal-website/</guid>
+  <pubDate>Sat, 18 Apr 2020 05:00:00 GMT</pubDate>
+  <media:content url="https://ahadjawaid.github.io/personal-website/assets/bookify.png" medium="image" type="image/png" height="128" width="144"/>
+</item>
+</channel>
+</rss>
