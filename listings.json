@@ -1,11 +1,11 @@
 [
   {
-    "listing": "/index.html",
+    "listing": "/talks.html",
     "items": [
-      "/blog/posts/modeling-reinforcement-learning-problem/index.html",
-      "/blog/posts/introduction-to-deep-reinforcement-learning/index.html",
-      "/blog/posts/translating-theory-into-code/index.html",
-      "/blog/posts/the-universal-function/index.html"
+      "/talks/intro-deep-learning-1/index.html",
+      "/talks/intro-deep-learning-2/index.html",
+      "/talks/intro-ml-mondays/index.html",
+      "/talks/deep-learning-with-fastai/index.html"
     ]
   },
   {
@@ -18,11 +18,12 @@
     ]
   },
   {
-    "listing": "/talks.html",
+    "listing": "/index.html",
     "items": [
-      "/talks/intro-deep-learning-1/index.html",
-      "/talks/intro-ml-mondays/index.html",
-      "/talks/deep-learning-with-fastai/index.html"
+      "/blog/posts/modeling-reinforcement-learning-problem/index.html",
+      "/blog/posts/introduction-to-deep-reinforcement-learning/index.html",
+      "/blog/posts/translating-theory-into-code/index.html",
+      "/blog/posts/the-universal-function/index.html"
     ]
   }
 ]

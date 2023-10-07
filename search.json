@@ -7,25 +7,165 @@
     "text": "This is the introduction to the ML Monday’s series, where we teach students the theory and application behind a lot of the most common artifical intelligence models.\nVideo Link\nGithub Repository Link\n\n\n\n Back to top"
   },
   {
-    "objectID": "talks/deep-learning-with-fastai/index.html",
-    "href": "talks/deep-learning-with-fastai/index.html",
-    "title": "Deep learning with fast.ai",
+    "objectID": "talks/intro-deep-learning-1/index.html",
+    "href": "talks/intro-deep-learning-1/index.html",
+    "title": "Introduction to Deep Learning - Part 1",
     "section": "",
-    "text": "Workshop on deep learning and introducing transfer learning. This work shop was hosted by me and Ibad to teach students how to use the library fast.ai to perform transfer learning on a image classification task.\nVideo Link\nGithub Repository Link\n\n\n\n Back to top"
+    "text": "Demystified neural networks by boiling them down to simple math equations. Attendees worked together to manually adjust the weights in these simplified models, gaining a hands-on understanding of the underlying concepts.\nVideo Link\nGithub Repository Link\n\n\n\n Back to top"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "👋 Hey, I’m Ahad",
+    "objectID": "talks.html",
+    "href": "talks.html",
+    "title": "Talks",
     "section": "",
-    "text": "I’m a Developer and a Researcher who likes to build cool things. Here, I share my experiences, things I’ve learned, and the projects I’ve worked on. My goal is to create a Jarvis like AI. Right now, I’m a researcher at the SML Lab at UTD and previous I worked as a SDE Intern at Amazon.\nYou can find more about me here.\n \n  \n   \n  \n    \n     Twitter\n  \n  \n    \n     Github\n  \n  \n    \n     LinkedIn\n  \n  \n    \n     Email"
+    "text": "Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n  \n\n\n\n\nIntroduction to Deep Learning - Part 1\n\n\n\n\n\n\n\n\n\n\n\n\n26 September 2023\n\n\nAhad Jawaid\n\n\n\n\n\n\n  \n\n\n\n\nIntroduction to Deep Learning - Part 2\n\n\n\n\n\n\n\n\n\n\n\n\n26 September 2023\n\n\nAhad Jawaid\n\n\n\n\n\n\n  \n\n\n\n\nIntroduction to ML Mondays\n\n\n\n\n\n\n\n\n\n\n\n\n19 September 2023\n\n\nAhad Jawaid\n\n\n\n\n\n\n  \n\n\n\n\nDeep learning with fast.ai\n\n\n\n\n\n\n\n\n\n\n\n\n22 March 2023\n\n\nAhad Jawaid\n\n\n\n\n\n\nNo matching items\n\n\n\n\n\n\n Back to top"
   },
   {
-    "objectID": "index.html#recent-posts",
-    "href": "index.html#recent-posts",
-    "title": "👋 Hey, I’m Ahad",
-    "section": "Recent Posts",
-    "text": "Recent Posts\nClick here to check out my blog.\n\n\n\n\n  \n\n\n\n\nModeling the Reinforcement Learning Problem\n\n\n\n\n\nMy notes on the second chapter of ‘Grokking Deep Reinforcement Learning’ by Miguel Morales. This post covers the components of the environment and how to model it using Markov Decision Processes (MDPs).\n\n\n\n\n\n\nJul 1, 2023\n\n\nAhad Jawaid\n\n\n\n\n\n\n  \n\n\n\n\nIntroduction to Deep Reinforcement Learning\n\n\n\n\n\nMy notes on Deep Reinforcement Learning (DRL) based on the first chapter of the ‘Grokking Deep Reinforcement Learning’ by Miguel Morales.\n\n\n\n\n\n\nJun 27, 2023\n\n\nAhad Jawaid\n\n\n\n\n\n\n  \n\n\n\n\nFrom Paper to Code: A Guide to Implement Research\n\n\n\n\n\nThis guide covers effective reading, model implementation, code validation, and the power of repetition.\n\n\n\n\n\n\nJun 5, 2023\n\n\nAhad Jawaid\n\n\n\n\n\n\nNo matching items"
+    "objectID": "blog/posts/translating-theory-into-code/index.html",
+    "href": "blog/posts/translating-theory-into-code/index.html",
+    "title": "From Paper to Code: A Guide to Implement Research",
+    "section": "",
+    "text": "Recently, I’ve been diving into the practice of implementing deep learning research papers. This post is designed to guide you through this process, sharing my key insights along the way.\nStarting with an independent study course at university, I explored deep learning intensively. To streamline the journey of understanding and implementing such papers, I’ve distilled the process into four steps:\n\nLet’s break each one down."
+  },
+  {
+    "objectID": "blog/posts/translating-theory-into-code/index.html#introduction",
+    "href": "blog/posts/translating-theory-into-code/index.html#introduction",
+    "title": "From Paper to Code: A Guide to Implement Research",
+    "section": "",
+    "text": "Recently, I’ve been diving into the practice of implementing deep learning research papers. This post is designed to guide you through this process, sharing my key insights along the way.\nStarting with an independent study course at university, I explored deep learning intensively. To streamline the journey of understanding and implementing such papers, I’ve distilled the process into four steps:\n\nLet’s break each one down."
+  },
+  {
+    "objectID": "blog/posts/translating-theory-into-code/index.html#read",
+    "href": "blog/posts/translating-theory-into-code/index.html#read",
+    "title": "From Paper to Code: A Guide to Implement Research",
+    "section": "Read",
+    "text": "Read\nReading a research paper should be focused on understanding the process rather than memorizing details. Pay attention to the inputs, outputs, data transformations, and assumptions.\n\nTo expedite the reading process, it helps to know where to find necessary details. Typically, the most crucial sections in a research paper are:\n\nAbstract\n\nProvides a broad understanding of the paper and its relevance.\n\nFigures\n\nOften encapsulate the paper’s content and are valuable for understanding the model’s workings. However, ensure their accuracy by cross-referencing the textual content.\n\nIntroduction\n\nHighlights the paper’s novelty or significance.\n\nArchitecture (Can go by other names)\n\nContains detailed descriptions of the architecture (usually where most of your time will be spent).\n\nTraining\n\nProvides hyperparameters for training, model performance, and other essential information.\n\nThe appendix\n\nOften contains implementation details not fitting into the main paper’s flow.\n\nExperiements (Optional)\n\nCan include important data and parameters used for model training."
+  },
+  {
+    "objectID": "blog/posts/translating-theory-into-code/index.html#implement",
+    "href": "blog/posts/translating-theory-into-code/index.html#implement",
+    "title": "From Paper to Code: A Guide to Implement Research",
+    "section": "Implement",
+    "text": "Implement\nDuring implementation, the key is not to get overwhelmed by the complexity of the task. Instead, focus on the components you understand, and incrementally build upon them. It’s okay if your code isn’t flawless initially; revisions can be made as you progress."
+  },
+  {
+    "objectID": "blog/posts/translating-theory-into-code/index.html#visualize",
+    "href": "blog/posts/translating-theory-into-code/index.html#visualize",
+    "title": "From Paper to Code: A Guide to Implement Research",
+    "section": "Visualize",
+    "text": "Visualize\nPost-implementation, validate your code. Use libraries like matplotlib to visualize the outputs, or tools like pytest to perform tests. Working in an interactive environment like a jupyter notebook can also be helpful."
+  },
+  {
+    "objectID": "blog/posts/translating-theory-into-code/index.html#repeat",
+    "href": "blog/posts/translating-theory-into-code/index.html#repeat",
+    "title": "From Paper to Code: A Guide to Implement Research",
+    "section": "Repeat",
+    "text": "Repeat\nThe key to successful implementation is repetition. Even if you start slowly, your pace will increase as you build your knowledge and develop better abstractions. This process also improves your programming skills."
+  },
+  {
+    "objectID": "blog/posts/translating-theory-into-code/index.html#conclusion",
+    "href": "blog/posts/translating-theory-into-code/index.html#conclusion",
+    "title": "From Paper to Code: A Guide to Implement Research",
+    "section": "Conclusion",
+    "text": "Conclusion\nIn summary, the methodology I formulated and the key lessons I learned during my initial experience implementing a research paper can be encapsulated in four words: read, implement, visualize, and repeat. I hope you find this post beneficial, and I welcome any feedback or suggestions you might have. Thank you!"
+  },
+  {
+    "objectID": "blog/posts/introduction-to-deep-reinforcement-learning/index.html",
+    "href": "blog/posts/introduction-to-deep-reinforcement-learning/index.html",
+    "title": "Introduction to Deep Reinforcement Learning",
+    "section": "",
+    "text": "Artificial Intelligence (AI) is a domain of computer science dedicated to developing software capable of exhibiting attributes of intelligence."
+  },
+  {
+    "objectID": "blog/posts/introduction-to-deep-reinforcement-learning/index.html#artificial-intelligence-ai",
+    "href": "blog/posts/introduction-to-deep-reinforcement-learning/index.html#artificial-intelligence-ai",
+    "title": "Introduction to Deep Reinforcement Learning",
+    "section": "",
+    "text": "Artificial Intelligence (AI) is a domain of computer science dedicated to developing software capable of exhibiting attributes of intelligence."
+  },
+  {
+    "objectID": "blog/posts/introduction-to-deep-reinforcement-learning/index.html#machine-learning-ml",
+    "href": "blog/posts/introduction-to-deep-reinforcement-learning/index.html#machine-learning-ml",
+    "title": "Introduction to Deep Reinforcement Learning",
+    "section": "Machine Learning (ML)",
+    "text": "Machine Learning (ML)\n\nMachine learning, a subset of AI, tackles problems necessitating intelligent solutions by learning from data.\nSupervised Learning (SL): A method that learns from labeled data.\n\nE.g., handwritten-digit-recognition\n\nUnsupervised Learning (UL): A method that learns from unlabeled data\n\nE.g., customer segmentaiton\n\nReinforcement Learning (RL): A method that learns from trial and error\n\nE.g., pong-playing agent"
+  },
+  {
+    "objectID": "blog/posts/introduction-to-deep-reinforcement-learning/index.html#deep-learning-dl",
+    "href": "blog/posts/introduction-to-deep-reinforcement-learning/index.html#deep-learning-dl",
+    "title": "Introduction to Deep Reinforcement Learning",
+    "section": "Deep Learning (DL)",
+    "text": "Deep Learning (DL)\n\nDeep Learning employs multi-layered non-linear function approximations, also known as neural networks, to address ML tasks. Essentially, it is a suite of techniques that utilize neural networks to solve ML challenges.\n\n\n\nDeep Reinforcement Learning (DRL)\n\nDeep Reinforcement Learning learns through trial and error from feedback that’s simultaneously sequentially, evaluative, and sampled by leveraging non-linear function approximation (neural networks)."
+  },
+  {
+    "objectID": "blog/posts/introduction-to-deep-reinforcement-learning/index.html#reinforcement-learning-rl",
+    "href": "blog/posts/introduction-to-deep-reinforcement-learning/index.html#reinforcement-learning-rl",
+    "title": "Introduction to Deep Reinforcement Learning",
+    "section": "Reinforcement Learning (RL)",
+    "text": "Reinforcement Learning (RL)\n\nSimilar fields\n\nReinforcement Learning (RL): Investigates methods of resolving complex sequential decision-making problems under uncertain conditions.\nControl Theory (CT): Examines methods of controlling complex known dynamic systems.\nOperations Research (OR): Investigates decision-making under uncertain conditions, generally featuring a larger action space than in DRL.\nPsychology: Studies human behavior, which frequently encapsulates complex sequential decision-making problems under uncertainty.\n\n\n\n\nAgent and Enviroment\n\nAgent: Refers exclusively to the decision-making entity.\n\nFor instance, if you are training a robot arm to pick up a toy, the agent is the code that makes the decisions, not the robot arm itself.\n\nEnvironment: Includes everything external to the agent, beyond the agent’s control, and everything that follows the agent’s decisions.\n\nIn the context of training a robot arm to pick up a toy, the objects to be picked up, the tray where the objects reside, atmospheric conditions like wind, and even the robot arm itself are all considered parts of the environment.\n\n\n\n\n\nStates and Observations\n\nState Space: The set of all possible variables and values that can represent the state of the environment.\nState: A comprehensive description of the environment, or an instantiation of the state space.\nObservation: A partial or incomplete description of the environment.\n\n\n\n\nReinforcement Learning Cycle\n\nTransition Function: The mapping from the agent’s action to a potentially new state.\nReward Function: The mapping from the action taken to the potential reward signal.\n\nGoals are defined via the reward function.\n\nModel: A set of the transitions and rewards.\n\n\n\nAgent’s Improvement process:\n\nInteract with the environment.\nEvaluates its behavior.\nImproves its responses.\n\n\n\nAgent’s can be designed to learn:\n\nPolicy: The mapping from observations to actions.\nModels: A model of the environment on mappings.\nValue Functions: The mapping of a state to its estimated value.\n\n\n\n\nExperiences\n\nTime Step: A single cycle of interaction between the agent and the environment.\nExperience: The set consisting of the state, the action, the reward, and the new state in a single time step.\n\n\n\nEpisodic Task: Tasks that have a natural ending or goes on finitely many step.\n\nE.g., video games\n\nContinuing Task: Tasks that don’t have a natural ending or could go on indefinitely.\n\nE.g., learning forward motion\n\n\n\n\nCredit Assignment Problem\n\nTemporal Credit Assignment Problem: the challenge in determining which state and/or action is responsible for a reward the agent recieves\n\nUsually occurs when the agent may have delayed rewards from an action or state that caused it hence the temporal aspect of the problem\n\n\n\n\n\nExploration vs. Exploitation\n\nEvaluative Feedback: Feedback that provides an indication of performance but not correctness.\nExploration versus Exploitation trade-off: The balance between collecting new information from the environment and using known information to maximize rewards.\n\n\n\n\nSampled Feedback\n\nLearning from sparse or weak feedback becomes more challenging with samples only. The agent must be capable of generalizing to learn from sampled feedback.\n\n\n\n\nTypes of Agents\n\nPolicy-based: Designed to approximate policies.\nModel-based: Designed to approximate models.\nValue-based: Designed to approximate value functions.\nActor-critic: Designed to approximate both policies and value functions.\n\n\n\nPros and Cons\nStrength: Reinforcement learning excels in mastering specific tasks.\nWeaknesses: To learn a well-performing policy, it generally requires millions of samples."
+  },
+  {
+    "objectID": "blog/posts/introduction-to-deep-reinforcement-learning/index.html#history-of-deep-reinforcement-learning",
+    "href": "blog/posts/introduction-to-deep-reinforcement-learning/index.html#history-of-deep-reinforcement-learning",
+    "title": "Introduction to Deep Reinforcement Learning",
+    "section": "History of Deep Reinforcement Learning",
+    "text": "History of Deep Reinforcement Learning\n\nAlan Turing - 1930: Developed the Turing Test, a test of a machine’s ability to exhibit intelligent behavior indistinguishable from that of a human.\nJohn McCarthy - 1955: Coined the term “Artificial Intelligence”.\nAndrew Ng - 2002: Trained an autonomous helicopter to perform stunts by observing human-expert flights using inverse reinforcement learning.\nNate Kohl and Peter Stone - 2002: Applied policy-gradient methods to train a soccer-playing robot.\nMnih et al. - 2013, 2015: Introduced the DQN algorithm, which learned to play Atari games from raw pixels.\n\n\n\nSilver et al. - 2014: Released the deterministic policy gradient (DPG) algorithm.\nLillicrap et al. - 2015: Improved DPG with deep deterministic policy gradient (DDPG)\nSchulman et al. - 2016: Released trust region policy optimization (TRPO) and generalized advantage estimation (GAE) methods.\nSergey Levine et al. - 2016: Published Guided Policy Search (GPS)\nSilver et al. - 2016: Demonstrated AlphaGo\n…"
+  },
+  {
+    "objectID": "blog/posts/introduction-to-deep-reinforcement-learning/index.html#references",
+    "href": "blog/posts/introduction-to-deep-reinforcement-learning/index.html#references",
+    "title": "Introduction to Deep Reinforcement Learning",
+    "section": "References",
+    "text": "References\nMorales, M. (2020). Grokking Deep Reinforcement Learning. Originally Published: October 15, 2020.\nAll figures are sourced from this book."
+  },
+  {
+    "objectID": "blog/index.html",
+    "href": "blog/index.html",
+    "title": "Blog",
+    "section": "",
+    "text": "Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n  \n\n\n\n\nModeling the Reinforcement Learning Problem\n\n\n\n\n\nMy notes on the second chapter of ‘Grokking Deep Reinforcement Learning’ by Miguel Morales. This post covers the components of the environment and how to model it using Markov Decision Processes (MDPs).\n\n\n\n\n\n\n01 July 2023\n\n\nAhad Jawaid\n\n\n6 min\n\n\n\n\n\n\n  \n\n\n\n\nIntroduction to Deep Reinforcement Learning\n\n\n\n\n\nMy notes on Deep Reinforcement Learning (DRL) based on the first chapter of the ‘Grokking Deep Reinforcement Learning’ by Miguel Morales.\n\n\n\n\n\n\n27 June 2023\n\n\nAhad Jawaid\n\n\n5 min\n\n\n\n\n\n\n  \n\n\n\n\nFrom Paper to Code: A Guide to Implement Research\n\n\n\n\n\nThis guide covers effective reading, model implementation, code validation, and the power of repetition.\n\n\n\n\n\n\n05 June 2023\n\n\nAhad Jawaid\n\n\n2 min\n\n\n\n\n\n\n  \n\n\n\n\nNeural network: The universal function\n\n\n\n\n\n\n\n\n\n\n\n\n23 February 2023\n\n\nAhad Jawaid\n\n\n6 min\n\n\n\n\n\n\nNo matching items\n\n\n\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "Ahad Jawaid",
+    "section": "",
+    "text": "Twitter\n  \n  \n    \n     Github\n  \n  \n    \n     LinkedIn\n  \n  \n    \n     Email\n  \n\n      \nI’m a curious person, deeply interested in subjects related to the creation of intelligent agents. I am currently a researcher at the SML Lab at UTD.\nMy hobbies include reading Machine Learning papers and books, playing musical instruments, and running.\n\n    \n    \n  \n\n\n\nEducation\n\n\n\n\nBachelors of Science in Computer Science\nThe University of Texas at Dallas, Richardson, TX, USA\n\n\nExpected Graduation: May 2024\n\n\n\n\n\n\nExperience\n\n\n\n\nSoftware Developer Engineer Intern\nAmazon, Seattle, WA, USA\n\n\nMay 2023 - Present\n\n\n\n\nIndependent Undergraduate Researcher\nThe University of Texas at Dallas, Richardson, TX, USA\n\n\nJanuary 2023 - May 2023\n\n\n\n\nUndergraduate Researcher\nSystem Security Research Lab, Richardson, TX, USA\n\n\nMay 2022 - Septemeber 2022\n\n\n\n\n\n\nOrganizations\n\n\n\n\nArtificial Intelligence Society\nDevelopment Officer\n\n\nOctober 2022 – Present\n\n\n\n\nAssociation of Computing Machinery\nCommunity Member, Mentor, Mentee, TIP Participant\n\n\nJanuary 2022 – Present\n\n\n\n\nFinTech UTD\nDeveloper\n\n\nSeptember 2022 – November 2022\n\n\n\n\nComet Marketing\nDirector of Web Development\n\n\nAugust 2022 – October 2022\n\n\n\n\nUX Club\nMember\n\n\nJanuary 2022 – May 2022\n\n\n\n\n\n\nCertifications\n\n\n\n\nNeural Networks and Deep Learning, Deeplearning.ai, Coursera\nCertificate\n\n\nJanuary, 2023\n\n\n\n\nStructuring Machine Learning Projects Structuring, Deeplearning.ai, Coursera\nCertificate\n\n\nJanuary, 2023\n\n\n\n\nCertified Developer - Associate, AWS\nCredential ID NGJGEZLJFJE4QMWQ\n\n\nMay, 2022"
+  },
+  {
+    "objectID": "blog/posts/modeling-reinforcement-learning-problem/index.html",
+    "href": "blog/posts/modeling-reinforcement-learning-problem/index.html",
+    "title": "Modeling the Reinforcement Learning Problem",
+    "section": "",
+    "text": "This post will discuss how to model the reinforcement learning problem using the mathematical framework of a Markov Decision Process (MDP). We’ll cover what an environment is in reinforcement learning, its components, and how to model it through an MDP.\nTo understand what we are modeling, we must first familiarize ourselves with the components of reinforcement learning:"
+  },
+  {
+    "objectID": "blog/posts/modeling-reinforcement-learning-problem/index.html#components-of-reinforcement-learning",
+    "href": "blog/posts/modeling-reinforcement-learning-problem/index.html#components-of-reinforcement-learning",
+    "title": "Modeling the Reinforcement Learning Problem",
+    "section": "Components of Reinforcement Learning",
+    "text": "Components of Reinforcement Learning\n\nReinforcement Learning is A solution for managing complex, uncertain sequential decision-making.\n\nComplex: Pertains to the large scale of the state and action spaces that the agent needs to navigate.\nSequential: Denotes the delayed effect of an agent’s actions, essentially the credit assignment problem.\nUncertainty: Highlights the unpredictability of the impact of an agent’s actions on the environment, tying to balance the exploration vs exploitation trade-off.\n\n\n\n\nThe agent: The decision maker\n\nAgents: These are entities solely responsible for making decisions that may influence the environment.\n\n\n\nAgent’s Improvement Process:\n\nInteract\nEvaluate\nImprove\n\n\n\n\nThe environment: Everything else\n\nThe environment symbolizes the problem at hand. It encapsulates everything external to the agent, anything that’s beyond the agent’s control but responds to the agent’s decisions.\n\n\nPay attention to how we try to emulate the possible reactions of the environment to the agent’s actions."
+  },
+  {
+    "objectID": "blog/posts/modeling-reinforcement-learning-problem/index.html#unraveling-the-environment",
+    "href": "blog/posts/modeling-reinforcement-learning-problem/index.html#unraveling-the-environment",
+    "title": "Modeling the Reinforcement Learning Problem",
+    "section": "Unraveling the Environment:",
+    "text": "Unraveling the Environment:\n\nThe environment is made up of states, actions, transition probabilities, and a reward function.\n\n\nStates: Specific configurations of the environment\n\nA state provides a comprehensive description of the environment.\nState Space: A combiniation of all possible variables and values that can characterize the environment.\n\n\n\nInitial States: A subset of states where the agent starts in the environment.\nTerminal States: The final state in an episodic task, any transition from this state will leads back to itself.\nObservation: The set of variables that the agent perceives. It might not be as comprehensive as a state.\nObservation Space: All possible values of the variables observed by the agent.\n\n\n\nActions: A mechanism to influence the environment\n\nAn action signifies a choice that an agent can make to potentially alter the environment. The set of actions available to an agent may vary across states and during the agent’s learning process.\nAction Space: The set of all actions in all states.\n\n\n\nTransition Function: Consequences of agent actions\n\nA transition function determines how the environment changes in response to an action.\nDenoted as \\(T(s, a, s')\\), where \\(s\\) is the current state, \\(a\\) is the action taken, and \\(s'\\) is the resulting state.\n\n\n\nStochastic Transitions: Transitions that don’t guarantee a single resulting state but could lead to multiple states, each with a different probability.\nIn RL, we often assume that transition distributions remain stationary, whether they’re stochastic or deterministic. While this assumption can be relaxed to some degree, for most agents, the transitions must at least appear stationary.\n\n\n\nReward Function\n\nA reward function steers the agent towards its goal. It maps a state or an action to a scalar reward, indicative of the goodness but not necessarily the correctness of the agent’s state or action.\nReward signals supervise your agent. A denser reward signal leads to quicker learning but imposes more bias on the agent’s task-solving approach. Conversely, a sparser (less frequent) reward signal results in a less biased agent, potentially leading to novel, emergent behavior.\nReturn: The sum of the rewards collected in a single episode.\n\n\n\n\nCommon Types of Environments:\n\nGrid-World Environment: An environment that is a square grid of any size.\n\nWalk / Corridor: A type of grid-world environment with a single row.\n\nBandit Environment: An environment with a single non-terminal state, named ‘bandit’ as an analogy to a slot machine that will empty your pockets the same way bandits do.\n\n\nWays to represent an environment:\n\n\nTable Form"
+  },
+  {
+    "objectID": "blog/posts/modeling-reinforcement-learning-problem/index.html#markov-decision-process-mdps-the-engine-of-the-environment",
+    "href": "blog/posts/modeling-reinforcement-learning-problem/index.html#markov-decision-process-mdps-the-engine-of-the-environment",
+    "title": "Modeling the Reinforcement Learning Problem",
+    "section": "Markov Decision Process (MDPs): The engine of the environment",
+    "text": "Markov Decision Process (MDPs): The engine of the environment\n\nMarkov Decision Processes (MDPs) is a mathematical framework for modeling complex decision-making problems under uncertainty. It consists of system states, per-state actions, a transition function, a reward signal, a horizon, a discount factor, and an initial state distribution.\nIn RL, it’s often assumed that all environments operate based on an underlying MDP, whether this assumption holds true or not.\n\n\nMarkov Property\n\nFor a state to have the markov property, it must contain all necessary variables to make it independent of all other states.\nMore formally, the probability of the next state, given the current state and action, is independent of the history of interactions.\n\n\n\nThe markov assumption is useful as it allows us to keep the number of variables in a state to a minimum since the more variables you add, the longer it will take the agent to learn. However, completely adhering to the markov assumption may be impractical or even impossible.\n\n\n\nHorizon: Time changes what’s optimal\n\nA time step is a global clock synchronizing all parties and discretizing time.\nAn episode is a sequence of consecutive time steps from the start to the end of an episodic task.\nPlanning Horizon: It’s the temporal depth the agent must plan for.\nFinite Horizon: It’s a planning horizon that terminates after a specific number of steps.\nInfite / Indefinite Horizon: It’s an unlimited planning horizon, assuming that the task can continue indefinitely.\nGreedy Horizon: It’s a planning horizon of a single time step.\n\n\n\nDiscount: The future is uncertain, value it less\n\nTo handle the possibility of infinite sequences of interactions, we must convey to the agent that immediate rewards are more valuable than future ones. This concept is handled by introducing a discount factor that reduces the value of future rewards, stabilizing the learning of the task.\nMoreover, the more we look into the future, the more uncertainty we accumulate. Introducing a discount factor discounts these highly uncertain future rewards, preventing them from affecting our value estimates significantly.\n\n\n\nThe discount factor, \\(\\gamma\\) or gamma, reduces the variance of the value prediction by considering future, more uncertain, rewards less than immediate ones, fostering urgency in the agent.\n\n\n\n\nExtensions to MDPs\n\nPartially observable Markov decision process (POMDP): When the agent can’t fully observe the environment state.\nFactored Markov decision process (FMDP): It compactly represents the transition and reward functions, enabling the representation of large MDPs.\nContinuous [Time|Action|State] Markov decision process: When either time, action, state, or any combination of them are continuous.\nRelational Markov decision process (RMDP): It allows combining probabilistic and relational knowledge.\nSemi-Markov decision process (SMDP): It allows the inclusion of abstract actions that take multiple time steps to complete.\nMulti-agent Markov decision process (MMDP): It allows multiple agents in the same environment.\nDecentralized Markov decision process (Dec-MDP): It allows multiple agents to collaborate and maximize a common reward.\n\n\n\nPutting it all together"
+  },
+  {
+    "objectID": "blog/posts/modeling-reinforcement-learning-problem/index.html#references",
+    "href": "blog/posts/modeling-reinforcement-learning-problem/index.html#references",
+    "title": "Modeling the Reinforcement Learning Problem",
+    "section": "References",
+    "text": "References\nMorales, M. (2020). Grokking Deep Reinforcement Learning. Originally Published: October 15, 2020.\nAll figures are sourced from this book."
   },
   {
     "objectID": "blog/posts/the-universal-function/index.html",
@@ -84,163 +224,30 @@
     "text": "The Universal Function\nIn conclusion, the neural network is a powerful tool that allows software to adapt to any role given to them. At first glance, it may seem like an abstract concept, but it is nothing more guessing and checking then improving. What’s fascinating about this is that the improvement can be made automatically by using concepts from calculus like the derivative, which allows us to determine how to improve. With these tools, the neural network can learn any task and solve most problem thrown its way.\nToday, we see the applications of neural networks in various fields, including speech recognition, image and pattern recognition, and natural language processing, to name a few. The possibilities of what we can achieve with this technology are endless, and we are only scratching the surface of what it can do."
   },
   {
-    "objectID": "blog/posts/modeling-reinforcement-learning-problem/index.html",
-    "href": "blog/posts/modeling-reinforcement-learning-problem/index.html",
-    "title": "Modeling the Reinforcement Learning Problem",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "👋 Hey, I’m Ahad",
     "section": "",
-    "text": "This post will discuss how to model the reinforcement learning problem using the mathematical framework of a Markov Decision Process (MDP). We’ll cover what an environment is in reinforcement learning, its components, and how to model it through an MDP.\nTo understand what we are modeling, we must first familiarize ourselves with the components of reinforcement learning:"
+    "text": "I’m a Developer and a Researcher who likes to build cool things. Here, I share my experiences, things I’ve learned, and the projects I’ve worked on. My goal is to create a Jarvis like AI. Right now, I’m a researcher at the SML Lab at UTD and previous I worked as a SDE Intern at Amazon.\nYou can find more about me here.\n \n  \n   \n  \n    \n     Twitter\n  \n  \n    \n     Github\n  \n  \n    \n     LinkedIn\n  \n  \n    \n     Email"
   },
   {
-    "objectID": "blog/posts/modeling-reinforcement-learning-problem/index.html#components-of-reinforcement-learning",
-    "href": "blog/posts/modeling-reinforcement-learning-problem/index.html#components-of-reinforcement-learning",
-    "title": "Modeling the Reinforcement Learning Problem",
-    "section": "Components of Reinforcement Learning",
-    "text": "Components of Reinforcement Learning\n\nReinforcement Learning is A solution for managing complex, uncertain sequential decision-making.\n\nComplex: Pertains to the large scale of the state and action spaces that the agent needs to navigate.\nSequential: Denotes the delayed effect of an agent’s actions, essentially the credit assignment problem.\nUncertainty: Highlights the unpredictability of the impact of an agent’s actions on the environment, tying to balance the exploration vs exploitation trade-off.\n\n\n\n\nThe agent: The decision maker\n\nAgents: These are entities solely responsible for making decisions that may influence the environment.\n\n\n\nAgent’s Improvement Process:\n\nInteract\nEvaluate\nImprove\n\n\n\n\nThe environment: Everything else\n\nThe environment symbolizes the problem at hand. It encapsulates everything external to the agent, anything that’s beyond the agent’s control but responds to the agent’s decisions.\n\n\nPay attention to how we try to emulate the possible reactions of the environment to the agent’s actions."
+    "objectID": "index.html#recent-posts",
+    "href": "index.html#recent-posts",
+    "title": "👋 Hey, I’m Ahad",
+    "section": "Recent Posts",
+    "text": "Recent Posts\nClick here to check out my blog.\n\n\n\n\n  \n\n\n\n\nModeling the Reinforcement Learning Problem\n\n\n\n\n\nMy notes on the second chapter of ‘Grokking Deep Reinforcement Learning’ by Miguel Morales. This post covers the components of the environment and how to model it using Markov Decision Processes (MDPs).\n\n\n\n\n\n\nJul 1, 2023\n\n\nAhad Jawaid\n\n\n\n\n\n\n  \n\n\n\n\nIntroduction to Deep Reinforcement Learning\n\n\n\n\n\nMy notes on Deep Reinforcement Learning (DRL) based on the first chapter of the ‘Grokking Deep Reinforcement Learning’ by Miguel Morales.\n\n\n\n\n\n\nJun 27, 2023\n\n\nAhad Jawaid\n\n\n\n\n\n\n  \n\n\n\n\nFrom Paper to Code: A Guide to Implement Research\n\n\n\n\n\nThis guide covers effective reading, model implementation, code validation, and the power of repetition.\n\n\n\n\n\n\nJun 5, 2023\n\n\nAhad Jawaid\n\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "blog/posts/modeling-reinforcement-learning-problem/index.html#unraveling-the-environment",
-    "href": "blog/posts/modeling-reinforcement-learning-problem/index.html#unraveling-the-environment",
-    "title": "Modeling the Reinforcement Learning Problem",
-    "section": "Unraveling the Environment:",
-    "text": "Unraveling the Environment:\n\nThe environment is made up of states, actions, transition probabilities, and a reward function.\n\n\nStates: Specific configurations of the environment\n\nA state provides a comprehensive description of the environment.\nState Space: A combiniation of all possible variables and values that can characterize the environment.\n\n\n\nInitial States: A subset of states where the agent starts in the environment.\nTerminal States: The final state in an episodic task, any transition from this state will leads back to itself.\nObservation: The set of variables that the agent perceives. It might not be as comprehensive as a state.\nObservation Space: All possible values of the variables observed by the agent.\n\n\n\nActions: A mechanism to influence the environment\n\nAn action signifies a choice that an agent can make to potentially alter the environment. The set of actions available to an agent may vary across states and during the agent’s learning process.\nAction Space: The set of all actions in all states.\n\n\n\nTransition Function: Consequences of agent actions\n\nA transition function determines how the environment changes in response to an action.\nDenoted as \\(T(s, a, s')\\), where \\(s\\) is the current state, \\(a\\) is the action taken, and \\(s'\\) is the resulting state.\n\n\n\nStochastic Transitions: Transitions that don’t guarantee a single resulting state but could lead to multiple states, each with a different probability.\nIn RL, we often assume that transition distributions remain stationary, whether they’re stochastic or deterministic. While this assumption can be relaxed to some degree, for most agents, the transitions must at least appear stationary.\n\n\n\nReward Function\n\nA reward function steers the agent towards its goal. It maps a state or an action to a scalar reward, indicative of the goodness but not necessarily the correctness of the agent’s state or action.\nReward signals supervise your agent. A denser reward signal leads to quicker learning but imposes more bias on the agent’s task-solving approach. Conversely, a sparser (less frequent) reward signal results in a less biased agent, potentially leading to novel, emergent behavior.\nReturn: The sum of the rewards collected in a single episode.\n\n\n\n\nCommon Types of Environments:\n\nGrid-World Environment: An environment that is a square grid of any size.\n\nWalk / Corridor: A type of grid-world environment with a single row.\n\nBandit Environment: An environment with a single non-terminal state, named ‘bandit’ as an analogy to a slot machine that will empty your pockets the same way bandits do.\n\n\nWays to represent an environment:\n\n\nTable Form"
-  },
-  {
-    "objectID": "blog/posts/modeling-reinforcement-learning-problem/index.html#markov-decision-process-mdps-the-engine-of-the-environment",
-    "href": "blog/posts/modeling-reinforcement-learning-problem/index.html#markov-decision-process-mdps-the-engine-of-the-environment",
-    "title": "Modeling the Reinforcement Learning Problem",
-    "section": "Markov Decision Process (MDPs): The engine of the environment",
-    "text": "Markov Decision Process (MDPs): The engine of the environment\n\nMarkov Decision Processes (MDPs) is a mathematical framework for modeling complex decision-making problems under uncertainty. It consists of system states, per-state actions, a transition function, a reward signal, a horizon, a discount factor, and an initial state distribution.\nIn RL, it’s often assumed that all environments operate based on an underlying MDP, whether this assumption holds true or not.\n\n\nMarkov Property\n\nFor a state to have the markov property, it must contain all necessary variables to make it independent of all other states.\nMore formally, the probability of the next state, given the current state and action, is independent of the history of interactions.\n\n\n\nThe markov assumption is useful as it allows us to keep the number of variables in a state to a minimum since the more variables you add, the longer it will take the agent to learn. However, completely adhering to the markov assumption may be impractical or even impossible.\n\n\n\nHorizon: Time changes what’s optimal\n\nA time step is a global clock synchronizing all parties and discretizing time.\nAn episode is a sequence of consecutive time steps from the start to the end of an episodic task.\nPlanning Horizon: It’s the temporal depth the agent must plan for.\nFinite Horizon: It’s a planning horizon that terminates after a specific number of steps.\nInfite / Indefinite Horizon: It’s an unlimited planning horizon, assuming that the task can continue indefinitely.\nGreedy Horizon: It’s a planning horizon of a single time step.\n\n\n\nDiscount: The future is uncertain, value it less\n\nTo handle the possibility of infinite sequences of interactions, we must convey to the agent that immediate rewards are more valuable than future ones. This concept is handled by introducing a discount factor that reduces the value of future rewards, stabilizing the learning of the task.\nMoreover, the more we look into the future, the more uncertainty we accumulate. Introducing a discount factor discounts these highly uncertain future rewards, preventing them from affecting our value estimates significantly.\n\n\n\nThe discount factor, \\(\\gamma\\) or gamma, reduces the variance of the value prediction by considering future, more uncertain, rewards less than immediate ones, fostering urgency in the agent.\n\n\n\n\nExtensions to MDPs\n\nPartially observable Markov decision process (POMDP): When the agent can’t fully observe the environment state.\nFactored Markov decision process (FMDP): It compactly represents the transition and reward functions, enabling the representation of large MDPs.\nContinuous [Time|Action|State] Markov decision process: When either time, action, state, or any combination of them are continuous.\nRelational Markov decision process (RMDP): It allows combining probabilistic and relational knowledge.\nSemi-Markov decision process (SMDP): It allows the inclusion of abstract actions that take multiple time steps to complete.\nMulti-agent Markov decision process (MMDP): It allows multiple agents in the same environment.\nDecentralized Markov decision process (Dec-MDP): It allows multiple agents to collaborate and maximize a common reward.\n\n\n\nPutting it all together"
-  },
-  {
-    "objectID": "blog/posts/modeling-reinforcement-learning-problem/index.html#references",
-    "href": "blog/posts/modeling-reinforcement-learning-problem/index.html#references",
-    "title": "Modeling the Reinforcement Learning Problem",
-    "section": "References",
-    "text": "References\nMorales, M. (2020). Grokking Deep Reinforcement Learning. Originally Published: October 15, 2020.\nAll figures are sourced from this book."
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "Ahad Jawaid",
+    "objectID": "talks/deep-learning-with-fastai/index.html",
+    "href": "talks/deep-learning-with-fastai/index.html",
+    "title": "Deep learning with fast.ai",
     "section": "",
-    "text": "Twitter\n  \n  \n    \n     Github\n  \n  \n    \n     LinkedIn\n  \n  \n    \n     Email\n  \n\n      \nI’m a curious person, deeply interested in subjects related to the creation of intelligent agents. I am currently a researcher at the SML Lab at UTD.\nMy hobbies include reading Machine Learning papers and books, playing musical instruments, and running.\n\n    \n    \n  \n\n\n\nEducation\n\n\n\n\nBachelors of Science in Computer Science\nThe University of Texas at Dallas, Richardson, TX, USA\n\n\nExpected Graduation: May 2024\n\n\n\n\n\n\nExperience\n\n\n\n\nSoftware Developer Engineer Intern\nAmazon, Seattle, WA, USA\n\n\nMay 2023 - Present\n\n\n\n\nIndependent Undergraduate Researcher\nThe University of Texas at Dallas, Richardson, TX, USA\n\n\nJanuary 2023 - May 2023\n\n\n\n\nUndergraduate Researcher\nSystem Security Research Lab, Richardson, TX, USA\n\n\nMay 2022 - Septemeber 2022\n\n\n\n\n\n\nOrganizations\n\n\n\n\nArtificial Intelligence Society\nDevelopment Officer\n\n\nOctober 2022 – Present\n\n\n\n\nAssociation of Computing Machinery\nCommunity Member, Mentor, Mentee, TIP Participant\n\n\nJanuary 2022 – Present\n\n\n\n\nFinTech UTD\nDeveloper\n\n\nSeptember 2022 – November 2022\n\n\n\n\nComet Marketing\nDirector of Web Development\n\n\nAugust 2022 – October 2022\n\n\n\n\nUX Club\nMember\n\n\nJanuary 2022 – May 2022\n\n\n\n\n\n\nCertifications\n\n\n\n\nNeural Networks and Deep Learning, Deeplearning.ai, Coursera\nCertificate\n\n\nJanuary, 2023\n\n\n\n\nStructuring Machine Learning Projects Structuring, Deeplearning.ai, Coursera\nCertificate\n\n\nJanuary, 2023\n\n\n\n\nCertified Developer - Associate, AWS\nCredential ID NGJGEZLJFJE4QMWQ\n\n\nMay, 2022"
+    "text": "Workshop on deep learning and introducing transfer learning. This work shop was hosted by me and Ibad to teach students how to use the library fast.ai to perform transfer learning on a image classification task.\nVideo Link\nGithub Repository Link\n\n\n\n Back to top"
   },
   {
-    "objectID": "blog/index.html",
-    "href": "blog/index.html",
-    "title": "Blog",
-    "section": "",
-    "text": "Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n  \n\n\n\n\nModeling the Reinforcement Learning Problem\n\n\n\n\n\nMy notes on the second chapter of ‘Grokking Deep Reinforcement Learning’ by Miguel Morales. This post covers the components of the environment and how to model it using Markov Decision Processes (MDPs).\n\n\n\n\n\n\n01 July 2023\n\n\nAhad Jawaid\n\n\n6 min\n\n\n\n\n\n\n  \n\n\n\n\nIntroduction to Deep Reinforcement Learning\n\n\n\n\n\nMy notes on Deep Reinforcement Learning (DRL) based on the first chapter of the ‘Grokking Deep Reinforcement Learning’ by Miguel Morales.\n\n\n\n\n\n\n27 June 2023\n\n\nAhad Jawaid\n\n\n5 min\n\n\n\n\n\n\n  \n\n\n\n\nFrom Paper to Code: A Guide to Implement Research\n\n\n\n\n\nThis guide covers effective reading, model implementation, code validation, and the power of repetition.\n\n\n\n\n\n\n05 June 2023\n\n\nAhad Jawaid\n\n\n2 min\n\n\n\n\n\n\n  \n\n\n\n\nNeural network: The universal function\n\n\n\n\n\n\n\n\n\n\n\n\n23 February 2023\n\n\nAhad Jawaid\n\n\n6 min\n\n\n\n\n\n\nNo matching items\n\n\n\n\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "blog/posts/introduction-to-deep-reinforcement-learning/index.html",
-    "href": "blog/posts/introduction-to-deep-reinforcement-learning/index.html",
-    "title": "Introduction to Deep Reinforcement Learning",
-    "section": "",
-    "text": "Artificial Intelligence (AI) is a domain of computer science dedicated to developing software capable of exhibiting attributes of intelligence."
-  },
-  {
-    "objectID": "blog/posts/introduction-to-deep-reinforcement-learning/index.html#artificial-intelligence-ai",
-    "href": "blog/posts/introduction-to-deep-reinforcement-learning/index.html#artificial-intelligence-ai",
-    "title": "Introduction to Deep Reinforcement Learning",
-    "section": "",
-    "text": "Artificial Intelligence (AI) is a domain of computer science dedicated to developing software capable of exhibiting attributes of intelligence."
-  },
-  {
-    "objectID": "blog/posts/introduction-to-deep-reinforcement-learning/index.html#machine-learning-ml",
-    "href": "blog/posts/introduction-to-deep-reinforcement-learning/index.html#machine-learning-ml",
-    "title": "Introduction to Deep Reinforcement Learning",
-    "section": "Machine Learning (ML)",
-    "text": "Machine Learning (ML)\n\nMachine learning, a subset of AI, tackles problems necessitating intelligent solutions by learning from data.\nSupervised Learning (SL): A method that learns from labeled data.\n\nE.g., handwritten-digit-recognition\n\nUnsupervised Learning (UL): A method that learns from unlabeled data\n\nE.g., customer segmentaiton\n\nReinforcement Learning (RL): A method that learns from trial and error\n\nE.g., pong-playing agent"
-  },
-  {
-    "objectID": "blog/posts/introduction-to-deep-reinforcement-learning/index.html#deep-learning-dl",
-    "href": "blog/posts/introduction-to-deep-reinforcement-learning/index.html#deep-learning-dl",
-    "title": "Introduction to Deep Reinforcement Learning",
-    "section": "Deep Learning (DL)",
-    "text": "Deep Learning (DL)\n\nDeep Learning employs multi-layered non-linear function approximations, also known as neural networks, to address ML tasks. Essentially, it is a suite of techniques that utilize neural networks to solve ML challenges.\n\n\n\nDeep Reinforcement Learning (DRL)\n\nDeep Reinforcement Learning learns through trial and error from feedback that’s simultaneously sequentially, evaluative, and sampled by leveraging non-linear function approximation (neural networks)."
-  },
-  {
-    "objectID": "blog/posts/introduction-to-deep-reinforcement-learning/index.html#reinforcement-learning-rl",
-    "href": "blog/posts/introduction-to-deep-reinforcement-learning/index.html#reinforcement-learning-rl",
-    "title": "Introduction to Deep Reinforcement Learning",
-    "section": "Reinforcement Learning (RL)",
-    "text": "Reinforcement Learning (RL)\n\nSimilar fields\n\nReinforcement Learning (RL): Investigates methods of resolving complex sequential decision-making problems under uncertain conditions.\nControl Theory (CT): Examines methods of controlling complex known dynamic systems.\nOperations Research (OR): Investigates decision-making under uncertain conditions, generally featuring a larger action space than in DRL.\nPsychology: Studies human behavior, which frequently encapsulates complex sequential decision-making problems under uncertainty.\n\n\n\n\nAgent and Enviroment\n\nAgent: Refers exclusively to the decision-making entity.\n\nFor instance, if you are training a robot arm to pick up a toy, the agent is the code that makes the decisions, not the robot arm itself.\n\nEnvironment: Includes everything external to the agent, beyond the agent’s control, and everything that follows the agent’s decisions.\n\nIn the context of training a robot arm to pick up a toy, the objects to be picked up, the tray where the objects reside, atmospheric conditions like wind, and even the robot arm itself are all considered parts of the environment.\n\n\n\n\n\nStates and Observations\n\nState Space: The set of all possible variables and values that can represent the state of the environment.\nState: A comprehensive description of the environment, or an instantiation of the state space.\nObservation: A partial or incomplete description of the environment.\n\n\n\n\nReinforcement Learning Cycle\n\nTransition Function: The mapping from the agent’s action to a potentially new state.\nReward Function: The mapping from the action taken to the potential reward signal.\n\nGoals are defined via the reward function.\n\nModel: A set of the transitions and rewards.\n\n\n\nAgent’s Improvement process:\n\nInteract with the environment.\nEvaluates its behavior.\nImproves its responses.\n\n\n\nAgent’s can be designed to learn:\n\nPolicy: The mapping from observations to actions.\nModels: A model of the environment on mappings.\nValue Functions: The mapping of a state to its estimated value.\n\n\n\n\nExperiences\n\nTime Step: A single cycle of interaction between the agent and the environment.\nExperience: The set consisting of the state, the action, the reward, and the new state in a single time step.\n\n\n\nEpisodic Task: Tasks that have a natural ending or goes on finitely many step.\n\nE.g., video games\n\nContinuing Task: Tasks that don’t have a natural ending or could go on indefinitely.\n\nE.g., learning forward motion\n\n\n\n\nCredit Assignment Problem\n\nTemporal Credit Assignment Problem: the challenge in determining which state and/or action is responsible for a reward the agent recieves\n\nUsually occurs when the agent may have delayed rewards from an action or state that caused it hence the temporal aspect of the problem\n\n\n\n\n\nExploration vs. Exploitation\n\nEvaluative Feedback: Feedback that provides an indication of performance but not correctness.\nExploration versus Exploitation trade-off: The balance between collecting new information from the environment and using known information to maximize rewards.\n\n\n\n\nSampled Feedback\n\nLearning from sparse or weak feedback becomes more challenging with samples only. The agent must be capable of generalizing to learn from sampled feedback.\n\n\n\n\nTypes of Agents\n\nPolicy-based: Designed to approximate policies.\nModel-based: Designed to approximate models.\nValue-based: Designed to approximate value functions.\nActor-critic: Designed to approximate both policies and value functions.\n\n\n\nPros and Cons\nStrength: Reinforcement learning excels in mastering specific tasks.\nWeaknesses: To learn a well-performing policy, it generally requires millions of samples."
-  },
-  {
-    "objectID": "blog/posts/introduction-to-deep-reinforcement-learning/index.html#history-of-deep-reinforcement-learning",
-    "href": "blog/posts/introduction-to-deep-reinforcement-learning/index.html#history-of-deep-reinforcement-learning",
-    "title": "Introduction to Deep Reinforcement Learning",
-    "section": "History of Deep Reinforcement Learning",
-    "text": "History of Deep Reinforcement Learning\n\nAlan Turing - 1930: Developed the Turing Test, a test of a machine’s ability to exhibit intelligent behavior indistinguishable from that of a human.\nJohn McCarthy - 1955: Coined the term “Artificial Intelligence”.\nAndrew Ng - 2002: Trained an autonomous helicopter to perform stunts by observing human-expert flights using inverse reinforcement learning.\nNate Kohl and Peter Stone - 2002: Applied policy-gradient methods to train a soccer-playing robot.\nMnih et al. - 2013, 2015: Introduced the DQN algorithm, which learned to play Atari games from raw pixels.\n\n\n\nSilver et al. - 2014: Released the deterministic policy gradient (DPG) algorithm.\nLillicrap et al. - 2015: Improved DPG with deep deterministic policy gradient (DDPG)\nSchulman et al. - 2016: Released trust region policy optimization (TRPO) and generalized advantage estimation (GAE) methods.\nSergey Levine et al. - 2016: Published Guided Policy Search (GPS)\nSilver et al. - 2016: Demonstrated AlphaGo\n…"
-  },
-  {
-    "objectID": "blog/posts/introduction-to-deep-reinforcement-learning/index.html#references",
-    "href": "blog/posts/introduction-to-deep-reinforcement-learning/index.html#references",
-    "title": "Introduction to Deep Reinforcement Learning",
-    "section": "References",
-    "text": "References\nMorales, M. (2020). Grokking Deep Reinforcement Learning. Originally Published: October 15, 2020.\nAll figures are sourced from this book."
-  },
-  {
-    "objectID": "blog/posts/translating-theory-into-code/index.html",
-    "href": "blog/posts/translating-theory-into-code/index.html",
-    "title": "From Paper to Code: A Guide to Implement Research",
-    "section": "",
-    "text": "Recently, I’ve been diving into the practice of implementing deep learning research papers. This post is designed to guide you through this process, sharing my key insights along the way.\nStarting with an independent study course at university, I explored deep learning intensively. To streamline the journey of understanding and implementing such papers, I’ve distilled the process into four steps:\n\nLet’s break each one down."
-  },
-  {
-    "objectID": "blog/posts/translating-theory-into-code/index.html#introduction",
-    "href": "blog/posts/translating-theory-into-code/index.html#introduction",
-    "title": "From Paper to Code: A Guide to Implement Research",
-    "section": "",
-    "text": "Recently, I’ve been diving into the practice of implementing deep learning research papers. This post is designed to guide you through this process, sharing my key insights along the way.\nStarting with an independent study course at university, I explored deep learning intensively. To streamline the journey of understanding and implementing such papers, I’ve distilled the process into four steps:\n\nLet’s break each one down."
-  },
-  {
-    "objectID": "blog/posts/translating-theory-into-code/index.html#read",
-    "href": "blog/posts/translating-theory-into-code/index.html#read",
-    "title": "From Paper to Code: A Guide to Implement Research",
-    "section": "Read",
-    "text": "Read\nReading a research paper should be focused on understanding the process rather than memorizing details. Pay attention to the inputs, outputs, data transformations, and assumptions.\n\nTo expedite the reading process, it helps to know where to find necessary details. Typically, the most crucial sections in a research paper are:\n\nAbstract\n\nProvides a broad understanding of the paper and its relevance.\n\nFigures\n\nOften encapsulate the paper’s content and are valuable for understanding the model’s workings. However, ensure their accuracy by cross-referencing the textual content.\n\nIntroduction\n\nHighlights the paper’s novelty or significance.\n\nArchitecture (Can go by other names)\n\nContains detailed descriptions of the architecture (usually where most of your time will be spent).\n\nTraining\n\nProvides hyperparameters for training, model performance, and other essential information.\n\nThe appendix\n\nOften contains implementation details not fitting into the main paper’s flow.\n\nExperiements (Optional)\n\nCan include important data and parameters used for model training."
-  },
-  {
-    "objectID": "blog/posts/translating-theory-into-code/index.html#implement",
-    "href": "blog/posts/translating-theory-into-code/index.html#implement",
-    "title": "From Paper to Code: A Guide to Implement Research",
-    "section": "Implement",
-    "text": "Implement\nDuring implementation, the key is not to get overwhelmed by the complexity of the task. Instead, focus on the components you understand, and incrementally build upon them. It’s okay if your code isn’t flawless initially; revisions can be made as you progress."
-  },
-  {
-    "objectID": "blog/posts/translating-theory-into-code/index.html#visualize",
-    "href": "blog/posts/translating-theory-into-code/index.html#visualize",
-    "title": "From Paper to Code: A Guide to Implement Research",
-    "section": "Visualize",
-    "text": "Visualize\nPost-implementation, validate your code. Use libraries like matplotlib to visualize the outputs, or tools like pytest to perform tests. Working in an interactive environment like a jupyter notebook can also be helpful."
-  },
-  {
-    "objectID": "blog/posts/translating-theory-into-code/index.html#repeat",
-    "href": "blog/posts/translating-theory-into-code/index.html#repeat",
-    "title": "From Paper to Code: A Guide to Implement Research",
-    "section": "Repeat",
-    "text": "Repeat\nThe key to successful implementation is repetition. Even if you start slowly, your pace will increase as you build your knowledge and develop better abstractions. This process also improves your programming skills."
-  },
-  {
-    "objectID": "blog/posts/translating-theory-into-code/index.html#conclusion",
-    "href": "blog/posts/translating-theory-into-code/index.html#conclusion",
-    "title": "From Paper to Code: A Guide to Implement Research",
-    "section": "Conclusion",
-    "text": "Conclusion\nIn summary, the methodology I formulated and the key lessons I learned during my initial experience implementing a research paper can be encapsulated in four words: read, implement, visualize, and repeat. I hope you find this post beneficial, and I welcome any feedback or suggestions you might have. Thank you!"
-  },
-  {
-    "objectID": "talks.html",
-    "href": "talks.html",
-    "title": "Talks",
-    "section": "",
-    "text": "Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n  \n\n\n\n\nIntroduction to Deep Learning - Part 1\n\n\n\n\n\n\n\n\n\n\n\n\n26 September 2023\n\n\nAhad Jawaid\n\n\n\n\n\n\n  \n\n\n\n\nIntroduction to ML Mondays\n\n\n\n\n\n\n\n\n\n\n\n\n19 September 2023\n\n\nAhad Jawaid\n\n\n\n\n\n\n  \n\n\n\n\nDeep learning with fast.ai\n\n\n\n\n\n\n\n\n\n\n\n\n22 March 2023\n\n\nAhad Jawaid\n\n\n\n\n\n\nNo matching items\n\n\n\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "talks/intro-deep-learning-1/index.html",
-    "href": "talks/intro-deep-learning-1/index.html",
-    "title": "Introduction to Deep Learning - Part 1",
+    "objectID": "talks/intro-deep-learning-2/index.html",
+    "href": "talks/intro-deep-learning-2/index.html",
+    "title": "Introduction to Deep Learning - Part 2",
     "section": "",
     "text": "Demystified neural networks by boiling them down to simple math equations. Attendees worked together to manually adjust the weights in these simplified models, gaining a hands-on understanding of the underlying concepts.\nVideo Link\nGithub Repository Link\n\n\n\n Back to top"
   }
