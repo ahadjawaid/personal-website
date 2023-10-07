@@ -6,10 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Ahad Jawaid">
-<meta name="dcterms.date" content="2023-03-22">
 
-<title>Ahad Jawaid - Deep learning with fast.ai</title>
+<title>Ahad Jawaid - Projects</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -25,19 +23,21 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
-<link href="../../favicon.ico" rel="icon">
-<script src="../../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../../site_libs/quarto-html/quarto.js"></script>
-<script src="../../site_libs/quarto-html/popper.min.js"></script>
-<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<link href="./favicon.ico" rel="icon">
+<script src="site_libs/quarto-listing/list.min.js"></script>
+<script src="site_libs/quarto-listing/quarto-listing.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "language": {
     "search-no-results-text": "No results",
@@ -52,6 +52,35 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-projects .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title','listing-description','listing-image',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] }],
+      
+      searchColumns: ["listing-title","listing-description","listing-date","listing-path","listing-image"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-projects'] = new List('listing-projects', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-Q9WDH7ENSQ"></script>
 
 <script type="text/javascript">
@@ -63,22 +92,22 @@ gtag('config', 'G-Q9WDH7ENSQ', { 'anonymize_ip': true});
 </script>
 <style>html{ scroll-behavior: smooth; }</style>
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<link rel="stylesheet" href="../../styles.css">
-<meta property="og:title" content="Ahad Jawaid - Deep learning with fast.ai">
+<link rel="stylesheet" href="styles.css">
+<link rel="alternate" type="application/rss+xml" title="Ahad Jawaid" href="projects.xml" data-external="1"><meta property="og:title" content="Ahad Jawaid - Projects">
 <meta property="og:description" content="Ahad Jawaid’s Website">
-<meta property="og:image" content="https://ahadjawaid.github.io/personal-website/talks/deep-learning-with-fastai/assets/brain.png">
+<meta property="og:image" content="https://ahadjawaid.github.io/personal-website/clouds.png">
 <meta property="og:site-name" content="Ahad Jawaid">
-<meta property="og:image:height" content="512">
-<meta property="og:image:width" content="512">
 <meta name="twitter:title" content="Ahad Jawaid">
 <meta name="twitter:description" content="Ahad Jawaid’s Website">
-<meta name="twitter:image" content="https://ahadjawaid.github.io/personal-website/talks/deep-learning-with-fastai/assets/brain.png">
+<meta name="twitter:image" content="https://ahadjawaid.github.io/personal-website/assets/clouds.png">
 <meta name="twitter:creator" content="@_ahadj_">
 <meta name="twitter:site" content="@_ahadj_">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image-height" content="512">
-<meta name="twitter:image-width" content="512">
+<meta name="twitter:image-height" content="400">
+<meta name="twitter:image-width" content="400">
 </head>
 
 <body class="nav-fixed">
@@ -88,10 +117,10 @@ gtag('config', 'G-Q9WDH7ENSQ', { 'anonymize_ip': true});
     <nav class="navbar navbar-expand-lg navbar-dark ">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
-    <img src="../../assets/chip.png" alt="computer chip icon" class="navbar-logo">
+    <a href="./index.html" class="navbar-brand navbar-brand-logo">
+    <img src="./assets/chip.png" alt="computer chip icon" class="navbar-logo">
     </a>
-    <a class="navbar-brand" href="../../index.html">
+    <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">Ahad Jawaid</span>
     </a>
   </div>
@@ -101,27 +130,27 @@ gtag('config', 'G-Q9WDH7ENSQ', { 'anonymize_ip': true});
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../index.html" rel="" target=""><i class="bi bi-house-door" role="img">
+    <a class="nav-link" href="./index.html" rel="" target=""><i class="bi bi-house-door" role="img">
 </i> 
  <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../projects.html" rel="" target=""><i class="bi bi-folder" role="img">
+    <a class="nav-link active" href="./projects.html" rel="" target="" aria-current="page"><i class="bi bi-folder" role="img">
 </i> 
  <span class="menu-text">Projects</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../blog/index.html" rel="" target=""><i class="bi bi-newspaper" role="img">
+    <a class="nav-link" href="./blog/index.html" rel="" target=""><i class="bi bi-newspaper" role="img">
 </i> 
  <span class="menu-text">Blog</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../talks.html" rel="" target=""><i class="bi bi-megaphone" role="img">
+    <a class="nav-link" href="./talks.html" rel="" target=""><i class="bi bi-megaphone" role="img">
 </i> 
  <span class="menu-text">Talks</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../about.html" rel="" target=""><i class="bi bi-person" role="img">
+    <a class="nav-link" href="./about.html" rel="" target=""><i class="bi bi-person" role="img">
 </i> 
  <span class="menu-text">About</span></a>
   </li>  
@@ -161,29 +190,14 @@ gtag('config', 'G-Q9WDH7ENSQ', { 'anonymize_ip': true});
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Deep learning with fast.ai</h1>
-  <div class="quarto-categories">
-    <div class="quarto-category">Deep Learning</div>
-  </div>
-  </div>
+<h1 class="title">Projects</h1>
+</div>
 
 
 
 <div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>Ahad Jawaid </p>
-          </div>
-  </div>
     
-    <div>
-    <div class="quarto-title-meta-heading">Published</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">March 22, 2023</p>
-    </div>
-  </div>
   
     
   </div>
@@ -191,13 +205,291 @@ gtag('config', 'G-Q9WDH7ENSQ', { 'anonymize_ip': true});
 
 </header>
 
-<p>Workshop on deep learning and introducing transfer learning. This work shop was hosted by me and Ibad to teach students how to use the library fast.ai to perform transfer learning on a image classification task.</p>
-<p><a href="https://www.youtube.com/live/K5_KzXeL_Tc">Video Link</a></p>
-<p><a href="https://github.com/ahadjawaid/fastai-workshop">Github Repository Link</a></p>
 
 
 
-<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
+
+<div class="quarto-listing quarto-listing-container-grid" id="listing-projects">
+<div class="listing-actions-group">
+</div>
+<div class="list grid quarto-listing-cols-3">
+<div class="g-col-1" data-index="0" data-listing-date-sort="1695445200000">
+<a href="https://www.csresumebuilder.com/" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img src="assets/csresumebuilder.svg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+CS Resume Builder
+</h5>
+<div class="card-text listing-description">
+We give you personalized resume reviews to help you pass the resume screening process.
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="1" data-listing-date-sort="1694581200000">
+<a href="https://www.createyourdemo.com/" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img src="assets/mic.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Create Your Demo
+</h5>
+<div class="card-text listing-description">
+A studio to create voiceovers for demos.
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="2" data-listing-date-sort="1691902800000">
+<a href="https://www.paperleaderboard.com/" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img src="assets/paperleaderboard.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Paper Leaderboard
+</h5>
+<div class="card-text listing-description">
+We help you find the latest and most promising research papers through a community-driven leaderboard
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="3" data-listing-date-sort="1690520400000">
+<a href="https://github.com/ahadjawaid/rl-algorithms" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img src="assets/robot.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Reinforcement Learning Algorithms
+</h5>
+<div class="card-text listing-description">
+A library filled with my implentation of reinforcement learning algorithms.
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="4" data-listing-date-sort="1689829200000">
+<a href="https://github.com/ahadjawaid/simple-gridworld" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img src="assets/gridworld.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Simple Gridworld
+</h5>
+<div class="card-text listing-description">
+A gridworld used for training reinforcement learning algorithms using the openai’s gym library.
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="5" data-listing-date-sort="1689829200000">
+<a href="https://github.com/ahadjawaid/multi-armed-bandits" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img src="assets/mab.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Multi Armed Bandits
+</h5>
+<div class="card-text listing-description">
+A library contained Multi-Armed Bandit environments built ontop of openai’s gym library.
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="6" data-listing-date-sort="1685941200000">
+<a href="https://ahadjawaid.github.io/fastspeech/" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img src="assets/fastspeech.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Fastspeech 1 / 2
+</h5>
+<div class="card-text listing-description">
+A pytorch implementation of the FastSpeech architecture trained on the text-to-speech task.
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="7" data-listing-date-sort="1681966800000">
+<a href="https://github.com/ahadjawaid/optimine" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img src="assets/optimine.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Optimine
+</h5>
+<div class="card-text listing-description">
+A website that mined data from twitter for specific topics and analyzed their sentiments.
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="8" data-listing-date-sort="1681016400000">
+<a href="https://github.com/ahadjawaid/ser" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img src="assets/ser.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Fintuned Speech Emotion Recognition
+</h5>
+<div class="card-text listing-description">
+Fine tuned a ResNet image classifer on the speech emotion recongition task.
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="9" data-listing-date-sort="1678341600000">
+<a href="https://github.com/ahadjawaid/wavenet" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img src="assets/wavenet.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+WaveNet Implementation
+</h5>
+<div class="card-text listing-description">
+An implementation of an unconditioned wavenet architecture.
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="10" data-listing-date-sort="1675144800000">
+<a href="https://devpost.com/software/robo-rev" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img src="assets/roborev.jpg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Robo Rev
+</h5>
+<div class="card-text listing-description">
+Train your own robotic dog companion with voice recognition and object detection abilities.
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="11" data-listing-date-sort="1670133600000">
+<a href="https://github.com/ahadjawaid/grade_calculator" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img src="assets/calculator.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Letter Grade Calculator
+</h5>
+<div class="card-text listing-description">
+A script that let’s you caclulate your class’s letter grade from your scores and the weightings of you scores.
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="12" data-listing-date-sort="1668319200000">
+<a href="https://devpost.com/software/ambient-5xmhgo" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img src="assets/ambient.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Ambient
+</h5>
+<div class="card-text listing-description">
+Analyze customer service calls to get an overview of your service quality and effectiveness.
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="13" data-listing-date-sort="1664082000000">
+<a href="https://randomleetcode.vercel.app/" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img src="assets/randomlc.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Random Leetcode
+</h5>
+<div class="card-text listing-description">
+A website that randomly select a leetcode question from the blind 75 list.
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="14" data-listing-date-sort="1663995600000">
+<a href="https://devpost.com/software/thing-for-the-thing" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img src="assets/eco.jpg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Eco
+</h5>
+<div class="card-text listing-description">
+Support eco-friendly projects by funding projects.
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="15" data-listing-date-sort="1587186000000">
+<a href="https://devpost.com/software/bookify-hveapw" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img src="assets/bookify.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Bookify
+</h5>
+<div class="card-text listing-description">
+Convert book and research paper titles to audio formats for easy listening. Perfect for busy individuals or those with visual impairments.
+</div>
+</div>
+</div>
+</a>
+</div>
+</div>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div><a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -495,10 +787,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
-<script src="https://giscus.app/client.js" data-repo="ahadjawaid/ahadjawaid.github.io" data-repo-id="R_kgDOJrWaMQ" data-category="Announcements" data-category-id="DIC_kwDOJrWaMc4CXAIC" data-mapping="title" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="top" data-theme="light" data-lang="en" crossorigin="anonymous" data-loading="lazy" async="">
-</script>
-<input type="hidden" id="giscus-base-theme" value="light">
-<input type="hidden" id="giscus-alt-theme" value="light">
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
@@ -535,5 +823,5 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
-<script src="../../site_libs/quarto-html/zenscroll-min.js"></script>
+<script src="site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>
