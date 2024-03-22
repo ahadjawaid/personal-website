@@ -1,0 +1,14 @@
+---
+title: "Introduction to Natural Language Processing"
+author: "Ahad Jawaid"
+date: "2023-10-30"
+categories: [ML Mondays]
+image: assets/natural-language-processing.png
+draft: false
+Venue: "Blackstone, 800 W Campbell Rd, Richardson, TX"
+Location: "Richardson, Texas, US"
+---
+
+I introduce the popular task in natural language processing and how to use recurrent neural networks to solve them.
+
+[Video Link](https://www.youtube.com/watch?v=iXmzIUA35TQ)

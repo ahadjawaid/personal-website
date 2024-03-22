@@ -1,0 +1,14 @@
+---
+title: "Introduction to Reinforcement Learning"
+author: "Ahad Jawaid"
+date: "2023-11-13"
+categories: [ML Mondays]
+image: assets/dog-treat.png
+draft: false
+Venue: "Blackstone, 800 W Campbell Rd, Richardson, TX"
+Location: "Richardson, Texas, US"
+---
+
+I introduce the basics of reinforcement learning including markov decision process and value functions. And the basic problems in reinforcement learning including credit assignment and the exploration exploitation tradeoff.
+
+[Video Link](https://www.youtube.com/watch?v=utnWBjjRkao)

@@ -1,0 +1,14 @@
+---
+title: "Reinforcement Learning"
+author: "Ahad Jawaid"
+date: "2023-11-27"
+categories: [ML Mondays]
+image: assets/robot.png
+draft: false
+Venue: "Blackstone, 800 W Campbell Rd, Richardson, TX"
+Location: "Richardson, Texas, US"
+---
+
+I introduce policy iteration, Q-functions, Q-learning. And go over examples how the Q-learning equation works.
+
+[Video Link](https://www.youtube.com/watch?v=hQhqNCOdWLk)
