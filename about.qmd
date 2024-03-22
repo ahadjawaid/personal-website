@@ -24,9 +24,7 @@ about:
 ---
 
 :::{#about}
-I'm a curious person, deeply interested in subjects related to the creation of intelligent agents. I am currently a researcher at the SML Lab at UTD.
-
-My hobbies include reading Machine Learning papers and books, playing musical instruments, and running.
+My interests lie in the creation of advanced machine intelligence. 
 :::
 
 ::::{.panel-tabset}
@@ -104,21 +102,21 @@ May 2022 - Septemeber 2022
 *ML Mondays Host, Development Officer*
 :::
 ::: {.text-end}
-October 2022 – Present
+October 2022 – Decemeber 2023
 :::
 :::
 
 ::: {.d-flex .justify-content-between}
 ::: {}
 **Association of Computing Machinery**  
-*CMentor, Mentee, TIP Participant*
+*Mentor, Mentee*
 :::
 ::: {.text-end}
-January 2022 – Present
+January 2022 – December 2022
 :::
 :::
 
-::: {.d-flex .justify-content-between}
+<!-- ::: {.d-flex .justify-content-between}
 ::: {}
 **FinTech UTD**  
 *Developer*
@@ -126,9 +124,9 @@ January 2022 – Present
 ::: {.text-end}
 September 2022 – November 2022
 :::
-:::
+::: -->
 
-::: {.d-flex .justify-content-between}
+<!-- ::: {.d-flex .justify-content-between}
 ::: {}
 **Comet Marketing**  
 *Director of Web Development*
@@ -136,9 +134,9 @@ September 2022 – November 2022
 ::: {.text-end}
 August 2022 – October 2022
 :::
-:::
+::: -->
 
-::: {.d-flex .justify-content-between}
+<!-- ::: {.d-flex .justify-content-between}
 ::: {}
 **UX Club**  
 *Member*
@@ -146,7 +144,7 @@ August 2022 – October 2022
 ::: {.text-end}
 January 2022 – May 2022
 :::
-:::
+::: -->
 
 
 ::::
