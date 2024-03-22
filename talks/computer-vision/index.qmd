@@ -1,0 +1,14 @@
+---
+title: "Computer Vision"
+author: "Ahad Jawaid"
+date: "2023-10-16"
+categories: [ML Mondays]
+image: assets/view.png
+draft: false
+Venue: "Blackstone, 800 W Campbell Rd, Richardson, TX"
+Location: "Richardson, Texas, US"
+---
+
+I introduce the popular task in computer vision and how to use convolution networks to solve them.
+
+[Video Link](https://www.youtube.com/watch?v=ET_CxmYKHJg)

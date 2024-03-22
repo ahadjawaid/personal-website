@@ -13,32 +13,36 @@
     <lastmod>2023-06-07T17:04:01.785Z</lastmod>
   </url>
   <url>
-    <loc>https://ahadjawaid.github.io/personal-website/blog/posts/translating-theory-into-code/index.html</loc>
-    <lastmod>2023-06-27T23:18:59.588Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ahadjawaid.github.io/personal-website/blog/posts/introduction-to-deep-reinforcement-learning/index.html</loc>
-    <lastmod>2023-07-07T17:39:19.453Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ahadjawaid.github.io/personal-website/blog/index.html</loc>
-    <lastmod>2023-06-07T16:30:32.713Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ahadjawaid.github.io/personal-website/about.html</loc>
-    <lastmod>2023-10-07T20:21:16.742Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ahadjawaid.github.io/personal-website/blog/posts/modeling-reinforcement-learning-problem/index.html</loc>
-    <lastmod>2023-07-07T17:39:30.496Z</lastmod>
+    <loc>https://ahadjawaid.github.io/personal-website/index.html</loc>
+    <lastmod>2024-03-22T00:28:13.704Z</lastmod>
   </url>
   <url>
     <loc>https://ahadjawaid.github.io/personal-website/blog/posts/the-universal-function/index.html</loc>
     <lastmod>2023-06-07T17:12:29.350Z</lastmod>
   </url>
   <url>
-    <loc>https://ahadjawaid.github.io/personal-website/index.html</loc>
-    <lastmod>2023-10-07T20:21:42.256Z</lastmod>
+    <loc>https://ahadjawaid.github.io/personal-website/blog/posts/modeling-reinforcement-learning-problem/index.html</loc>
+    <lastmod>2023-07-07T17:39:30.496Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ahadjawaid.github.io/personal-website/about.html</loc>
+    <lastmod>2024-03-22T00:39:34.642Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ahadjawaid.github.io/personal-website/blog/index.html</loc>
+    <lastmod>2023-06-07T16:30:32.713Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ahadjawaid.github.io/personal-website/blog/posts/introduction-to-deep-reinforcement-learning/index.html</loc>
+    <lastmod>2023-07-07T17:39:19.453Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ahadjawaid.github.io/personal-website/blog/posts/translating-theory-into-code/index.html</loc>
+    <lastmod>2023-06-27T23:18:59.588Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ahadjawaid.github.io/personal-website/projects.html</loc>
+    <lastmod>2024-03-22T00:36:08.524Z</lastmod>
   </url>
   <url>
     <loc>https://ahadjawaid.github.io/personal-website/talks/deep-learning-with-fastai/index.html</loc>
@@ -46,14 +50,30 @@
   </url>
   <url>
     <loc>https://ahadjawaid.github.io/personal-website/talks/intro-deep-learning-2/index.html</loc>
-    <lastmod>2023-10-07T18:27:36.615Z</lastmod>
+    <lastmod>2024-03-22T00:41:34.163Z</lastmod>
   </url>
   <url>
-    <loc>https://ahadjawaid.github.io/personal-website/projects.html</loc>
-    <lastmod>2023-10-07T20:11:21.099Z</lastmod>
+    <loc>https://ahadjawaid.github.io/personal-website/talks/rl/index.html</loc>
+    <lastmod>2024-03-22T01:01:05.670Z</lastmod>
   </url>
   <url>
-    <loc>https://ahadjawaid.github.io/personal-website/projects/index.html</loc>
-    <lastmod>2023-10-07T20:11:21.099Z</lastmod>
+    <loc>https://ahadjawaid.github.io/personal-website/talks/intro-rl/index.html</loc>
+    <lastmod>2024-03-22T00:59:15.388Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ahadjawaid.github.io/personal-website/talks/deploying-models/index.html</loc>
+    <lastmod>2024-03-22T00:57:26.637Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ahadjawaid.github.io/personal-website/talks/computer-vision/index.html</loc>
+    <lastmod>2024-03-22T00:58:23.798Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ahadjawaid.github.io/personal-website/talks/nlp/index.html</loc>
+    <lastmod>2024-03-22T01:00:13.410Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ahadjawaid.github.io/personal-website/talks/transformers/index.html</loc>
+    <lastmod>2024-03-22T01:02:22.393Z</lastmod>
   </url>
 </urlset>

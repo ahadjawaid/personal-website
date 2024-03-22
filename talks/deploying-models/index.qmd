@@ -1,0 +1,14 @@
+---
+title: "Training and Deploying a ML Model"
+author: "Ahad Jawaid"
+date: "2023-10-09"
+categories: [ML Mondays]
+image: assets/rocket.png
+draft: false
+Venue: "Blackstone, 800 W Campbell Rd, Richardson, TX"
+Location: "Richardson, Texas, US"
+---
+
+I introduce how to train neural networks and deploy them using gradio.
+
+[Video Link](https://www.youtube.com/watch?v=16eGIypP62Y)

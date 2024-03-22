@@ -10,7 +10,141 @@
 <atom:link href="https://ahadjawaid.github.io/personal-website/talks.xml" rel="self" type="application/rss+xml"/>
 <description>Ahad Jawaid&#39;s Website!</description>
 <generator>quarto-1.4.122</generator>
-<lastBuildDate>Tue, 26 Sep 2023 05:00:00 GMT</lastBuildDate>
+<lastBuildDate>Mon, 27 Nov 2023 06:00:00 GMT</lastBuildDate>
+<item>
+  <title>Reinforcement Learning</title>
+  <dc:creator>Ahad Jawaid</dc:creator>
+  <link>https://ahadjawaid.github.io/personal-website/talks/rl/index.html</link>
+  <description><![CDATA[ 
+
+
+
+<p>I introduce policy iteration, Q-functions, Q-learning. And go over examples how the Q-learning equation works.</p>
+<p><a href="https://www.youtube.com/watch?v=hQhqNCOdWLk">Video Link</a></p>
+
+
+
+<a onclick="window.scrollTo(0, 0); return false;" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a> ]]></description>
+  <category>ML Mondays</category>
+  <guid>https://ahadjawaid.github.io/personal-website/talks/rl/index.html</guid>
+  <pubDate>Mon, 27 Nov 2023 06:00:00 GMT</pubDate>
+  <media:content url="https://ahadjawaid.github.io/personal-website/talks/rl/assets/robot.png" medium="image" type="image/png" height="144" width="144"/>
+</item>
+<item>
+  <title>Introduction to Reinforcement Learning</title>
+  <dc:creator>Ahad Jawaid</dc:creator>
+  <link>https://ahadjawaid.github.io/personal-website/talks/intro-rl/index.html</link>
+  <description><![CDATA[ 
+
+
+
+<p>I introduce the basics of reinforcement learning including markov decision process and value functions. And the basic problems in reinforcement learning including credit assignment and the exploration exploitation tradeoff.</p>
+<p><a href="https://www.youtube.com/watch?v=utnWBjjRkao">Video Link</a></p>
+
+
+
+<a onclick="window.scrollTo(0, 0); return false;" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a> ]]></description>
+  <category>ML Mondays</category>
+  <guid>https://ahadjawaid.github.io/personal-website/talks/intro-rl/index.html</guid>
+  <pubDate>Mon, 13 Nov 2023 06:00:00 GMT</pubDate>
+  <media:content url="https://ahadjawaid.github.io/personal-website/talks/intro-rl/assets/dog-treat.png" medium="image" type="image/png" height="144" width="144"/>
+</item>
+<item>
+  <title>Natural Language Processing - Transformers</title>
+  <dc:creator>Ahad Jawaid</dc:creator>
+  <link>https://ahadjawaid.github.io/personal-website/talks/transformers/index.html</link>
+  <description><![CDATA[ 
+
+
+
+<p>I introduce transformers going through an example of how to use them autoregressively.</p>
+<p><a href="https://www.youtube.com/watch?v=u5OuInyf4L8">Video Link</a></p>
+
+
+
+<a onclick="window.scrollTo(0, 0); return false;" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a> ]]></description>
+  <category>ML Mondays</category>
+  <guid>https://ahadjawaid.github.io/personal-website/talks/transformers/index.html</guid>
+  <pubDate>Mon, 06 Nov 2023 06:00:00 GMT</pubDate>
+  <media:content url="https://ahadjawaid.github.io/personal-website/talks/transformers/assets/communication.png" medium="image" type="image/png" height="144" width="144"/>
+</item>
+<item>
+  <title>Introduction to Natural Language Processing</title>
+  <dc:creator>Ahad Jawaid</dc:creator>
+  <link>https://ahadjawaid.github.io/personal-website/talks/nlp/index.html</link>
+  <description><![CDATA[ 
+
+
+
+<p>I introduce the popular task in natural language processing and how to use recurrent neural networks to solve them.</p>
+<p><a href="https://www.youtube.com/watch?v=iXmzIUA35TQ">Video Link</a></p>
+
+
+
+<a onclick="window.scrollTo(0, 0); return false;" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a> ]]></description>
+  <category>ML Mondays</category>
+  <guid>https://ahadjawaid.github.io/personal-website/talks/nlp/index.html</guid>
+  <pubDate>Mon, 30 Oct 2023 05:00:00 GMT</pubDate>
+  <media:content url="https://ahadjawaid.github.io/personal-website/talks/nlp/assets/natural-language-processing.png" medium="image" type="image/png" height="144" width="144"/>
+</item>
+<item>
+  <title>Computer Vision</title>
+  <dc:creator>Ahad Jawaid</dc:creator>
+  <link>https://ahadjawaid.github.io/personal-website/talks/computer-vision/index.html</link>
+  <description><![CDATA[ 
+
+
+
+<p>I introduce the popular task in computer vision and how to use convolution networks to solve them.</p>
+<p><a href="https://www.youtube.com/watch?v=ET_CxmYKHJg">Video Link</a></p>
+
+
+
+<a onclick="window.scrollTo(0, 0); return false;" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a> ]]></description>
+  <category>ML Mondays</category>
+  <guid>https://ahadjawaid.github.io/personal-website/talks/computer-vision/index.html</guid>
+  <pubDate>Mon, 16 Oct 2023 05:00:00 GMT</pubDate>
+  <media:content url="https://ahadjawaid.github.io/personal-website/talks/computer-vision/assets/view.png" medium="image" type="image/png" height="144" width="144"/>
+</item>
+<item>
+  <title>Training and Deploying a ML Model</title>
+  <dc:creator>Ahad Jawaid</dc:creator>
+  <link>https://ahadjawaid.github.io/personal-website/talks/deploying-models/index.html</link>
+  <description><![CDATA[ 
+
+
+
+<p>I introduce how to train neural networks and deploy them using gradio.</p>
+<p><a href="https://www.youtube.com/watch?v=16eGIypP62Y">Video Link</a></p>
+
+
+
+<a onclick="window.scrollTo(0, 0); return false;" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a> ]]></description>
+  <category>ML Mondays</category>
+  <guid>https://ahadjawaid.github.io/personal-website/talks/deploying-models/index.html</guid>
+  <pubDate>Mon, 09 Oct 2023 05:00:00 GMT</pubDate>
+  <media:content url="https://ahadjawaid.github.io/personal-website/talks/deploying-models/assets/rocket.png" medium="image" type="image/png" height="144" width="144"/>
+</item>
+<item>
+  <title>Introduction to Deep Learning - Part 2</title>
+  <dc:creator>Ahad Jawaid</dc:creator>
+  <link>https://ahadjawaid.github.io/personal-website/talks/intro-deep-learning-2/index.html</link>
+  <description><![CDATA[ 
+
+
+
+<p>Demystified neural networks by boiling them down to simple math equations. Attendees worked together to manually adjust the weights in these simplified models, gaining a hands-on understanding of the underlying concepts.</p>
+<p><a href="https://www.youtube.com/watch?v=haVIU9QC-XE">Video Link</a></p>
+<p><a href="https://github.com/ahadjawaid/ml-mondays/tree/main/Workshop-3">Github Repository Link</a></p>
+
+
+
+<a onclick="window.scrollTo(0, 0); return false;" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a> ]]></description>
+  <category>ML Mondays</category>
+  <guid>https://ahadjawaid.github.io/personal-website/talks/intro-deep-learning-2/index.html</guid>
+  <pubDate>Mon, 02 Oct 2023 05:00:00 GMT</pubDate>
+  <media:content url="https://ahadjawaid.github.io/personal-website/talks/intro-deep-learning-2/assets/deep-learning.png" medium="image" type="image/png" height="144" width="144"/>
+</item>
 <item>
   <title>Introduction to Deep Learning - Part 1</title>
   <dc:creator>Ahad Jawaid</dc:creator>
@@ -30,26 +164,6 @@
   <guid>https://ahadjawaid.github.io/personal-website/talks/intro-deep-learning-1/index.html</guid>
   <pubDate>Tue, 26 Sep 2023 05:00:00 GMT</pubDate>
   <media:content url="https://ahadjawaid.github.io/personal-website/talks/intro-deep-learning-1/assets/deep-learning.png" medium="image" type="image/png" height="144" width="144"/>
-</item>
-<item>
-  <title>Introduction to Deep Learning - Part 2</title>
-  <dc:creator>Ahad Jawaid</dc:creator>
-  <link>https://ahadjawaid.github.io/personal-website/talks/intro-deep-learning-2/index.html</link>
-  <description><![CDATA[ 
-
-
-
-<p>Demystified neural networks by boiling them down to simple math equations. Attendees worked together to manually adjust the weights in these simplified models, gaining a hands-on understanding of the underlying concepts.</p>
-<p><a href="https://www.youtube.com/watch?v=haVIU9QC-XE">Video Link</a></p>
-<p><a href="https://github.com/ahadjawaid/ml-mondays/tree/main/Workshop-3">Github Repository Link</a></p>
-
-
-
-<a onclick="window.scrollTo(0, 0); return false;" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a> ]]></description>
-  <category>ML Mondays</category>
-  <guid>https://ahadjawaid.github.io/personal-website/talks/intro-deep-learning-2/index.html</guid>
-  <pubDate>Tue, 26 Sep 2023 05:00:00 GMT</pubDate>
-  <media:content url="https://ahadjawaid.github.io/personal-website/talks/intro-deep-learning-2/assets/deep-learning.png" medium="image" type="image/png" height="144" width="144"/>
 </item>
 <item>
   <title>Introduction to ML Mondays</title>

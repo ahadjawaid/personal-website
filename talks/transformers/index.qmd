@@ -1,0 +1,14 @@
+---
+title: "Natural Language Processing - Transformers"
+author: "Ahad Jawaid"
+date: "2023-11-06"
+categories: [ML Mondays]
+image: assets/communication.png
+draft: false
+Venue: "Blackstone, 800 W Campbell Rd, Richardson, TX"
+Location: "Richardson, Texas, US"
+---
+
+I introduce transformers going through an example of how to use them autoregressively.
+
+[Video Link](https://www.youtube.com/watch?v=u5OuInyf4L8)

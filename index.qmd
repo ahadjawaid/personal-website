@@ -32,7 +32,7 @@ listing:
 ---
 
 :::{#about}
-I'm a Developer and a Researcher who likes to build cool things. Here, I share my experiences, things I've learned, and the projects I've worked on. Right now, I'm a researcher at the SML Lab at UTD and I'm trying to start and launch a product every month until I graduate.
+I'm a Developer and a Researcher who likes to build cool things. Here, I share my experiences, things I've learned, and the projects I've worked on. Right now, I'm a researcher at the Speech and Machine Learning Lab at UTD.
 
 You can view my recent works [here](projects.qmd).
 
