@@ -10,7 +10,23 @@
 <atom:link href="https://ahadjawaid.github.io/personal-website/projects.xml" rel="self" type="application/rss+xml"/>
 <description>Ahad Jawaid&#39;s Website!</description>
 <generator>quarto-1.4.122</generator>
-<lastBuildDate>Sat, 23 Sep 2023 05:00:00 GMT</lastBuildDate>
+<lastBuildDate>Sat, 27 Jan 2024 06:00:00 GMT</lastBuildDate>
+<item>
+  <title>Discovery</title>
+  <link>https://ahadjawaid.github.io/personal-website/</link>
+  <description>Teaching through discovery ficition generated on the fly using LLMs.</description>
+  <guid>https://ahadjawaid.github.io/personal-website/</guid>
+  <pubDate>Sat, 27 Jan 2024 06:00:00 GMT</pubDate>
+  <media:content url="https://ahadjawaid.github.io/personal-website/assets/discovery.jpg" medium="image" type="image/jpeg"/>
+</item>
+<item>
+  <title>Curis</title>
+  <link>https://ahadjawaid.github.io/personal-website/</link>
+  <description>Seeks to keep physicians informed about the best course of action for their patients. The project specifically focuses on Cancer patients and finds relevant medical trials for the patient.</description>
+  <guid>https://ahadjawaid.github.io/personal-website/</guid>
+  <pubDate>Sat, 04 Nov 2023 05:00:00 GMT</pubDate>
+  <media:content url="https://ahadjawaid.github.io/personal-website/assets/curis.png" medium="image" type="image/png" height="96" width="144"/>
+</item>
 <item>
   <title>CS Resume Builder</title>
   <link>https://ahadjawaid.github.io/personal-website/</link>

@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://ahadjawaid.github.io/personal-website/talks/transformers/index.html</loc>
+    <lastmod>2024-03-22T01:20:45.386Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ahadjawaid.github.io/personal-website/talks/nlp/index.html</loc>
+    <lastmod>2024-03-22T01:20:45.384Z</lastmod>
+  </url>
+  <url>
     <loc>https://ahadjawaid.github.io/personal-website/talks/intro-ml-mondays/index.html</loc>
     <lastmod>2023-09-30T18:16:23.932Z</lastmod>
   </url>
@@ -9,12 +17,16 @@
     <lastmod>2023-09-30T18:18:16.822Z</lastmod>
   </url>
   <url>
+    <loc>https://ahadjawaid.github.io/personal-website/talks/deep-learning-with-fastai/index.html</loc>
+    <lastmod>2023-06-09T23:31:05.042Z</lastmod>
+  </url>
+  <url>
     <loc>https://ahadjawaid.github.io/personal-website/talks.html</loc>
     <lastmod>2023-06-07T17:04:01.785Z</lastmod>
   </url>
   <url>
     <loc>https://ahadjawaid.github.io/personal-website/index.html</loc>
-    <lastmod>2023-10-07T20:21:42.256Z</lastmod>
+    <lastmod>2024-03-22T01:20:45.381Z</lastmod>
   </url>
   <url>
     <loc>https://ahadjawaid.github.io/personal-website/blog/posts/the-universal-function/index.html</loc>
@@ -26,7 +38,7 @@
   </url>
   <url>
     <loc>https://ahadjawaid.github.io/personal-website/about.html</loc>
-    <lastmod>2023-10-07T20:21:16.742Z</lastmod>
+    <lastmod>2024-03-22T01:20:45.380Z</lastmod>
   </url>
   <url>
     <loc>https://ahadjawaid.github.io/personal-website/blog/index.html</loc>
@@ -42,14 +54,26 @@
   </url>
   <url>
     <loc>https://ahadjawaid.github.io/personal-website/projects.html</loc>
-    <lastmod>2023-10-07T22:18:48.708Z</lastmod>
+    <lastmod>2024-03-22T01:20:45.381Z</lastmod>
   </url>
   <url>
-    <loc>https://ahadjawaid.github.io/personal-website/talks/deep-learning-with-fastai/index.html</loc>
-    <lastmod>2023-06-09T23:31:05.042Z</lastmod>
+    <loc>https://ahadjawaid.github.io/personal-website/talks/computer-vision/index.html</loc>
+    <lastmod>2024-03-22T01:20:45.382Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ahadjawaid.github.io/personal-website/talks/deploying-models/index.html</loc>
+    <lastmod>2024-03-22T01:20:45.383Z</lastmod>
   </url>
   <url>
     <loc>https://ahadjawaid.github.io/personal-website/talks/intro-deep-learning-2/index.html</loc>
-    <lastmod>2023-10-07T18:27:36.615Z</lastmod>
+    <lastmod>2024-03-22T01:20:45.383Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ahadjawaid.github.io/personal-website/talks/intro-rl/index.html</loc>
+    <lastmod>2024-03-22T01:20:45.384Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ahadjawaid.github.io/personal-website/talks/rl/index.html</loc>
+    <lastmod>2024-03-22T01:20:45.385Z</lastmod>
   </url>
 </urlset>
