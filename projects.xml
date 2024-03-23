@@ -28,6 +28,14 @@
   <media:content url="https://ahadjawaid.github.io/personal-website/assets/curis.png" medium="image" type="image/png" height="96" width="144"/>
 </item>
 <item>
+  <title>DDQN for Atari</title>
+  <link>https://ahadjawaid.github.io/personal-website/</link>
+  <description>Implemented the Double DQN (DDQN) reinforcement learning method for Atari environments in OpenAI Gym.</description>
+  <guid>https://ahadjawaid.github.io/personal-website/</guid>
+  <pubDate>Sat, 04 Nov 2023 05:00:00 GMT</pubDate>
+  <media:content url="https://ahadjawaid.github.io/personal-website/assets/reinforcement-learning.png" medium="image" type="image/png" height="144" width="144"/>
+</item>
+<item>
   <title>CS Resume Builder</title>
   <link>https://ahadjawaid.github.io/personal-website/</link>
   <description>We give you personalized resume reviews to help you pass the resume screening process.</description>
