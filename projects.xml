@@ -10,7 +10,15 @@
 <atom:link href="https://ahadjawaid.github.io/personal-website/projects.xml" rel="self" type="application/rss+xml"/>
 <description>Ahad Jawaid&#39;s Website!</description>
 <generator>quarto-1.4.122</generator>
-<lastBuildDate>Sat, 27 Jan 2024 06:00:00 GMT</lastBuildDate>
+<lastBuildDate>Tue, 23 Apr 2024 05:00:00 GMT</lastBuildDate>
+<item>
+  <title>PreScribe</title>
+  <link>https://ahadjawaid.github.io/personal-website/</link>
+  <description>Records a conversation between the doctor and the patient and transcribes it. While also giving a checklist of prescribed medications requirements to assist doctor in getting the correct medication history for each patient.</description>
+  <guid>https://ahadjawaid.github.io/personal-website/</guid>
+  <pubDate>Tue, 23 Apr 2024 05:00:00 GMT</pubDate>
+  <media:content url="https://ahadjawaid.github.io/personal-website/assets/prescribe.png" medium="image" type="image/png" height="144" width="144"/>
+</item>
 <item>
   <title>Discovery</title>
   <link>https://ahadjawaid.github.io/personal-website/</link>
@@ -20,20 +28,20 @@
   <media:content url="https://ahadjawaid.github.io/personal-website/assets/discovery.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
+  <title>DDQN for Atari</title>
+  <link>https://ahadjawaid.github.io/personal-website/</link>
+  <description>Implemented the Double DQN (DDQN) reinforcement learning method for Atari environments in OpenAI Gym.</description>
+  <guid>https://ahadjawaid.github.io/personal-website/</guid>
+  <pubDate>Mon, 04 Dec 2023 06:00:00 GMT</pubDate>
+  <media:content url="https://ahadjawaid.github.io/personal-website/assets/reinforcement-learning.png" medium="image" type="image/png" height="144" width="144"/>
+</item>
+<item>
   <title>Curis</title>
   <link>https://ahadjawaid.github.io/personal-website/</link>
   <description>Seeks to keep physicians informed about the best course of action for their patients. The project specifically focuses on Cancer patients and finds relevant medical trials for the patient.</description>
   <guid>https://ahadjawaid.github.io/personal-website/</guid>
   <pubDate>Sat, 04 Nov 2023 05:00:00 GMT</pubDate>
   <media:content url="https://ahadjawaid.github.io/personal-website/assets/curis.png" medium="image" type="image/png" height="96" width="144"/>
-</item>
-<item>
-  <title>DDQN for Atari</title>
-  <link>https://ahadjawaid.github.io/personal-website/</link>
-  <description>Implemented the Double DQN (DDQN) reinforcement learning method for Atari environments in OpenAI Gym.</description>
-  <guid>https://ahadjawaid.github.io/personal-website/</guid>
-  <pubDate>Sat, 04 Nov 2023 05:00:00 GMT</pubDate>
-  <media:content url="https://ahadjawaid.github.io/personal-website/assets/reinforcement-learning.png" medium="image" type="image/png" height="144" width="144"/>
 </item>
 <item>
   <title>CS Resume Builder</title>
